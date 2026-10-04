@@ -3154,6 +3154,695 @@ const questionsGuillotina = [
     correct: 0,
     explanation: "Permite controlar la vida útil, número de rectificados acumulados y el rendimiento del acero.",
     source: "Manual Guillotinero (Pág. 113)"
+  },
+   
+  {
+    theme: 1,
+    question: "En los tejuelos de tablero que acompañan al trabajo en la FNMT, ¿qué información se puede encontrar?",
+    options: [
+      "Taller, labor, orden de fabricación, del nº... al nº, defectuosos, el nº de tablero",
+      "Horario del turno, nombre del mecánico y modelo de guillotina",
+      "Precio del papel por kilo y proveedor del cartón"
+    ],
+    correct: 0,
+    explanation: "El tejuelo de tablero registra la trazabilidad del lote, indicando el rango de numeración, pliegos defectuosos y número de tablero.",
+    source: "Examen FNMT 2025 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es un documento de reposiciones en la FNMT?",
+    options: [
+      "Es el documento que se emplea para extraer los efectos defectuosos que se detecten durante todo el proceso de fabricación",
+      "El pedido de compra de papel al proveedor",
+      "El parte de cambio de cuchilla"
+    ],
+    correct: 0,
+    explanation: "Permite retirar y justificar los billetes o efectos con fallos detectados durante el corte y manipulado.",
+    source: "Examen FNMT 2022 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "En una guillotina XT, ¿qué indica el pictograma de un sujetador con la flecha en reposo?",
+    options: [
+      "Sujetador reposo/pasivo",
+      "Sujetador activo",
+      "Sujetador arriba"
+    ],
+    correct: 0,
+    explanation: "Identifica el estado pasivo del sujetador mecánico de la escuadra.",
+    source: "Examen FNMT 2022 (Pág. 3)"
+  },
+  {
+    theme: 1,
+    question: "En una guillotina XT, ¿cuántas líneas de observaciones se pueden memorizar como máximo en una información de programa?",
+    options: [
+      "7 líneas",
+      "8 líneas",
+      "9 líneas"
+    ],
+    correct: 0,
+    explanation: "El sistema de programación de POLAR XT admite hasta un máximo de 7 líneas de texto en el campo de observaciones.",
+    source: "Examen FNMT 2022 (Pág. 3)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué ventaja ofrece la función 'Soltar pisón en PMI' (Punto Muerto Inferior) en una POLAR XT?",
+    options: [
+      "El pisón se eleva antes, con lo que la escuadra es capaz de ponerse en movimiento antes agilizando el corte",
+      "El pisón baja solo sin pisar el pedal",
+      "La cuchilla se frena a mitad de recorrido"
+    ],
+    correct: 0,
+    explanation: "Al liberar el pisón justo en el PMI, se gana tiempo en el ciclo permitiendo el avance inmediato de la escuadra.",
+    source: "Examen FNMT 2022 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "En el modelo POLAR XT, ¿cuántos programas se pueden almacenar en cada uno de los segmentos de memoria (A y B)?",
+    options: [
+      "999 programas en cada segmento (A/B)",
+      "499 programas en cada segmento (A/B)",
+      "100 programas en cada segmento (A/B)"
+    ],
+    correct: 0,
+    explanation: "La memoria dividida en sectores A y B permite albergar hasta 999 programas independientes en cada uno.",
+    source: "Examen FNMT 2026 (Pág. 8)"
+  },
+  {
+    theme: 1,
+    question: "¿Para qué sirve el elemento llamado 'Fixomat' en las guillotinas POLAR?",
+    options: [
+      "Alinear el papel mediante las guías de registro",
+      "Enfriar la cuchilla con chorro de aire",
+      "Bloquear la mesa de corte en paradas de emergencia"
+    ],
+    correct: 0,
+    explanation: "El Fixomat utiliza las guías de registro fijas para escuadrar la posteta de forma precisa contra el tope.",
+    source: "Examen FNMT 2022 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "En una nota de numeración impresa de resta en la FNMT, ¿cuál es la característica de la salida?",
+    options: [
+      "El último pliego que sale de la máquina tiene la numeración más baja",
+      "El primer pliego tiene la numeración más baja",
+      "Todos los pliegos llevan el mismo número"
+    ],
+    correct: 0,
+    explanation: "Al ser impresión en resta, los valores numéricos van descendiendo, quedando el número menor al final.",
+    source: "Examen FNMT 2023 (Pág. 1)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué tiempo total de reacción tiene el sistema de la guillotina POLAR 115 XT al interrumpirse la barrera de luz?",
+    options: [
+      "< 125 ms",
+      "< 150 ms",
+      "< 200 ms"
+    ],
+    correct: 0,
+    explanation: "La barrera fotoeléctrica detiene el avance mecánico en menos de 125 milisegundos por normativa de seguridad.",
+    source: "Examen FNMT 2022 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué deforma el material hacia adelante durante el proceso de corte por guillotina?",
+    options: [
+      "El ángulo de bisel en el lado frontal de la cuchilla",
+      "El soplo de la mesa de aire",
+      "La tracción de la correa de transmisión"
+    ],
+    correct: 0,
+    explanation: "La cuña del bisel de la cuchilla ejerce una fuerza de empuje que desplaza el papel cortado hacia la mesa delantera.",
+    source: "Examen FNMT 2026 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Para qué es conveniente el uso de la función 'Eltrotact'?",
+    options: [
+      "Para cortar medidas de productos que se repiten en una misma dirección",
+      "Para que la retirada del desperdicio se automatice bajo la mesa",
+      "Para facilitar la colocación de productos una vez cortados"
+    ],
+    correct: 0,
+    explanation: "Facilita secuencias repetitivas automatizando los pasos de avance continuo en una misma dirección.",
+    source: "Examen FNMT 2022 (Pág. 1)"
+  },
+  {
+    theme: 1,
+    question: "¿Cuál es la protección en caso de rotura de la biela mediante el perno de rotura en los modelos POLAR 115?",
+    options: [
+      "13 t",
+      "10 t",
+      "15 t"
+    ],
+    correct: 0,
+    explanation: "El perno de seguridad fusible está tarado para cizallarse y romperse al alcanzar una sobrecarga de 13 toneladas.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "¿Cómo se puede reconocer visualmente que una cuchilla está cortando sin filo?",
+    options: [
+      "Cuando la superficie de corte y/o los desperdicios se pegan entre sí después de cortar",
+      "Con unos guantes de seguridad deslizando el dedo por el filo",
+      "Porque la máquina se para continuamente por sobrepresión"
+    ],
+    correct: 0,
+    explanation: "La falta de filo embota el corte provocando la fusión o adherencia por fricción de los bordes del papel.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué tipo de comentarios permite añadir la pantalla de las guillotinas POLAR?",
+    options: [
+      "Individuales, Funcionales y Estándar",
+      "Individuales y Funcionales",
+      "Individuales y Generales"
+    ],
+    correct: 0,
+    explanation: "Permite clasificar notas de ayuda para el operador en comentarios individuales, funcionales y estándar.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "Según el manual oficial, cuanto menor es el gramaje del papel no estucado...",
+    options: [
+      "Más difícil será de igualar y su comportamiento será más inestable",
+      "Más fácil será de igualar y su comportamiento será más estable",
+      "Más difícil será de igualar pero su comportamiento será más estable"
+    ],
+    correct: 0,
+    explanation: "Los gramajes muy finos carecen de rigidez estructural, dificultando el aplanado y alineación correcta.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "En las máquinas vibradoras, ¿cuándo se debe desconectar el rodillo sacador de aire?",
+    options: [
+      "Cuando se vibra papel engomado o adhesivo",
+      "Cuando se vibran láminas de plástico",
+      "Cuando se vibra material con perforaciones"
+    ],
+    correct: 0,
+    explanation: "El rodillo sacador de aire podría provocar la activación del adhesivo o el pegado accidental de las hojas.",
+    source: "Examen FNMT 2022 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "Como norma general, ¿cuándo actúa automáticamente el expulsor programable?",
+    options: [
+      "Cuando la medida siguiente es mayor que la posición de corte anterior",
+      "Cuando la medida siguiente es menor que la posición de corte anterior",
+      "Cuando la mesa delantera está completamente limpia"
+    ],
+    correct: 0,
+    explanation: "Al requerir una medida mayor, el expulsor empuja el material hacia adelante para liberar espacio de recule.",
+    source: "Examen FNMT 2022 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "En las elevadoras de descarga de papel, el pulsador de descenso de la zona de seguridad se detiene a:",
+    options: [
+      "A 12 cm del suelo (o entre 12 y 20 cm según norma)",
+      "A 50 cm del suelo",
+      "Toca directamente el suelo sin parar"
+    ],
+    correct: 0,
+    explanation: "Se frena automáticamente a distancia de seguridad para prevenir atrapamientos de pies.",
+    source: "Examen FNMT 2022 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿De cuántos canales dispone la barrera de luz de seguridad de la guillotina?",
+    options: [
+      "45 a 65 canales según resolución de la cortina infrarroja",
+      "20 canales exactos",
+      "2 canales"
+    ],
+    correct: 0,
+    explanation: "Las barreras electrónicas modernas dividen el haz infrarrojo en múltiples canales para detectar dedos pequeños.",
+    source: "Examen FNMT 2022 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿Para qué sirve una 'Plantilla de Calidad de Producto' en la guillotina?",
+    options: [
+      "Para la verificación visual y dimensional del producto cortado frente al estándar",
+      "Para programar los pasos de corte en la consola",
+      "Para medir el desgaste de la cuchilla"
+    ],
+    correct: 0,
+    explanation: "Permite comprobar el escuadrado, márgenes de registro y cotas exactas del corte.",
+    source: "Examen FNMT 2022 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "¿En qué consiste la función 'Autotrim' en las guillotinas POLAR?",
+    options: [
+      "Apertura automática de la mesa delantera para evacuar desperdicios y tiras de desbarbe durante el corte",
+      "Afilado automático de la cuchilla mediante piedra rotativa",
+      "Engrase automático de las guías mecánicas"
+    ],
+    correct: 0,
+    explanation: "Abre una ranura en la mesa delantera permitiendo la caída directa del recorte sin intervención del operario.",
+    source: "Examen FNMT 2022 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es el 'Lado de Aplicación' en la preparación de una posteta?",
+    options: [
+      "Los bordes de referencia (entrada y costado) que han servido de guía en la máquina de imprimir",
+      "El reverso de la última hoja del paquete",
+      "El lado por donde se introduce el adhesivo"
+    ],
+    correct: 0,
+    explanation: "Garantiza que los primeros cortes se apoyen exactamente en las mismas escuadras de la imprenta.",
+    source: "Examen FNMT 2025 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué ocurre si se selecciona una presión de prensado exesivamente alta para un papel blando?",
+    options: [
+      "El material se deforma permanentemente y la cuchilla se desvía alargando los pliegos inferiores",
+      "La máquina se apaga inmediatamente",
+      "El papel sale disparado hacia atrás"
+    ],
+    correct: 0,
+    explanation: "La sobrepresión aplasta los bordes, alterando la geometría de la posteta y curvando el corte.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "En una guillotina POLAR X, ¿cómo se valida la introducción de una medida teórica simple?",
+    options: [
+      "Pulsando la tecla '=' dos veces o accionando la tecla de inicio",
+      "Pulsando la tecla C",
+      "Girando el volante de ajuste manual"
+    ],
+    correct: 0,
+    explanation: "La pulsación doble de la tecla igual activa el desplazamiento inmediato de la escuadra a la cota.",
+    source: "Examen FNMT 2022 (Pág. 1)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es la 'Corrección Material' en la programación de corte?",
+    options: ["Un ajuste global de compensación para absorber la dilatación o encogimiento del soporte", "Cambiar el papel de la máquina", "Limpiar el polvo de la mesa"],
+    correct: 0,
+    explanation: "Modifica proporcionalmente todas las cotas del programa para corregir desviaciones de formato.",
+    source: "Examen FNMT 2022 (Pág. 3)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué representa el valor 'daN' en las tablas de presión de la guillotina?",
+    options: ["Decanewtons (unidad de fuerza equivalente a aproximadamente 1 kgf)", "Dinas por centímetro", "Diámetro del pistón neumático"],
+    correct: 0,
+    explanation: "Unidad estándar en la que se calibrated la fuerza de prensado del pisón hidroneumático.",
+    source: "Examen FNMT 2022 (Pág. 1)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué deforma el papel en 'Silla de Montar' en el centro de la pila?",
+    options: ["El aire atrapado entre pliegos que no ha sido evacuado antes del prensado", "El uso de cuchillas de metal duro", "El soplado de la mesa de aire"],
+    correct: 0,
+    explanation: "El colchón de aire crea un abultamiento central que falsea la medida real al pisar.",
+    source: "Examen FNMT 2022 (Pág. 1)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué se debe hacer si se detectan variaciones de medida en cortes sucesivos?",
+    options: ["Verificar el filo de la cuchilla, la presión del pisón y el correcto funcionamiento del freno de escuadra", "Reducir la luz del taller", "Poner más polvo antirrepinte"],
+    correct: 0,
+    explanation: "Las imprecisiones derivan de cuchillas romas o falta de retención mecánica de la escuadra.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "En el tejuelo de tablero de dos o más tableros, ¿cómo se indica la numeración de los efectos?",
+    options: [
+      "Desde el efecto con la numeración más baja al de la numeración más alta del cuadrante",
+      "Independientemente del orden numérico",
+      "Solo se pone la cifra total de millares"
+    ],
+    correct: 0,
+    explanation: "Exige registrar de forma estricta los límites del rango numérico inicial y final.",
+    source: "Examen FNMT 2025 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿Cuándo se conecta el aire de la mesa automáticamente?",
+    options: [
+      "Con la escuadra automática conectada, durante cada retroceso de la misma",
+      "Cuando la cuchilla está en la posición más baja",
+      "Solo cuando se pulsa el pedal"
+    ],
+    correct: 0,
+    explanation: "El aire facilita el deslizamiento del bloque mientras la escuadra retrocede para el siguiente paso.",
+    source: "Examen FNMT 2025 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "¿Cuándo se recomienda realizar un 'Corte Angular'?",
+    options: [
+      "Cuando el papel no impreso no es claramente angular o se requiere un ángulo recto perfecto a 90°",
+      "Solo para hacer sobres triangulares",
+      "Para aprovechar retales de cartón"
+    ],
+    correct: 0,
+    explanation: "Refila los bordes para garantizar que las dos caras contiguas formen exactamente 90 grados.",
+    source: "Examen FNMT 2025 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "Ante un material que se desliza mal, ¿en qué lado de la mesa se debe posicionar si el corte desplaza a la derecha?",
+    options: [
+      "A la izquierda, para evitar el atasco contra la regla lateral derecha",
+      "A la derecha",
+      "Es totalmente indiferente"
+    ],
+    correct: 0,
+    explanation: "Compensa el empuje lateral de la cuchilla evitando que el material se acuñe contra la guía.",
+    source: "Examen FNMT 2025 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "¿Cuál es la presión de prensado recomendada para una posteta de altura media de 'Planchas Litográficas'?",
+    options: [
+      "3.000 daN utilizando la chapa de protección del pisón",
+      "500 daN sin chapa",
+      "4.500 daN sin chapa"
+    ],
+    correct: 0,
+    explanation: "Evita deformar las planchas metálicas y protege la dentadura del pisón mediante la chapa lisa.",
+    source: "Examen FNMT 2025 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "Al cortar papel de impresión de libros con cuchilla sin filo, la carga de esfuerzo de la máquina sube de 1 tonelada a:",
+    options: [
+      "Aproximadamente 4,5 toneladas",
+      "2 toneladas",
+      "1,5 toneladas"
+    ],
+    correct: 0,
+    explanation: "Un filo gastado quadruplica la resistencia mecánica sobre los brazos de tracción del portalápices.",
+    source: "Examen FNMT 2025 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué procedimiento se aplica si las tiras de prueba no se cortan tras un cambio de cuchilla?",
+    options: [
+      "Ajustar el perno excéntrico o bajar ligeramente la regleta con las levas de apoyo graduadas",
+      "Dar dos golpes fuertes de cuchilla",
+      "Lijar la regla de corte"
+    ],
+    correct: 0,
+    explanation: "Exige graduar la profundidad de bajada mediante los excéntricos laterales hasta rozar la regla.",
+    source: "Examen FNMT 2025 (Pág. 9)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es el 'Aplanado por Prensado Previo'?",
+    options: [
+      "Bajar el pisón sobre la pila sin accionar el corte para eliminar el aire retenido",
+      "Planchar el papel con calor",
+      "Cortar el paquete dos veces consecutivas"
+    ],
+    correct: 0,
+    explanation: "Estabiliza el volumen de la posteta esponjosa asegurando un corte recto posterior.",
+    source: "Examen FNMT 2022 (Pág. 1)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué deforma las esquinas del paquete cortado si el pisón tiene exceso de presión?",
+    options: ["Aplastamiento de las fibras por superarse el límite de elasticidad", "Falta de aire en la mesa", "Exceso de velocidad de la cuchilla"],
+    correct: 0,
+    explanation: "Las esquinas sufren mayor deformación plástica al no tener material colindante que distribuya la carga.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "En una nota de 40 resmas en 8 cuadrantes numerada en resta, ¿qué calculo determina el salto por cuadrante?",
+    options: ["El total de pliegos dividido entre el número de cuadrantes impresos", "Multiplicar por ocho la primera cifra", "Es una constante fija de 1.000"],
+    correct: 0,
+    explanation: "Permite saber con exactitud la numeración de inicio de cada una de las postetas independientes.",
+    source: "Examen FNMT 2023 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué indica la indicación 'CORTE INTERRUMPIDO' en el monitor?",
+    options: ["Que se ha invadido la barrera de luz o soltado el mando bimanual durante la bajada de la cuchilla", "Que el trabajo se ha terminado con éxito", "Que falta papel en la mesa"],
+    correct: 0,
+    explanation: "Muestra el estado de paro de seguridad bloqueando la máquina en la posición actual.",
+    source: "Examen FNMT 2023 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "¿Cómo se reinicia la marcha tras una interrupción por barrera de luz?",
+    options: ["Liberar el área de trabajo y volver a accionar de forma simultánea los dos mandos de corte", "Pulsar el pedal tres veces", "Apagar el interruptor general"],
+    correct: 0,
+    explanation: "Exige retirar el obstáculo y pulsar nuevamente el accionamiento bimanual.",
+    source: "Examen FNMT 2023 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué función cumple el soplado de aire en la mesa de Autotrim?",
+    options: ["Impulsar las tiras cortadas de recorte hacia el canal de evacuación inferior", "Secar la tinta de las hojas", "Enfriar la cuchilla"],
+    correct: 0,
+    explanation: "Lanza una ráfaga neumática que arrastra los desperdicios fuera de la mesa de trabajo.",
+    source: "Examen FNMT 2023 (Pág. 3)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es la 'Medida de Carga' en la programación de la guillotina?",
+    options: ["Una posición de la escuadra retrasada donde el corte está desactivado por seguridad para introducir el papel", "La cantidad máxima de paquetes", "La fuerza del motor"],
+    correct: 0,
+    explanation: "Bloquea el ciclo de corte impidiendo accidentes mientras el usuario posiciona el pliego.",
+    source: "Examen FNMT 2023 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué ocurre al activar la 'Protección de Programa'?",
+    options: ["Se impide la modificación o borrado accidental de las medidas del programa memorizado", "La pantalla se vuelve negra", "La máquina solo funciona en manual"],
+    correct: 0,
+    explanation: "Bloquea la edición protegiendo la secuencia aprobada por el jefe de taller.",
+    source: "Examen FNMT 2023 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Cómo influye el uso de 'Polvos Antimaculantes' en el corte?",
+    options: ["Hacen que el paquete sea resbaladizo y esponjoso, requiriendo un prensado previo suave", "Impiden que la cuchilla baje", "Rallan la mesa de aire"],
+    correct: 0,
+    explanation: "Las micropartículas reducen el rozamiento entre pliegos provocando desplazamientos al cortar.",
+    source: "Examen FNMT 2023 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es el 'Corrector de Espesor de Cuchilla'?",
+    options: ["Una función que ajusta la posición de la escuadra según los milímetros perdidos en los reafilados del acero", "Una regla graduada de mano", "Un calibre micrométrico"],
+    correct: 0,
+    explanation: "Compensa en la programación el menor grosor que adopta la cuchilla tras pasar por la rectificadora.",
+    source: "Examen FNMT 2025 (Pág. 8)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué tolerancia dimensional exige la norma ISO para formatos cortados de hasta 150 mm?",
+    options: ["± 1,0 mm (o ± 1,5 mm según norma DIN/ISO 216)", "± 5,0 mm", "± 0,01 mm"],
+    correct: 0,
+    explanation: "Establece los márgenes de desviación máximos permitidos en productos de pequeño formato.",
+    source: "Examen FNMT 2025 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué representan las 'Cruces de Registro' en el pliego?",
+    options: ["Marcas en forma de cruz fuera del formato para verificar la superposición exacta de colores y el encaje anverso/reverso", "Líneas por donde debe pasar la cuchilla", "Puntos de apoyo del pisón"],
+    correct: 0,
+    explanation: "Permiten evaluar el ajuste óptico de la impresión antes de proceder al desbarbe.",
+    source: "Examen FNMT 2025 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "Al realizar la corrección de una medida errónea ANTES de memorizar, ¿qué tecla se presiona?",
+    options: ["La tecla C para borrar el campo de entrada", "La tecla de emergencia", "El pedal de prensado"],
+    correct: 0,
+    explanation: "La tecla Clear (C) limpia la cifra en pantalla permitiendo teclear el valor correcto.",
+    source: "Examen FNMT 2025 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es el 'Corte a Sangre'?",
+    options: ["Aquel que elimina los márgenes blancos dejando la imagen impresa hasta el borde mismo del papel", "Un corte que hiere al operario", "El primer refilado de la resma"],
+    correct: 0,
+    explanation: "Corta por dentro del área impresa de demasía para evitar filos blancos tras el manipulado.",
+    source: "Examen FNMT 2022 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es la 'Prueba de Presión' en la guillotina?",
+    options: ["Comparar el comportamiento de la pila a cortar con una pila de referencia para determinar la fuerza de pisón adecuada", "Apretar el pedal con la mano", "Medir la presión de los neumáticos del taller"],
+    correct: 0,
+    explanation: "Ensayo previo que evalúa el volumen de aire retenido para ajustar la fuerza sin dañar el papel.",
+    source: "Examen FNMT 2026 (Pág. 10)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es la 'Escuadra Inclinable'?",
+    options: ["Un mecanismo que permite inclinar la cara vertical de la escuadra para compensar pilas con variaciones de grosor en el lomo", "Una regla graduada a 45°", "El soporte de la pantalla"],
+    correct: 0,
+    explanation: "Corrige las desviaciones de verticalidad en paquetes que presentan desnivel por volumen de pliegue o tinta.",
+    source: "Examen FNMT 2023 (Pág. 3)"
+  },
+  {
+    theme: 1,
+    question: "¿Para qué sirve el mando de ajuste de precisión 'DNT'?",
+    options: ["Ajustar manualmente la escuadra mediante una rueda de pulso micrométrico", "Aumentar la luz de la mesa", "Subir el pisón de golpe"],
+    correct: 0,
+    explanation: "Permite desplazamientos de centésimas de milímetro accionando el mando giratorio frontal.",
+    source: "Examen FNMT 2022 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "En las guillotinas POLAR, ¿qué significa el pictograma de una cuchilla sobre fondo sombreado?",
+    options: ["Cuchilla automática preparada / lista", "Cambio de cuchilla en curso", "Cuchilla fuera de servicio"],
+    correct: 0,
+    explanation: "Indica que el modo de corte automático está habilitado para ejecutarse al avanzar la escuadra.",
+    source: "Examen FNMT 2023 (Pág. 3)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué ocurre si la rueda de mano de ajuste fino se presiona hacia ADENTRO?",
+    options: ["Engrana el mecanismo micrométrico manual para desplazar la escuadra a izquierda o derecha", "Bloquea la escuadra de golpe", "Enciende la mesa de aire"],
+    correct: 0,
+    explanation: "El embrague mecánico conecta el volante manual con el husillo de la escuadra.",
+    source: "Examen FNMT 2026 (Pág. 8)"
+  },
+  {
+    theme: 1,
+    question: "¿Cómo se cancela la ejecución de un programa en automático?",
+    options: ["Accionando la tecla de parada o cambiando al modo manual en la consola", "Pisando el pedal a fondo", "Cortando el aire neumático"],
+    correct: 0,
+    explanation: "Devuelve el control al operador deteniendo el avance automático de pasos.",
+    source: "Examen FNMT 2025 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué deforma el borde de corte si la regla de apoyo de plástico está muy desgastada?",
+    options: ["Los pliegos inferiores del paquete quedan mal cortados, con rebabas o sin separar totalmente", "La pantalla se apaga", "El pisón no puede bajar"],
+    correct: 0,
+    explanation: "El canal profundo grabado en la regla impide que la cuchilla remate el último pliego de abajo.",
+    source: "Examen FNMT 2022 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "En el refilado de paquetes impresos con barniz, ¿por qué se debe esperar al secado total?",
+    options: ["Para evitar que la presión del pisón transfiera la capa de barniz tierno al reverso del pliego adyacente", "Para que el papel pese menos", "Porque la cuchilla se oxida"],
+    correct: 0,
+    explanation: "Un barniz no curado se adhiere bajo presión provocando el bloqueo masivo del paquete.",
+    source: "Examen FNMT 2025 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es el 'Desbarbe'?",
+    options: ["Los primeros cortes perimetrales que eliminan los bordes irregulares de la resma dejándola a escuadra", "Limpiar las virutas del suelo", "Rallar el lomo de un libro"],
+    correct: 0,
+    explanation: "Establece las caras limpias de referencia para las posteriores operaciones de fraccionamiento.",
+    source: "Examen FNMT 2022 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué riesgo presenta la acumulación de recorte debajo de la mesa de la guillotina?",
+    options: ["Peligro de incendio y bloqueo de los sensores de posición o mecanismos inferiores", "Que la máquina pierda precisión", "Ninguno, es normal"],
+    correct: 0,
+    explanation: "Exige la recogida periódica de la viruta celulósica para mantener despejados los finales de carrera.",
+    source: "Examen FNMT 2022 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es la 'Goma de Expulsión' en el entorno de manipulado?",
+    options: ["Tiras elásticas que devuelven el material fuera de la zona de presión o corte", "Un borrador de lápiz", "La banda de transmisión del motor"],
+    correct: 0,
+    explanation: "Evita que las piezas cortadas se enganchen en los elementos mecánicos.",
+    source: "Examen FNMT 2022 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué deforma una posteta mal igualada?",
+    options: ["Falta de alineación de las imágenes impresas y diferencias de cota entre pliegos del mismo paquete", "Que el papel cambie de color", "Que la cuchilla se rompa"],
+    correct: 0,
+    explanation: "Si las hojas no tocan la escuadra, cada pliego se cortará con una medida distinta.",
+    source: "Examen FNMT 2022 (Pág. 1)"
+  },
+  {
+    theme: 1,
+    question: "En una guillotina POLAR XT, ¿qué indica la luz verde en el cuadro de selección de programa?",
+    options: ["Indica el siguiente programa libre disponible en el segmento de memoria activo", "Que la cuchilla está bajando", "Que hay una avería grave"],
+    correct: 0,
+    explanation: "Guía al operario mostrando la primera casilla de memoria vacía para grabar.",
+    source: "Examen FNMT 2022 (Pág. 3)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué ocurre si la barrera de luz se interrumpe MIENTRAS la escuadra está avanzando?",
+    options: ["El avance de la escuadra se detiene de forma inmediata por seguridad", "La escuadra acelera al doble", "La cuchilla cae de golpe"],
+    correct: 0,
+    explanation: "Cualquier intrusión en la zona protegida frena todos los elementos motorizados.",
+    source: "Examen FNMT 2022 (Pág. 4)"
+  },
+  {
+    theme: 1,
+    question: "¿Para qué sirve el 'Puntero Óptico' de corte?",
+    options: ["Proyectar una línea luminosa sobre el papel que muestra exactamente la línea por donde pasará el filo de la cuchilla", "Encender la luz de la sala", "Medir la temperatura del papel"],
+    correct: 0,
+    explanation: "Permite al guillotinero ajustar a estima el corte sobre marcas o muestras visuales.",
+    source: "Examen FNMT 2025 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué deforma las esquinas si se usa un 'Pisón de Esquinas' incorrecto?",
+    options: ["Se producen marcas hundidas o falta de prensado en los extremos del paquete", "El papel se quema", "La mesa se desnivela"],
+    correct: 0,
+    explanation: "Se debe adaptar la pletina de sujeción al tamaño real del bloque a cortar.",
+    source: "Examen FNMT 2025 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Por qué se deben usar guantes de protección durante el cambio de cuchilla?",
+    options: ["Para evitar cortes profundos por contacto accidental con el filo extremadamante afilado", "Para no ensuciar la cuchilla con grasa", "Porque lo exige el fabricante para no oxidarla"],
+    correct: 0,
+    explanation: "EPI obligatorio para la manipulación segura del acero rectificado.",
+    source: "Examen FNMT 2022 (Pág. 2)"
+  },
+  {
+    theme: 1,
+    question: "En la FNMT, ¿qué departamento emite las órdenes de trabajo y especificaciones de corte?",
+    options: ["Oficina Técnica / Planificación de la Producción", "El servicio de limpieza", "El taller de mecánica general"],
+    correct: 0,
+    explanation: "Define las cotas, tolerancias, tipo de papel y secuencia de producción para el taller.",
+    source: "Examen FNMT 2022 (Pág. 7)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué es el 'Paso Libre' en la programación de corte?",
+    options: ["Un paso intercalado de movimiento de escuadra que no ejecuta acción de corte", "Un paso donde la máquina regala papel", "Una posición fuera de la mesa"],
+    correct: 0,
+    explanation: "Permite desplazar la posteta para giros o acomodación sin accionar la cuchilla.",
+    source: "Examen FNMT 2025 (Pág. 6)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué verificación final debe realizar el guillotinero al terminar una orden?",
+    options: ["Comprobar las cotas finales con la plantilla de calidad y registrar los pliegos útiles e inútiles en el tejuelo", "Limpiar la pantalla con agua", "Dejar la máquina encendida"],
+    correct: 0,
+    explanation: "Valida la conformidad del lote y garantiza el cierre del inventario de papel.",
+    source: "Examen FNMT 2025 (Pág. 5)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué deforma el material si la regla de corte de plástico no está bien asentada en su canal?",
+    options: ["El corte resultará inclinado o la cuchilla tropezará con el resalte dañando el filo", "La escuadra no podrá moverse", "El aire de la mesa perderá presión"],
+    correct: 0,
+    explanation: "La regla debe quedar perfectamente enrasada con el plano de la mesa de corte.",
+    source: "Examen FNMT 2022 (Pág. 7)"
   }
 
 
