@@ -9021,7 +9021,7 @@ function startQuizFromMenu() {
   wrongCount = 0;
   isPaused = false;
   
-  timeLeft = selectedCount * 12;
+  timeLeft = selectedCount * 15;
 
   renderActiveQuizUI();
   loadQuestion();
