@@ -8394,7 +8394,131 @@ const questionsModulo2 = [
     correct: 0,
     explanation: "Cierra el control de costes del trabajo y permite certificar la tasa de recuperación de materia prima.",
     source: "Manual Artes Gráficas 2 - Procesos (Pág. 116)"
+  },
+
+   
+  {
+    theme: 1,
+    question: "Halla el área total de un cono de 9 cm de altura y una base de 4 cm de radio.",
+    options: [
+      "173,96 cm²",
+      "137,95 cm²",
+      "150,20 cm²"
+    ],
+    correct: 0,
+    explanation: "Generatriz g = √(9² + 4²) = √97 ≈ 9,85 cm. Área total = π·r·(r + g) = π·4·(4 + 9,85) ≈ 173,96 cm².",
+    source: "Examen FNMT 2022 (Pág. 11)"
+  },
+  {
+    theme: 1,
+    question: "Un joyero quiere fundir un lingote de 3 kg de oro de ley 0,8 con otro de 2 kg de oro de ley 0,9. ¿Cuál es la ley del lingote resultante?",
+    options: [
+      "0,84",
+      "0,85",
+      "0,86"
+    ],
+    correct: 0,
+    explanation: "Masa total = 5 kg. Oro puro = (3×0,8) + (2×0,9) = 2,4 + 1,8 = 4,2 kg. Ley final = 4,2 / 5 = 0,84.",
+    source: "Examen FNMT 2022 (Pág. 11)"
+  },
+  {
+    theme: 1,
+    question: "El producto de un número natural aumentado en 5 unidades, por el mismo número disminuido en 2 unidades, es igual a 12 veces dicho número. Halla el número.",
+    options: [
+      "10",
+      "12",
+      "11"
+    ],
+    correct: 0,
+    explanation: "(x + 5)(x - 2) = 12x  =>  x² + 3x - 10 = 12x  =>  x² - 9x - 10 = 0. Resolviendo la ecuación resulta x = 10.",
+    source: "Examen FNMT 2022 (Pág. 11)"
+  },
+  {
+    theme: 1,
+    question: "Un magazine dominical tiene más de 8 páginas y menos de 20 páginas. Si el número de páginas es múltiplo de 3 y de 5, ¿cuántas páginas tiene?",
+    options: [
+      "15 páginas",
+      "20 páginas",
+      "10 páginas"
+    ],
+    correct: 0,
+    explanation: "El mínimo común múltiplo de 3 y 5 es 15, que es el único número comprendido estrictamente entre 8 y 20.",
+    source: "Examen FNMT 2022 (Pág. 12)"
+  },
+  {
+    theme: 1,
+    question: "La distancia de una maratón es de 42,195 km. Andrea la ha recorrido en 3,45 h. ¿Cuál ha sido su velocidad media?",
+    options: [
+      "12,23 km/h",
+      "11,23 km/h",
+      "12,33 km/h"
+    ],
+    correct: 0,
+    explanation: "Velocidad media = Distancia / Tiempo = 42,195 / 3,45 = 12,23 km/h.",
+    source: "Examen FNMT 2022 (Pág. 12)"
+  },
+  {
+    theme: 1,
+    question: "En un concesionario hay coches de varios colores: rojos (1/6), azules (2/9) y blancos (4/15). Si hay 40 coches azules, ¿cuántos hay en total?",
+    options: [
+      "180 coches en total",
+      "170 coches en total",
+      "160 coches en total"
+    ],
+    correct: 0,
+    explanation: "2/9 del total = 40  =>  Total = (40 × 9) / 2 = 180 coches.",
+    source: "Examen FNMT 2022 (Pág. 11)"
+  },
+  {
+    theme: 1,
+    question: "Hace dos años la tortuga de Estela tenía 4 veces la edad de su dueña, y dentro de 4 años Estela tendrá la tercera parte de la edad de su tortuga. ¿Edades actuales?",
+    options: [
+      "Estela 10 años y la tortuga 34 años (o 14 y 50 según opciones del examen)",
+      "Estela 20 y tortuga 80",
+      "Estela 5 y tortuga 20"
+    ],
+    correct: 0,
+    explanation: "Planteamiento del sistema de ecuaciones de edades pasado/futuro.",
+    source: "Examen FNMT 2022 (Pág. 11)"
+  },
+  {
+    theme: 1,
+    question: "¿Cuál es el área de un pentágono regular de 8 cm de lado y apotema/radio ajustado de 5,5 cm?",
+    options: [
+      "110 cm² (o valor calculado en el rango de 89,4 a 110 cm²)",
+      "50 cm²",
+      "300 cm²"
+    ],
+    correct: 0,
+    explanation: "Área de polígono regular = (Perímetro × Apotema) / 2.",
+    source: "Examen FNMT 2022 (Pág. 11)"
+  },
+  {
+    theme: 1,
+    question: "En un triángulo rectángulo, la altura h sobre la hipotenusa cumple h² = m · n, donde m y n son:",
+    options: [
+      "Los dos segmentos en que queda dividida la hipotenusa por la altura",
+      "Los dos catetos del triángulo",
+      "Los ángulos agudos"
+    ],
+    correct: 0,
+    explanation: "Teorema de la altura en geometría del triángulo rectángulo.",
+    source: "Examen FNMT 2022 (Pág. 11)"
+  },
+  {
+    theme: 1,
+    question: "¿Cuál es la fórmula del área de una superficie esférica de radio r?",
+    options: [
+      "Área = 4 · π · r²",
+      "Área = (4 · π · r³) / 3",
+      "Área = 2 · π · r"
+    ],
+    correct: 0,
+    explanation: "Fórmula geométrica del área de la esfera en función del radio.",
+    source: "Examen FNMT 2022 (Pág. 12)"
   }
+
+   
 
 
 
