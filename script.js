@@ -6115,7 +6115,294 @@ const questionsModulo1 = [
     correct: 0,
     explanation: "Es un coloide natural que se deposita en los microporos del aluminio conservando sus propiedades repelentes de grasa.",
     source: "Manual Artes Gráficas 1 (Pág. 98)"
+  },
+
+   
+  {
+    theme: 4,
+    question: "Según el XI Convenio Colectivo de la FNMT-RCM, ¿cuál es el periodo de prueba fijado para el personal operario?",
+    options: [
+      "Quince días",
+      "Un mes",
+      "Dos meses"
+    ],
+    correct: 0,
+    explanation: "El artículo 13 del XI Convenio Colectivo establece un periodo de prueba de 15 días para la categoría de operario.",
+    source: "Examen FNMT 2022 / 2025 / 2026"
+  },
+  {
+    theme: 4,
+    question: "¿Cuál es el tiempo máximo para un periodo de experimentación de nuevas normas de organización según el Convenio de la FNMT?",
+    options: [
+      "Diez semanas",
+      "Quince semanas",
+      "Dos meses"
+    ],
+    correct: 0,
+    explanation: "El artículo 6 del XI Convenio fija en diez semanas el límite para la prueba de nuevas pautas de producción.",
+    source: "Examen FNMT 2022 (Pág. 13)"
+  },
+  {
+    theme: 4,
+    question: "Según la normativa de Prevención de Riesgos Laborales, ¿a partir de qué nivel de ruido es obligatorio el uso de protectores auditivos?",
+    options: [
+      "85 dB",
+      "80 dB",
+      "75 dB"
+    ],
+    correct: 0,
+    explanation: "El valor límite de exposición que obliga al uso efectivo de EPIs auditivos está fijado en 85 dB(A).",
+    source: "Examen FNMT 2025 (Pág. 12)"
+  },
+  {
+    theme: 4,
+    question: "¿Qué significan las siglas del protocolo 'PAS' en primeros auxilios para socorristas?",
+    options: [
+      "Proteger, Avisar, Socorrer",
+      "Programar, Alertar, Socorrer",
+      "Prevenir, Auxiliar, Salvar"
+    ],
+    correct: 0,
+    explanation: "Secuencia fundamental de actuación: 1º Proteger el entorno, 2º Avisar a emergencias, 3º Socorrer al herido.",
+    source: "Examen FNMT 2026 (Pág. 11)"
+  },
+  {
+    theme: 4,
+    question: "En la técnica de reanimación cardiopulmonar (RCP) básica, ¿cuál es la relación correcta de ciclos?",
+    options: [
+      "30 compresiones cardiacas + 2 insuflaciones",
+      "20 compresiones + 2 insuflaciones",
+      "15 compresiones + 5 insuflaciones"
+    ],
+    correct: 0,
+    explanation: "El estándar de RCP de socorrismo establece ciclos continuos de 30 compresiones y 2 ventilaciones.",
+    source: "Examen FNMT 2026 (Pág. 11)"
+  },
+  {
+    theme: 4,
+    question: "¿Cuál es la composición de la Comisión Paritaria del XI Convenio Colectivo de la FNMT?",
+    options: [
+      "Seis representantes de la Dirección y seis de los trabajadores",
+      "Cinco de la Dirección y cinco de los trabajadores",
+      "Cuatro de la Dirección y cuatro de los trabajadores"
+    ],
+    correct: 0,
+    explanation: "Órgano formado de manera paritaria por 6 miembros designados por la empresa y 6 por el Comité Intercentros.",
+    source: "Examen FNMT 2023 (Pág. 14)"
+  },
+  {
+    theme: 4,
+    question: "¿Con qué periodicidad se reúne de forma ordinaria el Comité de Seguridad y Salud en los centros de la FNMT?",
+    options: [
+      "Trimestralmente",
+      "Semestralmente",
+      "Anualmente"
+    ],
+    correct: 0,
+    explanation: "El Comité de Seguridad y Salud celebra reuniones ordinarias cada tres meses en los centros de Madrid y Burgos.",
+    source: "Examen FNMT 2023 (Pág. 14)"
+  },
+  {
+    theme: 4,
+    question: "¿Cuál es el número de Delegados de Prevención en el Comité de Seguridad y Salud del centro de Madrid?",
+    options: [
+      "8 miembros",
+      "6 miembros",
+      "4 miembros"
+    ],
+    correct: 0,
+    explanation: "Por plantilla del centro de trabajo de Madrid, corresponden 8 delegados de prevención.",
+    source: "Examen FNMT 2022 / 2025"
+  },
+  {
+    theme: 4,
+    question: "¿Cómo se clasifican los reconocimientos médicos periódicos de los trabajadores en la FNMT?",
+    options: [
+      "Voluntarios, salvo excepciones legales con informe de los representantes",
+      "Obligatorios en el 100% de los casos",
+      "Depende del tipo de contrato temporal o fijo"
+    ],
+    correct: 0,
+    explanation: "La vigilancia de la salud es voluntaria salvo riesgos específicos o imprescindible para evaluar efectos del puesto.",
+    source: "Examen FNMT 2022 / 2025"
+  },
+  {
+    theme: 4,
+    question: "¿Qué organismo vigila el cumplimiento de la normativa sobre prevención de riesgos laborales?",
+    options: [
+      "La Inspección de Trabajo y Seguridad Social",
+      "El Ministerio de Industria",
+      "La mutua de accidentes de trabajo"
+    ],
+    correct: 0,
+    explanation: "Corresponde a la Inspección de Trabajo la función de vigilancia y exigencia de responsabilidades en PRL.",
+    source: "Examen FNMT 2022 / 2025"
+  },
+  {
+    theme: 4,
+    question: "¿Quién facilita a los trabajadores de la FNMT los equipos de protección individual (EPIs)?",
+    options: [
+      "El jefe de unidad del trabajador / La empresa de forma gratuita",
+      "Los propios trabajadores comprándolos en tienda",
+      "El servicio médico cobrándolo en nómina"
+    ],
+    correct: 0,
+    explanation: "Es obligación del empresario/jefe de unidad proporcionar gratuitamente los EPIs adecuados.",
+    source: "Examen FNMT 2022 / 2025"
+  },
+  {
+    theme: 4,
+    question: "Una señal de color ROJO en el puesto de trabajo indica:",
+    options: [
+      "Prohibición, material de lucha contra incendios o parada de emergencia",
+      "Obligación de usar protección",
+      "Advertencia de peligro potencial"
+    ],
+    correct: 0,
+    explanation: "El color rojo se reserva para prohibiciones, equipos contra incendios y dispositivos de desconexión urgente.",
+    source: "Examen FNMT 2025 (Pág. 12)"
+  },
+  {
+    theme: 4,
+    question: "Según la Ley General de la Seguridad Social (Art. 115), ¿cuál es la definición de Accidente de Trabajo?",
+    options: [
+      "Toda lesión corporal que el trabajador sufra con ocasión o por consecuencia del trabajo ejecutado por cuenta ajena",
+      "Cualquier enfermedad común que aparezca en el taller",
+      "Un tropiezo sin consecuencias físicas"
+    ],
+    correct: 0,
+    explanation: "Definición jurídica exacta de accidente laboral bajo el marco legal de la Seguridad Social.",
+    source: "Examen FNMT 2023 / 2026"
+  },
+  {
+    theme: 4,
+    question: "En el Manual de PRL de la FNMT, el rango de temperatura recomendado para trabajos LIGEROS en taller es:",
+    options: [
+      "14 a 25 °C (o 17 a 27 °C según tipo de actividad)",
+      "5 a 10 °C",
+      "30 a 35 °C"
+    ],
+    correct: 0,
+    explanation: "Mantiene las condiciones de confort térmico para evitar la fatiga o sudoración excesiva.",
+    source: "Examen FNMT 2023 (Pág. 13)"
+  },
+  {
+    theme: 4,
+    question: "En la clasificación de tipos de fuego, los de 'Clase B' involucran:",
+    options: [
+      "Líquidos inflamables o sólidos licuables (gasolina, pintura, disolventes, aceites)",
+      "Combustibles sólidos ordinarios como madera o papel",
+      "Gases inflamables como butano o propano"
+    ],
+    correct: 0,
+    explanation: "Clase B abarca los incendios alimentados por combustibles líquidos o hidrocarburos.",
+    source: "Examen FNMT 2023 (Pág. 13)"
+  },
+  {
+    theme: 4,
+    question: "¿Qué es un medio integral de protección?",
+    options: [
+      "Aquel equipo de protección que protege frente a riesgos que no actúan sobre partes concretas del cuerpo (ej. arnés anticaídas)",
+      "Un casco de seguridad",
+      "Gafas de protección ocular"
+    ],
+    correct: 0,
+    explanation: "Protege la integridad global del trabajador en operaciones de riesgo generalizado.",
+    source: "Examen FNMT 2022 / 2025"
+  },
+  {
+    theme: 4,
+    question: "En una hemorragia, si la sangre es de color rojo brillante y sale a borbotones impulsivos, procede de:",
+    options: [
+      "Una arteria",
+      "Una vena",
+      "Un vaso capilar superficial"
+    ],
+    correct: 0,
+    explanation: "La sangre arterial es oxigenada (rojo vivo) y sale con la presión de los latidos cardiacos.",
+    source: "Examen FNMT 2026 (Pág. 11)"
+  },
+  {
+    theme: 4,
+    question: "En el Plan de Igualdad de la FNMT, ¿cuál es uno de sus objetivos principales?",
+    options: [
+      "Conseguir procesos de selección y promoción en igualdad evitando la segregación y el lenguaje sexista",
+      "Fijar el precio de las monedas de colección",
+      "Organizar las vacaciones de verano"
+    ],
+    correct: 0,
+    explanation: "Garantiza la equidad de trato y oportunidades laborales sin discriminación de género.",
+    source: "Examen FNMT 2026 (Pág. 11)"
+  },
+  {
+    theme: 4,
+    question: "¿Quién compone la Comisión de Seguimiento del III Plan de Igualdad de la FNMT?",
+    options: [
+      "Cinco miembros de la parte empresarial y cinco de la parte social (o 4/4 según acta)",
+      "Cincuenta operarios elegidos al azar",
+      "Únicamente el Director General"
+    ],
+    correct: 0,
+    explanation: "Órgano paritario encargado de velar por el cumplimiento de los acuerdos de igualdad.",
+    source: "Examen FNMT 2023 (Pág. 14)"
+  },
+  {
+    theme: 4,
+    question: "¿Qué plazo tiene un trabajador para reclamar ante la Comisión Paritaria si realiza funciones de categoría superior?",
+    options: [
+      "Plazo máximo fijado por convenio (ej. 20 semanas / 1 año)",
+      "48 horas exactas",
+      "10 años"
+    ],
+    correct: 0,
+    explanation: "Regula el procedimiento de solicitud de reconocimiento de trabajos de superior categoría.",
+    source: "Examen FNMT 2022 (Pág. 12)"
+  },
+  {
+    theme: 4,
+    question: "Las enfermedades profesionales están reguladas oficialmente en España por:",
+    options: [
+      "El Real Decreto 1299/2006 con el cuadro oficial de enfermedades profesionales",
+      "El código de circulación",
+      "La ordenanza municipal de Madrid"
+    ],
+    correct: 0,
+    explanation: "Aprobación del cuadro legal que tipifica las patologías derivadas de la actividad laboral.",
+    source: "Examen FNMT 2026 (Pág. 11)"
+  },
+  {
+    theme: 4,
+    question: "¿Qué tipo de riesgo genera la exposición continua a vibraciones de maquinaria pesada?",
+    options: ["Riesgo físico dentro de los riesgos higiénicos", "Riesgo biológico", "Riesgo psicosocial leve"],
+    correct: 0,
+    explanation: "Las vibraciones mecánicas son agentes físicos que dañan el sistema músculo-esquelético y vascular.",
+    source: "Examen FNMT 2023 (Pág. 13)"
+  },
+  {
+    theme: 4,
+    question: "¿Es obligatorio que el Manual de Instrucciones de la guillotina esté disponible para los operarios?",
+    options: ["Sí, es obligatorio que esté accesible junto a la máquina en todo momento", "No, se guarda bajo llave en dirección", "Solo si la máquina es de segunda mano"],
+    correct: 0,
+    explanation: "La directiva de máquinas exige que el operador pueda consultar el manual de uso y seguridad siempre.",
+    source: "Examen FNMT 2025 (Pág. 13)"
+  },
+  {
+    theme: 4,
+    question: "¿Qué es el 'Estrés Laboral' según la definición de prevención de la FNMT?",
+    options: ["El estado que se manifiesta cuando las exigencias del entorno superan las capacidades o límites adaptativos del trabajador", "Tener ganas de terminar rápido el turno", "El cansancio físico de las piernas"],
+    correct: 0,
+    explanation: "Patología derivada de la organización del trabajo que afecta a la salud psíquica y rendimiento.",
+    source: "Examen FNMT 2023 (Pág. 13)"
+  },
+  {
+    theme: 4,
+    question: "¿Qué tipo de fuegos abarca la 'Clase A'?",
+    options: ["Combustibles sólidos orgánicos que forman brasas (madera, papel, tela, cartón)", "Fuegos eléctricos en cables", "Metales reactivos como el magnesio"],
+    correct: 0,
+    explanation: "La Clase A comprende los materiales sólidos del taller gráfico cuyos residuos dejan ascua incandescente.",
+    source: "Examen FNMT 2023 (Pág. 13)"
   }
+
 
 
 
