@@ -12495,19 +12495,1299 @@ const questionsModulo1 = [
   { theme: 1, question: "¿Qué inventor desarrolló el proceso de la Litografía en 1796?", options: ["Alois Senefelder", "Karl Klietsch", "Ottmar Mergenthaler"], correct: 0, explanation: "Alois Senefelder inventó la litografía en 1796 basándose en la inmiscibilidad entre agua y grasa.", source: "Manual Artes Gráficas 1 (Pág. 2)" },
   { theme: 1, question: "La Linotipia fue inventada en el año 1886 por:", options: ["Ottmar Mergenthaler", "Karl Klietsch", "Johannes Gutenberg"], correct: 0, explanation: "Ottmar Mergenthaler inventó la Linotipia en 1886, revolucionando la composición de textos mecanizados.", source: "Manual Artes Gráficas 1 (Pág. 2)" }
 
-
-
-
-
 ];
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================================
    3. BANCO DE PREGUNTAS - MÓDULO ARTES GRÁFICAS 2: TINTAS Y PROCESOS
    ========================================================================= */
 const questionsModulo2 = [
+ // const preguntasExamenArtesGraficasModoSuperDificil5 = [
+  // ==========================================
+  // BLOQUE I: COMPOSICIÓN DE TINTAS: PIGMENTOS, COLORANTES Y VEHÍCULOS (1-10)
+  // ==========================================
+  {
+    theme: 1,
+    question: "¿Cómo se estructuran técnicamente los componentes de una tinta de impresión en sus dos fases principales según el manual del IES Puerta Bonita / FNMT?",
+    options: [
+      "Fase sólida insoluble (pigmentos y cargas) y Fase líquida o continua denominada vehículo (resinas y aceites).",
+      "Fase gaseosa volátil (disolventes) y Fase sólida soluble (colorantes y plastificantes).",
+      "Fase emulsionada acuosa (solución de mojado) y Fase polimérica termoestable."
+    ],
+    correct: 0,
+    explanation: "La tinta consta de una fase sólida, insoluble y discontinua (pigmentos y cargas), y una fase líquida o continua (resinas y aceites) denominada vehículo, barniz o aglutinante, más los aditivos.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 353)"
+  },
+  {
+    theme: 1,
+    question: "En la comparación entre pigmentos y colorantes, ¿cuál es la diferencia de solubilidad y propiedad óptica fundamental que define a los colorantes?",
+    options: [
+      "Los colorantes son solubles en el barniz, ofreciendo mayor transparencia y brillo pero menor resistencia a la luz y disolventes.",
+      "Los colorantes son insolubles en el vehículo, proporcionando opacidad total y alta resistencia química.",
+      "Los colorantes son cargas inorgánicas que otorgan viscosidad elevada a las tintas de tipografía."
+    ],
+    correct: 0,
+    explanation: "Los colorantes son solubles en el barniz. Las tintas basadas en colorantes son más transparentes y brillantes que las de pigmentos, pero menos estables a la luz y disolventes, estando prohibido su uso en alimentación.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 356)"
+  },
+  {
+    theme: 1,
+    question: "El pigmento orgánico rojo identificado con la codificación PR-53:1 corresponde químicamente a:",
+    options: [
+      "Una Sal de Bario.",
+      "Un complejo de Ftalocianina de Cobre.",
+      "Un dióxido de titanio calcinado."
+    ],
+    correct: 0,
+    explanation: "El diagrama molecular del pigmento rojo PR-53:1 mostrado en la composición de tintas corresponde a una Sal de Bario.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 355)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué tipo de colorante sintético es la Rodamina B según la clasificación por familias químicas del manual?",
+    options: [
+      "Colorante Básico.",
+      "Colorante Ácido.",
+      "Colorante Disperso de Antraquinona."
+    ],
+    correct: 0,
+    explanation: "En la clasificación de tipos de colorantes se adscriben: Ácidos (eosina), Básicos (rodamina B) y Dispersos (antraquinona).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 357)"
+  },
+  {
+    theme: 1,
+    question: "Las resinas incorporadas en la formulación de las tintas cumplen las funciones principales de:",
+    options: [
+      "Proteger y fijar el pigmento al soporte, aportar brillo y determinar las propiedades del barniz.",
+      "Aumentar la velocidad de evaporación de los alcoholes sintéticos.",
+      "Reducir la acidez del agua de mojado en prensas offset."
+    ],
+    correct: 0,
+    explanation: "Las resinas protegen y fijan el pigmento al soporte, dan brillo a las tintas y son las responsables directas de las propiedades del barniz.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 358)"
+  },
+  {
+    theme: 1,
+    question: "¿Cuáles de los siguientes son ejemplos de resinas naturales y sintéticas empleadas en el vehículo de la tinta?",
+    options: [
+      "Naturales: colofonia y goma laca; Sintéticas: fenólicas, alquídicas, maleicas, acrílicas y epoxi.",
+      "Naturales: almidón catiónico; Sintéticas: hexano y heptano.",
+      "Naturales: aceite de linaza; Sintéticas: acetato de etilo y etilenglicol."
+    ],
+    correct: 0,
+    explanation: "El manual especifica como resinas naturales la colofonia y la goma laca; y como sintéticas las fenólicas, alquídicas, maleicas, acrílicas, epoxi y caucho.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 358)"
+  },
+  {
+    theme: 1,
+    question: "Dentro de los aceites utilizados para disolver las resinas en las tintas grasas, se distinguen dos grupos:",
+    options: [
+      "Vegetales (linaza, soja, ricino) y Minerales (alifáticos, negros y aromáticos).",
+      "Sintéticos (glicoles) y Naturales (eosina).",
+      "Acuosos (agua desmineralizada) y Ésteres (acetona)."
+    ],
+    correct: 0,
+    explanation: "Los aceites disuelven las resinas y se dividen en Vegetales (linaza, soja, ricino) y Minerales (alifáticos, negros y aromáticos).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 359)"
+  },
+  {
+    theme: 1,
+    question: "Los disolventes regulan la viscosidad y el secado de las tintas. ¿A qué grupo químico pertenecen el acetato de etilo y la acetona respectivamente?",
+    options: [
+      "Acetato de etilo: Ésteres; Acetona: Cetonas.",
+      "Acetato de etilo: Glicoles; Acetona: Alcoholes.",
+      "Acetato de etilo: Hidrocarburos; Acetona: Aromáticos."
+    ],
+    correct: 0,
+    explanation: "El manual clasifica los disolventes en: Hidrocarburos (hexano, heptano), Alcoholes (etanol, isopropanol), Glicoles (etilenglicol, dietilenglicol), Ésteres (acetato de etilo) y Cetonas (acetona).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 360)"
+  },
+  {
+    theme: 1,
+    question: "¿Qué aditivo se añade a la tinta offset para evitar el bloqueo o transferencia de tinta no seca de un pliego a la cara posterior del siguiente en la pila de salida?",
+    options: [
+      "Polvos antimaculantes.",
+      "Pomadas suavizantes.",
+      "Promotores de adherencia."
+    ],
+    correct: 0,
+    explanation: "Los polvos antimaculantes son aditivos que crean una separación física microscópica entre pliegos impidiendo el repintado en la pila de salida.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 361)"
+  },
+  {
+    theme: 1,
+    question: "Entre los aditivos utilizados en la formulación de tintas se citan las 'cargas o pigmentos inertes'. Su función principal es:",
+    options: [
+      "Ajustar la consistencia, el tiro y el coste de la tinta sin modificar sustancialmente el tono cromático.",
+      "Aumentar la volatilidad del vehículo en hornos Heat-set.",
+      "Polimerizar los monómeros por luz ultravioleta."
+    ],
+    correct: 0,
+    explanation: "Las cargas o pigmentos inertes son materia sólida incolora o blanca transparente que modifica propiedades reológicas y físicas sin aportar color directo.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 361)"
+  },
+
+  // ==========================================
+  // BLOQUE II: CLASIFICACIÓN DE TINTAS Y MECANISMOS DE SECADO (11-20)
+  // ==========================================
+  {
+    theme: 2,
+    question: "Según su composición reológica general, las tintas de Tipografía, Offset y Calcografía se clasifican como:",
+    options: [
+      "Tintas Grasas de viscosidad elevada.",
+      "Tintas Líquidas de viscosidad baja.",
+      "Tintas Permeográficas de viscosidad intermedia."
+    ],
+    correct: 0,
+    explanation: "Las tintas grasas poseen elevada viscosidad y están compuestas por pigmentos + aceites + resinas + aditivos, empleándose en tipografía, offset y calcografía.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 362)"
+  },
+  {
+    theme: 2,
+    question: "Las tintas de secado Ultravioleta (UV) contienen en su formulación líquida sin disolvente:",
+    options: [
+      "Pigmentos + prepolímeros + monómeros/oligómeros + fotoiniciadores + aditivos.",
+      "Pigmentos + resinas colofonias + aceites minerales alifáticos + cobaltos.",
+      "Colorantes dispersos + agua desionizada + glicoles de cadena larga."
+    ],
+    correct: 0,
+    explanation: "Las tintas UV están formadas por pigmentos, prepolímeros, monómeros/oligómeros reactivos, fotoiniciadores y aditivos.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 362)"
+  },
+  {
+    theme: 2,
+    question: "¿En qué consiste el Tóner Líquido empleado en prensas digitales como la ElectroPrint / Indigo?",
+    options: [
+      "Dispersiones de partículas de tóner en un aceite hidrocarbonado dieléctrico.",
+      "Una emulsión acuosa de alcohol isopropílico con colorantes ácidos.",
+      "Una resina epoxi disuelta en acetato de etilo a alta presión."
+    ],
+    correct: 0,
+    explanation: "El tóner líquido consiste en dispersiones de partículas de tóner en un aceite hidrocarbonado.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 362)"
+  },
+  {
+    theme: 2,
+    question: "Las tintas que contienen pigmentos de interferencia o láminas ópticas que cambian de color según el ángulo de visión se denominan:",
+    options: [
+      "OVI (Optically Variable Ink / Tinta de Variación Óptica).",
+      "Tintas borrabas por fricción.",
+      "Tintas reactivas al metal."
+    ],
+    correct: 0,
+    explanation: "En la clasificación por características ópticas se incluyen las tintas OVI, empleadas en documentos de seguridad por su cambio de color según el ángulo.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 363)"
+  },
+  {
+    theme: 2,
+    question: "En la clasificación de tintas por su mecanismo de secado, las tintas de periódico secan por:",
+    options: [
+      "Penetración (P) pura en el soporte poroso.",
+      "Oxipolimerización (O) catalizada por cobalto.",
+      "Evaporación (E) rápida de disolventes ésteres."
+    ],
+    correct: 0,
+    explanation: "Las tintas de periódico secan por penetración (P), lo que puede generar problemas de transparencia y traspasado si el papel es muy poroso.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 365, 383)"
+  },
+  {
+    theme: 2,
+    question: "¿Qué combinación de mecanismos de secado presentan las tintas líquidas empleadas en Huecograbado y Flexografía sobre soportes absorbentes?",
+    options: [
+      "Secado Mixto por Evaporación y Penetración (E + P).",
+      "Secado Mixto por Oxipolimerización y Penetración (O + P).",
+      "Secado por precipitación por humedad (Moisture-set)."
+    ],
+    correct: 0,
+    explanation: "En soportes no absorbentes el hueco y la flexo secan solo por Evaporación (E); pero en soportes absorbentes el secado es mixto Evaporación + Penetración (E + P).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 365)"
+  },
+  {
+    theme: 2,
+    question: "El secado de tintas por 'Precipitación con captación de humedad' (Moisture-set o Steam-set) se basa en el principio químico de:",
+    options: [
+      "Resinas sintéticas disueltas en glicoles; al absorber vapor de agua, la resina precipita e insolubiliza reteniendo el pigmento mientras el glicol es absorbido por el papel.",
+      "Evaporación relámpago de solventes de hidrocarburos a 300 °C.",
+      "Reticulación de monómeros acrílicos desencadenada por luz infrarroja."
+    ],
+    correct: 0,
+    explanation: "Las tintas Moisture-set/Steam-set usan resinas solubles en glicoles (afines al agua). El vapor provoca la precipitación y solidificación de la resina en superficie mientras el glicol penetra.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 365, 384)"
+  },
+  {
+    theme: 2,
+    question: "El secado por Radiación Infrarroja (IR) trabaja en un rango del espectro electromagnético comprendido entre:",
+    options: [
+      "0,76 y 2 micras.",
+      "40 y 400 nanómetros.",
+      "10 y 50 milímetros."
+    ],
+    correct: 0,
+    explanation: "El secado por radiación Infrarroja (IR) se sitúa en el rango de 0,76 a 2 micras ($\mu\text{m}$).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 385)"
+  },
+  {
+    theme: 2,
+    question: "Entre las ventajas del secado por Radiación Ultravioleta (UV) destacadas en el manual se encuentran:",
+    options: [
+      "Penetración casi nula en el soporte, eliminación de polvos antimaculantes y ausencia de formación de pieles en el tintero.",
+      "Bajo coste de las tintas y facilidad extrema para el reciclado de la fibra de papel.",
+      "Total inocuidad de los disolventes ordinarios empleados en la limpieza de la máquina."
+    ],
+    correct: 0,
+    explanation: "El secado UV permite mayores espesores, penetración casi nula, elimina polvos antimaculantes, no forma pieles en tintero y permite imprimir soportes difíciles.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 386)"
+  },
+  {
+    theme: 2,
+    question: "El sistema de curado/secado por Haz de Electrones (EB - Electron Beam) genera los electrones mediante:",
+    options: [
+      "Un tubo provisto de un filamento de tungsteno en atmósfera inerte de nitrógeno.",
+      "Una lámpara de arco de mercurio alimentada con gas argón.",
+      "Un emisor láser piezoeléctrico de alta frecuencia."
+    ],
+    correct: 0,
+    explanation: "El sistema EB utiliza un tubo con filamento de tungsteno que al calentarse libera electrones, requiriendo operar en una atmósfera inerte de nitrógeno.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 387)"
+  },
+
+  // ==========================================
+  // BLOQUE III: PROPIEDADES ÓPTICAS, REOLÓGICAS Y QUÍMICAS (21-30)
+  // ==========================================
+  {
+    theme: 3,
+    question: "Las propiedades de la tinta atribuibles exclusivamente al PIGMENTO frente al vehículo incluyen:",
+    options: [
+      "Tono, intensidad, opacidad/transparencia y solidez a la luz.",
+      "Tiro o tack, viscosidad, flujo y secado.",
+      "Resistencias mecánicas, imprimabilidad y emulsión."
+    ],
+    correct: 0,
+    explanation: "El manual atribuye al PIGMENTO: tono, intensidad, opacidad/transparencia, solidez (luz) y brillo; mientras atribuye al VEHÍCULO: tiro/tack, flujo, viscosidad, brillo, imprimabilidad, secado y resistencias mecánicas.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 369)"
+  },
+  {
+    theme: 3,
+    question: "¿Qué factores influyen directamente en la Intensidad o Fuerza de Coloración de una tinta impresa?",
+    options: [
+      "Concentración de pigmento, espesor de la película de tinta, composición química del pigmento y su tamaño/distribución.",
+      "Ángulo de la racla y presión del tórculo.",
+      "Conductividad del agua de mojado en microsiemens."
+    ],
+    correct: 0,
+    explanation: "La intensidad o poder de coloración depende de: concentración del pigmento, espesor de la película, composición química del pigmento y tamaño/distribución del pigmento.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 373)"
+  },
+  {
+    theme: 3,
+    question: "El Tiro o 'Tack' de una tinta se define reológicamente como:",
+    options: [
+      "La fuerza necesaria para dividir en dos una película de tinta que se encuentra entre dos superficies en contacto.",
+      "La velocidad de filtración de los aceites dentro de los poros del soporte.",
+      "El tiempo en horas que tarda la tinta en secar sobre una placa de vidrio."
+    ],
+    correct: 0,
+    explanation: "El Tiro o Tack es la fuerza necesaria para dividir en dos una película de tinta que se encuentra entre dos superficies, guardando relación directa con la viscosidad.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 375)"
+  },
+  {
+    theme: 3,
+    question: "Si el Tiro (Tack) de una tinta es excesivamente elevado en máquina offset, se produce el defecto de:",
+    options: [
+      "Arrancado (del papel) y acumulación excesiva en plancha y caucho.",
+      "Emulsificación excesiva de la tinta con la solución de mojado.",
+      "Pérdida de la definición del punto de trama por fluidez descontrolada."
+    ],
+    correct: 0,
+    explanation: "Un tiro excesivo aumenta el riesgo de arrancado del papel y la acumulación en plancha y caucho; por contra, la definición del punto mejora al aumentar el tiro.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 376)"
+  },
+  {
+    theme: 3,
+    question: "¿Cómo afecta la Temperatura a la Viscosidad de la tinta grasa en el taller según los datos del manual?",
+    options: [
+      "Una variación de solo 1 °C produce una variación de la viscosidad del 10%.",
+      "La temperatura no altera la viscosidad de las tintas grasas.",
+      "Al subir la temperatura un 10%, la viscosidad se duplica."
+    ],
+    correct: 0,
+    explanation: "La temperatura influye enormemente: una diferencia de $1^\circ\text{C}$ produce una variación de viscosidad del 10%. Además, al aumentar la velocidad de impresión la viscosidad aumenta.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 377)"
+  },
+  {
+    theme: 3,
+    question: "La Rigidez de una tinta representa la fuerza necesaria para que comience a fluir. ¿En qué unidades se mide según el manual?",
+    options: [
+      "Dinas/cm².",
+      "Poises o Pascales.",
+      "Micras o Nanómetros."
+    ],
+    correct: 0,
+    explanation: "La rigidez es la fuerza necesaria para que una tinta comience a fluir y se mide explícitamente en dinas/cm².",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 378)"
+  },
+  {
+    theme: 3,
+    question: "¿Qué ocurre si una tinta grasa es demasiado 'Corta' en la batería de entintado?",
+    options: [
+      "No se transmitirá bien en el sistema entintador y tenderá a acumularse en los rodillos.",
+      "Formará hilos en exceso produciendo desprendimientos o volado de tinta al aire.",
+      "Se volverá completamente líquida como una tinta de huecograbado."
+    ],
+    correct: 0,
+    explanation: "Si es demasiado corta, no se transmite bien y se acumula en los rodillos; si es demasiado larga, forma hilos en exceso en los contactos produciendo salpicaduras al aire.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 379)"
+  },
+  {
+    theme: 3,
+    question: "La Tixotropía se define como la variación de la viscosidad por efecto de la agitación. Su comportamiento reológico opuesto se denomina:",
+    options: [
+      "Reopexia.",
+      "Histeresis alcalina.",
+      "Dilatancia coloidal."
+    ],
+    correct: 0,
+    explanation: "El manual especifica explícitamente que el fenómeno contrario a la tixotropía es la reopexia.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 380)"
+  },
+  {
+    theme: 3,
+    question: "Para garantizar un Trapping correcto en la impresión multicolor húmedo sobre húmedo, la secuencia de impresión de las tintas debe ordenarse atendiendo a un:",
+    options: [
+      "Tiro (Tack) decreciente.",
+      "Tiro (Tack) creciente.",
+      "pH fuertemente alcalino en la primera unidad."
+    ],
+    correct: 0,
+    explanation: "La disposición de las tintas en máquina debe realizarse teniendo en cuenta un tiro decreciente (la primera tinta debe tener el tiro más alto y las siguientes paulatinamente menor).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 381)"
+  },
+  {
+    theme: 3,
+    question: "¿Qué consecuencia técnica sobre el proceso tiene un pH demasiado ÁCIDO en la solución de mojado?",
+    options: [
+      "Emulsificación agua-tinta y retraso en el secado de la tinta.",
+      "Fluidez insuficiente y falta de brillo en el impreso.",
+      "Humectación pobre del pigmento reduciendo el poder de coloración."
+    ],
+    correct: 0,
+    explanation: "Un pH demasiado ácido provoca emulsificación agua-tinta y retraso en el secado; mientras que un pH demasiado alcalino produce fluidez insuficiente, falta de brillo y mala humectación del pigmento.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 382)"
+  },
+
+  // ==========================================
+  // BLOQUE IV: ENSAYOS DE LABORATORIO, TRAPPING Y CONTROL DE CALIDAD (31-40)
+  // ==========================================
+  {
+    theme: 4,
+    question: "En la evaluación del Trapping de tinta mediante ensayo IGT (Tema 11 - Actividad 2), los rangos de porcentaje de trapping se catalogan como:",
+    options: [
+      "Crítico: <70%; Aceptable: 70-80%; Bueno: 80-95%; Muy Bueno: >95%.",
+      "Crítico: <30%; Aceptable: 30-50%; Bueno: 50-70%; Muy Bueno: >70%.",
+      "Crítico: >95%; Aceptable: 80-95%; Bueno: 70-80%; Muy Bueno: <70%."
+    ],
+    correct: 0,
+    explanation: "El manual establece los valores de trapping: Crítico (<70%), Aceptable (70-80%), Bueno (80-95%) y Muy Bueno (>95%).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 381, 397)"
+  },
+  {
+    theme: 4,
+    question: "La fórmula densitométrica de Trapping ($T$) expresada en el ensayo del manual es:",
+    options: [
+      "T = ((D_(1+2) - D_1) / D_2) * 100",
+      "T = (D_1 / (D_1 + D_2)) * 100",
+      "T = (D_(1+2) * D_2) / D_1"
+    ],
+    correct: 0,
+    explanation: "La fórmula de Preucil aplicada en las tablas del ensayo es $T = \frac{D_{1+2} - D_1}{D_2} \times 100$, donde $D_1$ es la densidad de la primera tinta, $D_2$ de la segunda y $D_{1+2}$ del sobreimpreso.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 397)"
+  },
+  {
+    theme: 4,
+    question: "En la prueba de solidez o resistencia a la luz de una tinta medida con un Fadeómetro, ¿cuántas horas de exposición corresponden a un resultado 'Óptimo'?",
+    options: [
+      "72 horas.",
+      "6 horas.",
+      "24 horas."
+    ],
+    correct: 0,
+    explanation: "La escala del Fadeómetro especifica: 6h = débil, 12h = mediocre, 24h = regular, 48h = bueno, y 72h = óptimo.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 388)"
+  },
+  {
+    theme: 4,
+    question: "¿En qué consiste la prueba normalizada de Resistencia al Calor de una tinta impresa?",
+    options: [
+      "Se coloca papel pergamino sobre la tinta y pinzas a una temperatura, presión y tiempo determinados, evaluando alteración o transferencia.",
+      "Se sumerge el impreso en agua hirviendo a 100 °C con acetona.",
+      "Se quema la muestra con un soplete midiendo los residuos de ceniza."
+    ],
+    correct: 0,
+    explanation: "Se coloca sobre la tinta un papel pergamino y sobre éste unas pinzas a una temperatura, presión y tiempo de contacto determinados, indicando si hay alteración o restos.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 389)"
+  },
+  {
+    theme: 4,
+    question: "¿Qué instrumento y elementos de laboratorio se citan para medir la Resistencia al Arrancado del papel frente a las tintas?",
+    options: [
+      "Tintas de arrancado IGT y Ceras Dennison.",
+      "Viscosímetro de Copa Ford N.º 4 y Fadeómetro.",
+      "Espectrofotómetro de esfera d/8° y tórculo."
+    ],
+    correct: 0,
+    explanation: "La resistencia al arrancado (picoteado, repelado, arrancado) se mide con Tintas de arrancado IGT y Ceras Dennison.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 391)"
+  },
+  {
+    theme: 4,
+    question: "En el ensayo práctico de formulación de Pantones (Tema 4 - Actividad 7), ¿qué tipo de guía Pantone se seleccionó para formular el color sobre papel estucado de alto brillo?",
+    options: [
+      "Pantone de tipo C (Coated).",
+      "Pantone de tipo U (Uncoated).",
+      "Pantone M (Matte)."
+    ],
+    correct: 0,
+    explanation: "Se eligieron las referencias Pantone C (Coated) debido a que el ensayo se realizó sobre papel estucado de alto brillo.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 396)"
+  },
+  {
+    theme: 4,
+    question: "En la formulación de colores directos Pantone mediante pesaje con balanza de precisión, las diferencias de tolerancia de color ($\Delta E$) según los tonos se representan mediante las:",
+    options: [
+      "Elipses de MacAdam.",
+      "Curva de Murray-Davies.",
+      "Escalas de densidad status T."
+    ],
+    correct: 0,
+    explanation: "El manual cita e ilustra expresamente que las 'Elipses de MacAdam nos muestran la diferencia de tolerancia de delta E según los tonos'.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 396)"
+  },
+  {
+    theme: 4,
+    question: "En el ensayo de Repintado (Tema 11 - Actividad 11), ¿cómo se aplica la capa de tinta inicial antes de presionar con el papel couché a distintos tiempos de espera?",
+    options: [
+      "Mediante batido y extensión de la tinta sobre una plancha de aluminio con un rodillo de caucho.",
+      "Mediante pulverización con aerógrafo ultrasónico.",
+      "Mediante inmersión directa de la probeta en el tintero."
+    ],
+    correct: 0,
+    explanation: "El procedimiento describe la preparación mediante 'Batido de tinta sobre una plancha de aluminio' y aplicación uniforme con rodillo de caucho sobre las probetas.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 399)"
+  },
+  {
+    theme: 4,
+    question: "En el ensayo de Conductividad del agua de mojado (Tema 11 - Actividad 3), ¿qué efecto produce en las lecturas la adición progresiva de partes de sal al agua del grifo?",
+    options: [
+      "Un incremento drástico de la conductividad (medida en microsiemens/cm).",
+      "Una caída en picado del pH hasta alcanzar valores ácidos de 1,0.",
+      "La neutralización total de la carga galvánica."
+    ],
+    correct: 0,
+    explanation: "El ensayo demuestra que la adición de sal o aditivos incrementa la conductividad de la solución, monitorizándose mediante lecturas en microsiemens ($\mu\text{S}$).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 398)"
+  },
+  {
+    theme: 4,
+    question: "En los requisitos de las tintas de Edición frente a las tintas de Embalaje, ¿qué exigencia es exclusiva del embalaje alimentario?",
+    options: [
+      "Ser inodoras, no contaminar alimentos y ser resistentes a detergentes, jabones y abrasión.",
+      "Tener una penetración máxima por macroporosidad sin secantes.",
+      "Ser solubles en alcohol etílico puro."
+    ],
+    correct: 0,
+    explanation: "Las tintas de embalaje deben ser inodoras, no contaminar alimentos, resistir jabones/detergentes y resistir la abrasión en cartón.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 392)"
+  },
+
+  // ==========================================
+  // BLOQUE V: GESTIÓN DE COLOR Y CARTA DE TEST ECI 2002 (41-45)
+  // ==========================================
+  {
+    theme: 5,
+    question: "¿Cuántos parches de color contiene la carta de test estándar ECI 2002 leídos por el espectrofotómetro para la caracterización de perfiles de salida?",
+    options: [
+      "1.485 parches.",
+      "256 parches.",
+      "10.000 parches."
+    ],
+    correct: 0,
+    explanation: "El manual indica textualmente: 'Una vez impresa la carta ECI 2002 del test de prueba se leerá los 1485 parches con un espectrofotómetro'.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 402)"
+  },
+  {
+    theme: 5,
+    question: "¿En qué espacio de colorimetría independiente se efectúa la lectura de la carta ECI 2002 conectada al programa de gestión de color (GMG o Mónaco)?",
+    options: [
+      "L*a*b*.",
+      "CMYK nativo.",
+      "RGB relativo."
+    ],
+    correct: 0,
+    explanation: "El texto especifica que 'la lectura de colorimetría se hará en L*a*b*, conectado a un programa específico de gestión de color'.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 402)"
+  },
+  {
+    theme: 5,
+    question: "En la tira de prueba de la carta de color ECI 2002 se incluyen sobreimpresos específicos de CMYK y RGB con el objetivo de verificar:",
+    options: [
+      "El trapping de las tintas.",
+      "El espesor del fotopolímero.",
+      "La dureza Shore de la mantilla de caucho."
+    ],
+    correct: 0,
+    explanation: "El diagrama de la carta de color señala expresamente: 'CMYK, sobreimpresos RGB para comprobar el trapping de las tintas'.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 401)"
+  },
+  {
+    theme: 5,
+    question: "En la tipología de perfiles de color que se crean y editan en el flujo de trabajo preimpresión se enumeran:",
+    options: [
+      "Perfiles de Pantalla, Perfiles de Entrada y Perfiles de Salida (así como la edición de Perfiles de Salida).",
+      "Perfiles de Anilox, Perfiles de Guillotina y Perfiles de Plegado.",
+      "Perfiles de Viscosidad y Perfiles de Tixotropía."
+    ],
+    correct: 0,
+    explanation: "El esquema de 'Creación y edición de perfiles' clasifica: Perfiles de Pantalla, Perfiles de Entrada, Perfiles de Salida y Editar Perfiles de Salida.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 404)"
+  },
+  {
+    theme: 5,
+    question: "¿Qué recomendación de formato de color se indica para el tratamiento de imágenes en los flujos de impresión digital?",
+    options: [
+      "Imágenes en CMYK mejor que en RGB.",
+      "Imágenes en Indexado de 8 bits.",
+      "Imágenes en escala de grises duotono exclusivamente."
+    ],
+    correct: 0,
+    explanation: "En las recomendaciones para sistemas de impresión digital se señala explícitamente: 'Imágenes CMYK mejor que en RGB'.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 444)"
+  },
+
+  // ==========================================
+  // BLOQUE VI: SISTEMA DE IMPRESIÓN OFFSET (46-55)
+  // ==========================================
+  {
+    theme: 6,
+    question: "El sistema de impresión Offset se define como un sistema de impresión de forma:",
+    options: [
+      "Planográfica, basado en la repulsión entre el agua y la tinta sobre una superficie que acepta a ambas.",
+      "En relieve, basado en el entintado de zonas altas mediante anilox.",
+      "Permeográfica, basado en el paso de tinta a través de una malla."
+    ],
+    correct: 0,
+    explanation: "Se trata de un sistema de impresión planográfico, basado en la repulsión entre el agua y la tinta y las características de una superficie que aceptará a ambas.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 406)"
+  },
+  {
+    theme: 6,
+    question: "Los elementos cilíndricos y de distribución fundamentales del cuerpo impresor offset son:",
+    options: [
+      "Batería de entintado, batería de mojado, cilindro portaplanchas, cilindro portacaucho (blanket) y cilindro impresor.",
+      "Cilindro anilox, cubeta de tinta, rasqueta y cilindro portacliché.",
+      "Pantalla, raedera, insoladora y cilindro de contrapresión."
+    ],
+    correct: 0,
+    explanation: "El cuerpo impresor offset consta de: Batería de entintado, Batería de mojado, Cilindro portaplanchas (Plate cylinder), Cilindro portacaucho (Blanket cylinder) y Cilindro impresor (Impression cylinder).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 406)"
+  },
+  {
+    theme: 6,
+    question: "¿Cuál es el rasgo de identificación microscópico característico de un texto impreso en sistema Offset?",
+    options: [
+      "Borde de los caracteres bien definidos (limpios y nítidos).",
+      "Borde de los caracteres en dientes de sierra.",
+      "Efecto squash o anillo de tinta periférico alrededor de las letras."
+    ],
+    correct: 0,
+    explanation: "En la identificación del sistema Offset se señala explícitamente: 'Borde de los caracteres bien definidos'.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 407)"
+  },
+  {
+    theme: 6,
+    question: "En las prensas para Pequeño Offset, las tintas deben ajustarse para que la incompatibilidad entre agua y tinta sea mayor con el objetivo de evitar el problema de:",
+    options: [
+      "Velo (o engrase en las zonas no impresas).",
+      "Efecto squash.",
+      "Marcas de dientes de sierra."
+    ],
+    correct: 0,
+    explanation: "Para pequeño offset se especifica que 'La incompatibilidad entre el agua y la tinta debe ser mayor para evitar problemas de velo'.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 393)"
+  },
+  {
+    theme: 6,
+    question: "En las máquinas offset de bobina (rotativas), la propiedad reológica y química más crítica que debe resistir la tinta es:",
+    options: [
+      "Resistencia a la emulsión excesiva con el agua.",
+      "Evaporación completa sin calor.",
+      "Precipitación instantánea por glicoles."
+    ],
+    correct: 0,
+    explanation: "En las tintas para máquinas de bobina se exige prioritariamente 'Resistencia a la emulsión con el agua' debido a la alta velocidad de rotación del grupo de mojado.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 394)"
+  },
+  {
+    theme: 6,
+    question: "¿De qué antecedente histórico-técnico proviene directamente el sistema Offset?",
+    options: [
+      "De la Litografía (impresión en piedra con tintas grasas y repulsión agua-grasa).",
+      "De la Xilografía (grabado en madera de boj).",
+      "De la Tipografía de tipos móviles de plomo."
+    ],
+    correct: 0,
+    explanation: "El manual indica que los fundamentos del Offset provienen de la Litografía (tintas grasas, repulsión agua-grasa, impresión directa sobre piedra).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 452)"
+  },
+  {
+    theme: 6,
+    question: "En el secado de tintas de rotativa Offset Heat-set, ¿qué ocurre cuando la banda de papel impresa sale del horno de aire caliente?",
+    options: [
+      "Las resinas y aceites especiales fijan una película grasa tras evaporarse los solventes ligeros.",
+      "El agua de mojado se solidifica sobre el papel.",
+      "La tinta se vuelve un polvo seco lavable con agua."
+    ],
+    correct: 0,
+    explanation: "Las tintas Heat-set son termosecantes: dejan una película grasa sólida al evaporarse los solventes minerales en el horno de secado.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 384)"
+  },
+  {
+    theme: 6,
+    question: "¿Qué papel cumple el 'Blanket' o mantilla de caucho montada en el cilindro portacaucho?",
+    options: [
+      "Recibir la imagen entintada de la plancha y transferirla por presión al soporte, adaptándose a sus irregularidades.",
+      "Filtrar la solución de mojado hacia el tintero.",
+      "Grabar las celdas en relieve de la forma impresora."
+    ],
+    correct: 0,
+    explanation: "El Blanket es la mantilla elástica de caucho que recibe la tinta de la plancha y la transfiere al soporte (impresión indirecta).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 406, 452)"
+  },
+  {
+    theme: 6,
+    question: "En las impresoras de pliego Offset, el exceso de agua en la emulsión provoca que la tinta pierda tiro y densidad. ¿Qué aditivo se usa para corregir la fluidez si la tinta es muy rígida?",
+    options: [
+      "Suavizantes.",
+      "Secantes de cobalto.",
+      "Ceras antipolvo."
+    ],
+    correct: 0,
+    explanation: "Los suavizantes son aditivos destinados a ajustar la viscosidad y reducir la rigidez de las tintas grasas demasiado duras.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 361)"
+  },
+  {
+    theme: 6,
+    question: "La combinación de secado $O + P$ corresponde en la tabla de mecanismos de secado a:",
+    options: [
+      "Tipografía y Offset en soportes absorbentes (Oxipolimerización + Penetración).",
+      "Flexografía sobre plástico.",
+      "Serigrafía textil con Plastisol."
+    ],
+    correct: 0,
+    explanation: "El diagrama de conjuntos indica expresamente que $O + P$ corresponde a Tipografía y Offset en soportes absorbentes.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 365)"
+  },
+
+  // ==========================================
+  // BLOQUE VII: SISTEMA DE IMPRESIÓN FLEXOGRÁFICO (56-70)
+  // ==========================================
+  {
+    theme: 7,
+    question: "El sistema de impresión Flexográfico se caracteriza por ser un sistema:",
+    options: [
+      "En relieve, que utiliza una forma impresora elástica (fotopolímero) y tintas fluidas que se dosifican mediante un rodillo Anilox.",
+      "En hueco, que utiliza cilindros de acero cobreado y racla.",
+      "Planográfico, que requiere agua de mojado con isopropanol."
+    ],
+    correct: 0,
+    explanation: "La flexografía imprime mediante una forma en relieve (fotopolímero) flexible y elástica, recibiendo la tinta fluida desde un rodillo dosificador Anilox.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 408, 409)"
+  },
+  {
+    theme: 7,
+    question: "¿Qué diferencia geométrica y funcional existe entre los puntos de un cliché flexográfico CONVENCIONAL y uno DIGITAL?",
+    options: [
+      "Convencional: espaldas redondeadas y perfil suave (alta ganancia de punto); Digital: perfil agudo (baja ganancia de punto e insensible a condiciones de máquina).",
+      "Convencional: perfil agudo; Digital: espaldas planas y anchas.",
+      "Ambos puntos son planos idénticosGrabados por láser en zinc."
+    ],
+    correct: 0,
+    explanation: "Puntos del cliché convencional: espaldas redondeadas, perfil suave y alta ganancia de punto. Puntos del cliché digital: perfil agudo, baja ganancia e insensibilidad a variaciones de máquina.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 412)"
+  },
+  {
+    theme: 7,
+    question: "Según los datos comparativos de Ganancia de Punto (GP) con y sin cinta adhesiva acolchada (Foam) entre el cilindro y el fotopolímero:",
+    options: [
+      "Digital con foam: GP(1%)=8-9%; Convencional con foam: GP(3%)=12-13%; Convencional sin foam: GP(3%)=18-20%.",
+      "Digital con foam: 50%; Convencional sin foam: 0%.",
+      "Digital sin foam: 12-13%; Convencional con foam: 8-9%."
+    ],
+    correct: 0,
+    explanation: "El manual detalla: Digital con foam $GP(1\%)=8-9\%$; Convencional con foam $GP(3\%)=12-13\%$; y Convencional sin foam $GP(3\%)=18-20\%$.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 413)"
+  },
+  {
+    theme: 7,
+    question: "¿Qué función cumple la colocación de la cinta de soporte 'Foam' (compresible) debajo del fotopolímero?",
+    options: [
+      "Absorber las presiones de impresión (efecto amortiguador), reduciendo drásticamente la ganancia de punto en los elementos tramados.",
+      "Inyectar solvente de secado a la superficie del cliché.",
+      "Aumentar el tiro de la tinta flexográfica."
+    ],
+    correct: 0,
+    explanation: "El foam actúa como una capa de amortiguación compresible que absorbe la sobrepresión, evitando la deformación de los puntos de trama.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 413, 414)"
+  },
+  {
+    theme: 7,
+    question: "Entre los cuatro sistemas de entintado flexográfico enumerados, ¿cuál proporciona el mayor control estanco y velocidad sin evaporación de solventes?",
+    options: [
+      "Sistema de cámara de rasquetas (cámara cerrada).",
+      "Sistema de entintado por dos rodillos (sumergido y caucho).",
+      "Sistema de rasqueta positiva abierta.",
+      "Sistema de rasqueta negativa directa."
+    ],
+    correct: 0,
+    explanation: "Los sistemas de entintado son: por rodillos, por rasqueta positiva, por rasqueta negativa y por cámara de rasquetas (cámara cerrada estanca).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 415)"
+  },
+  {
+    theme: 7,
+    question: "Los rodillos Anilox se clasifican por su método de grabado en:",
+    options: [
+      "Anilox de grabado Mecánico (cromados o cerámicos) y Anilox de grabado por Láser.",
+      "Anilox electrolíticos y Anilox térmicos.",
+      "Anilox fotográficos y Anilox de fundición de plomo."
+    ],
+    correct: 0,
+    explanation: "El manual clasifica: 1. Anilox de grabado Mecánico (cromado o cerámico) y 2. Anilox de grabado por Láser (Laser Engraving System).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 416)"
+  },
+  {
+    theme: 7,
+    question: "¿Cuáles son las cuatro formas geométricas estructurales de las celdillas o alvéolos del rodillo Anilox mostradas en el manual?",
+    options: [
+      "Celdilla Piramidal, Celdilla Cuadrangular, Celdilla Trihelicoidal y Celdilla Hexagonal.",
+      "Celdilla Cilíndrica, Celdilla Esférica, Celdilla Romboédrica y Celdilla Cónica.",
+      "Celdilla Lineal, Celdilla Estocástica, Celdilla Trapezoidal y Celdilla Plana."
+    ],
+    correct: 0,
+    explanation: "El manual ilustra e identifica exactamente: Celdilla Piramidal, Celdilla Cuadrangular, Celdilla Trihelicoidal y Celdilla Hexagonal.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 417)"
+  },
+  {
+    theme: 7,
+    question: "¿Qué ángulos de tramado o inclinación de las celdillas del rodillo Anilox se muestran e ilustran en el manual?",
+    options: [
+      "45°, 30° y 60°.",
+      "0°, 90° y 180°.",
+      "15°, 75° y 105°."
+    ],
+    correct: 0,
+    explanation: "Las imágenes de muestras de rodillos anilox especifican: Rodillo tramado a 45°, Rodillo tramado a 30° y Rodillo tramado a 60°.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 418)"
+  },
+  {
+    theme: 7,
+    question: "Para un rodillo Anilox tramado a 60°, ¿cuáles son los ángulos de trama recomendados para los fotopolímeros de cuatricromía?",
+    options: [
+      "Negro = 45°, Cian = 15°, Magenta = 75°, Amarillo = 90°.",
+      "Negro = 37,5°, Cian = 7,5°, Magenta = 67,5°, Amarillo = 82,5°.",
+      "Negro = 0°, Cian = 30°, Magenta = 60°, Amarillo = 90°."
+    ],
+    correct: 0,
+    explanation: "La tabla especifica para Anilox 60°: Negro = 45°, Cian = 15°, Magenta = 75°, Amarillo = 90°. (Para Anilox 45° indica: N=37.5°, C=7.5°, M=67.5°, A=82.5°).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 419)"
+  },
+  {
+    theme: 7,
+    question: "El defecto e indicador microscópico inequívoco para la IDENTIFICACIÓN de una impresión Flexográfica es:",
+    options: [
+      "El efecto 'Squash' o de escurrido de tinta en los bordes de los caracteres.",
+      "El borde en dientes de sierra de las letras.",
+      "El borde en zig-zag con alto espesor de tinta."
+    ],
+    correct: 0,
+    explanation: "El impreso flexográfico se identifica por el 'Efecto squash o de escurrido' (reborde más oscuro de tinta en el contorno por la presión del cliché flexible).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 420)"
+  },
+  {
+    theme: 7,
+    question: "¿Qué equipo industrial se cita e ilustra en el manual para el procesado y obtención de clichés/anilox térmicos sin solvente?",
+    options: [
+      "Cyrel FAST TD4260.",
+      "E-Print 1000.",
+      "Viptronic MPGLOSS."
+    ],
+    correct: 0,
+    explanation: "En la página 411 se muestra el equipo Cyrel FAST TD4260 para la obtención de clichés flexográficos.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 411)"
+  },
+  {
+    theme: 7,
+    question: "En el sistema de entintado por rasqueta negativa sobre el anilox, la cuchilla ataca la superficie del cilindro:",
+    options: [
+      "En sentido contrario a la dirección de rotación del cilindro anilox (ángulo agudo reverso).",
+      "A favor del sentido de rotación del cilindro.",
+      "Totalmente perpendicular a 90° sobre el eje de la cubeta."
+    ],
+    correct: 0,
+    explanation: "La rasqueta negativa o inversa se posiciona en sentido contrario al giro del anilox, rascando de forma limpia la superficie externa de la celdilla.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 415)"
+  },
+  {
+    theme: 7,
+    question: "¿Qué tipo de tintas se utilizan mayoritariamente en la impresión flexográfica sobre envoltorios plásticos no absorbentes?",
+    options: [
+      "Tintas líquidas de secado por evaporación (o tintas UV).",
+      "Tintas grasas de oxipolimerización con aceites minerales.",
+      "Tintas en polvo de tóner estático."
+    ],
+    correct: 0,
+    explanation: "La flexografía emplea tintas líquidas de baja viscosidad que secan rápidamente por evaporación sobre soportes no absorbentes.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 362, 365)"
+  },
+  {
+    theme: 7,
+    question: "Si la viscosidad de una tinta flexográfica es demasiado baja en el tintero, se producirá:",
+    options: [
+      "Deficiente densidad óptica, tono pálido y ganancia de punto descontrolada por escurrido.",
+      "Bloqueo inmediato de las celdillas del Anilox por secado prematuro.",
+      "Arrancado de la superficie del papel por exceso de tiro."
+    ],
+    correct: 0,
+    explanation: "Una viscosidad excesivamente baja no mantiene la masa de pigmento necesaria en los alvéolos del anilox, provocando baja densidad e impresión lavada.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 362, 377)"
+  },
+  {
+    theme: 7,
+    question: "La viscosidad de las tintas líquidas para flexografía y huecograbado se mide habitualmente en el taller mediante:",
+    options: [
+      "Viscosímetros de copa de eflujo (como la Copa Ford N.º 4).",
+      "El medidor Viptronic MPGLOSS.",
+      "Las ceras Dennison."
+    ],
+    correct: 0,
+    explanation: "Las tintas líquidas miden su fluidez registrando los segundos de vaciado en copas de eflujo o viscosímetros de copa mostrados en la pág. 377.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 377)"
+  },
+
+  // ==========================================
+  // BLOQUE VIII: SISTEMAS CALCOGRÁFICO Y HUECOGRABADO (71-85)
+  // ==========================================
+  {
+    theme: 8,
+    question: "¿Cuáles son los seis procedimientos de grabado en hueco (manuales y químicos) citados para la preparación de planchas calcográficas?",
+    options: [
+      "Grabado al buril, a la punta seca, al aguafuerte, al aguatinta, al barniz blando y a la mediatinta.",
+      "Grabado por láser, electromecánico, térmico, fotopolímero, CTP y LAMS.",
+      "Grabado alcalino, ácido, neutro, por plasma, por ultrasonidos y por chorro de arena."
+    ],
+    correct: 0,
+    explanation: "El manual enumera textualmente: Grabado al buril, Grabado a la punta seca, Grabado al aguafuerte, Grabado al aguatinta, Grabado barniz blando y Grabado a mediatinta.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 422)"
+  },
+  {
+    theme: 8,
+    question: "El proceso operativo de impresión en una prensa calcográfica de grabado en hueco (o tórculo) consta de los siguientes pasos:",
+    options: [
+      "Se entinta toda la plancha, se retira el exceso dejando llenas solo las partes grabadas, se coloca el soporte y se ejerce alta presión con el tórculo.",
+      "Se moja la plancha con agua y alcohol, se aplica la tinta grasa con rodillo de caucho y se transfiere al papel.",
+      "Se proyecta un haz de luz ultravioleta sobre la plancha sumergida en glicol."
+    ],
+    correct: 0,
+    explanation: "Se efectúa el entintado por toda la plancha, se quita el exceso de tinta dejando solamente llenas las partes grabadas, se coloca el soporte y se hace presión con el tórculo.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 423)"
+  },
+  {
+    theme: 8,
+    question: "Las formas impresoras calcográficas pueden ser planas o cilíndricas. Las cilíndricas se caracterizan por incorporar:",
+    options: [
+      "Una capa electrolítica de cobre que se graba con los procedimientos de formas en hueco.",
+      "Un fotopolímero digital montado sobre foam.",
+      "Una malla de poliéster de 120 hilos/cm."
+    ],
+    correct: 0,
+    explanation: "Las formas cilíndricas calcográficas son cilindros con una capa electrolítica de cobre que se graba con los procedimientos de formas en hueco.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 424)"
+  },
+  {
+    theme: 8,
+    question: "¿Cuáles son las dos características visuales y táctiles clave de IDENTIFICACIÓN del sistema Calcográfico en billetes y documentos de seguridad?",
+    options: [
+      "Se aprecia relieve de la tinta al tacto y el secado es muy lento (haciendo que manche tiempo después, rasgo de seguridad).",
+      "Borde en dientes de sierra y punteado blanco en zonas de masa.",
+      "Efecto squash en el borde y falta de depósito de tinta."
+    ],
+    correct: 0,
+    explanation: "Se aprecia el relieve de la tinta al tacto. El secado de la tinta es lento lo que hace que manche después de mucho tiempo, característica muy importante como sistema de seguridad en los papeles moneda.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 425)"
+  },
+  {
+    theme: 8,
+    question: "En el sistema de impresión por Huecograbado industrial, las zonas de imagen se encuentran:",
+    options: [
+      "En hueco respecto a la zona no imagen, utilizando tintas líquidas que secan por evaporación en soportes lisos y compresibles.",
+      "En relieve respecto a la zona no imagen, utilizando tintas grasas.",
+      "Al mismo nivel (planográfico), requiriendo solución de mojado."
+    ],
+    correct: 0,
+    explanation: "Sistema de impresión en el que la zona imagen está en hueco respecto a la zona no imagen. Las tintas son líquidas (secan por evaporación) y los soportes deben ser lisos y compresibles.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 427)"
+  },
+  {
+    theme: 8,
+    question: "Los elementos que componen un cuerpo de impresión de Huecograbado son:",
+    options: [
+      "Cilindro grabado, cubeta de tinta, racleta, cilindro impresor y cilindro de contrapresión.",
+      "Batería de entintado de 20 rodillos, cilindro portaplanchas y mojadores.",
+      "Pantalla de poliéster, emulsión, racleta y mesa de vacío."
+    ],
+    correct: 0,
+    explanation: "El cuerpo de impresión consta de: Cilindro grabado, Cubeta de tinta, Racleta, Cilindro impresor y Cilindro de contrapresión.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 428)"
+  },
+  {
+    theme: 8,
+    question: "¿Cuál es la secuencia química y galvánica correcta del Proceso de Grabado del cilindro de Huecograbado?",
+    options: [
+      "Cilindro de acero -> Cobreado por electrólisis -> Grabado -> Cromado por electrólisis.",
+      "Cilindro de aluminio -> Anodizado -> Fotosensibilizado -> Revelado acuoso.",
+      "Cilindro de cobre -> Niquelado -> Grabado al buril -> Plastecido con goma arábiga."
+    ],
+    correct: 0,
+    explanation: "El proceso de grabado comprende: Cilindro de acero base, Cobreado por electrólisis, Grabado de los alvéolos y Cromado por electrólisis para aportar dureza contra la racleta.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 429)"
+  },
+  {
+    theme: 8,
+    question: "¿Cuáles son los cuatro rasgos de IDENTIFICACIÓN característicos de un impreso realizado en Huecograbado?",
+    options: [
+      "Borde de los caracteres en dientes de sierra, puntos de diferente gradación de tinta, punteado blanco en zonas de masa y rayas (defectos de racleta).",
+      "Borde bien definido, ausencia de trama en textos y secado por oxipolimerización.",
+      "Efecto squash periférico, bordes en zig-zag y espesor de capa de 50 micras."
+    ],
+    correct: 0,
+    explanation: "Se distingue por: Borde de los caracteres en dientes de sierra, Puntos de diferente gradación de tinta, Punteado blanco en zonas de masa y Rayas (defectos de la racleta).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 430)"
+  },
+  {
+    theme: 8,
+    question: "¿A qué se debe el 'Punteado Blanco en Zonas de Masa' característico de la impresión de huecograbado?",
+    options: [
+      "A la falta de transferencia de tinta desde alvéolos individuales profundos debido a la rugosidad o falta de compresibilidad del soporte.",
+      "A la presencia de burbujas de aire en la solución de mojado.",
+      "Al impacto de partículas de polvo antimaculante sobre la racleta."
+    ],
+    correct: 0,
+    explanation: "Si el soporte no es lo suficientemente liso o compresible, la tinta retenida en el fondo de algunos celdillas no toca el papel, dejando minúsculos calados blancos no impresos.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 427, 430)"
+  },
+  {
+    theme: 8,
+    question: "Las rayas continuas que aparecen en el sentido de marcha de la bobina en huecograbado están causadas por:",
+    options: [
+      "Muescas o partículas atrapadas en la hoja de la racleta que rayan el cilindro cobreado/cromado.",
+      "Desgaste de los rodamientos del cilindro impresor.",
+      "Exceso de viscosidad en el baño de alcohol."
+    ],
+    correct: 0,
+    explanation: "Las rayas longitudinales en la imagen son defectos típicos originados por mellas o suciedad retenida bajo la racleta al rascar el exceso de tinta sobre el cilindro.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 430)"
+  },
+  {
+    theme: 8,
+    question: "Las tintas para Huecograbado deben poseer resistencias químicas específicas cuando se aplican sobre empaques. En el manual se especifican:",
+    options: [
+      "Resistencia a detergentes, ácidos, álcalis, jabones, grasas y luz.",
+      "Resistencia exclusiva al agua de grifo tibia.",
+      "Solubilidad inmediata en aceites minerales alifáticos."
+    ],
+    correct: 0,
+    explanation: "Entre las propiedades de las tintas para huecograbado se citan: Resistencia a detergentes, a ácidos y álcalis, a jabones y grasas, y a la luz.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 393)"
+  },
+  {
+    theme: 8,
+    question: "La graduación del tono de color en el huecograbado tradicional se consigue mediante alvéolos que varían en:",
+    options: [
+      "Profundidad y/o superficie (volumen de tinta depositado por unidad de área).",
+      "Número de hilos de la malla permeográfica.",
+      "Ángulo del prisma giratorio del láser."
+    ],
+    correct: 0,
+    explanation: "El huecograbado regula la intensidad modificando la profundidad y volumen del alvéolo grabado en el cobre, depositando capas de distinto espesor de tinta.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 427, 430)"
+  },
+  {
+    theme: 8,
+    question: "¿Por qué los soportes de impresión en Huecograbado deben ser muy 'lisos y compresibles'?",
+    options: [
+      "Para garantizar que el papel se deforme elásticamente entrando en el interior de las micro-celdillas grabadas y extraiga toda la tinta.",
+      "Para evitar que la radiación infrarroja los queme.",
+      "Para repeler el agua de la emulsión en la cubeta."
+    ],
+    correct: 0,
+    explanation: "Al ser un entintado por alvéolos rehundidos, la lisura y compresibilidad del papel son indispensables para que la superficie del soporte contacte con la tinta del fondo del grabado.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 427)"
+  },
+  {
+    theme: 8,
+    question: "En la calcografía, las tintas utilizadas son de consistencia:",
+    options: [
+      "Grasa y de muy elevada viscosidad.",
+      "Líquida y de muy baja viscosidad.",
+      "En polvo volátil no polar."
+    ],
+    correct: 0,
+    explanation: "La calcografía emplea tintas grasas de alta viscosidad (similares a las de offset/tipografía) para que permanezcan retenidas dentro de los surcos del grabado sin desbordarse.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 362, 424)"
+  },
+  {
+    theme: 8,
+    question: "El tórculo es la máquina de prensado utilizada característicamente en:",
+    options: [
+      "Calcografía manual y de pruebas.",
+      "Serigrafía textil rotativa.",
+      "Flexografía de tambor central."
+    ],
+    correct: 0,
+    explanation: "En la calcografía se hace presión con el tórculo para que la tinta depositada en los huecos pase al soporte.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 423)"
+  },
+
+  // ==========================================
+  // BLOQUE IX: SISTEMA DE IMPRESIÓN SERIGRÁFICO (86-90)
+  // ==========================================
+  {
+    theme: 9,
+    question: "El sistema de impresión Serigráfico se define como un procedimiento de impresión de tipo:",
+    options: [
+      "Permeográfico, en el que la tinta pasa al soporte a través de una pantalla en la que la zona imagen está despejada.",
+      "Planográfico, basado en el equilibrio físico-químico lipófilo e hidrófilo.",
+      "Directo en relieve por fotopolímero semirrígido."
+    ],
+    correct: 0,
+    explanation: "Procedimiento de impresión permeográfico en el que la tinta pasa al soporte a través de una pantalla en la que la zona imagen es permeable y la no imagen impermeable.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 432)"
+  },
+  {
+    theme: 9,
+    question: "Los elementos requeridos para la confección y estampación de una pantalla de Serigrafía enumerados en el manual son:",
+    options: [
+      "Pantalla, emulsión, raedera, fotolito, insoladora, revelado con agua, tinta, máquina de impresión y racleta.",
+      "Cilindro anilox, cuchilla racleta, tintero y rodillo impresor.",
+      "Prisma giratorio, espejo vibratorio, tambor de filmación y fusor térmico."
+    ],
+    correct: 0,
+    explanation: "Elementos para la impresión: Pantalla, Emulsión, Raedera, Fotolito, Insoladora, Revelado con agua, Tinta, Máquina de impresión, Racleta y Soportes.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 433, 434)"
+  },
+  {
+    theme: 9,
+    question: "¿Cuáles son los dos rasgos principales de IDENTIFICACIÓN de un impreso realizado en Serigrafía?",
+    options: [
+      "Borde de los caracteres en zig-zag y gran espesor de la capa de tinta depositada.",
+      "Borde bien definido y secado inmediato por absorción macroporosa.",
+      "Efecto squash en los bordes y gradación del color por alvéolos."
+    ],
+    correct: 0,
+    explanation: "El impreso serigráfico se reconoce por: Borde de los caracteres en zig-zag (debido al cruce de los hilos de la malla) y un elevado Espesor de la capa de tinta.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 435)"
+  },
+  {
+    theme: 9,
+    question: "Entre la amplia variedad de soportes de estampación admitidos por la serigrafía se citan expresamente:",
+    options: [
+      "Papel, plásticos, telas, vidrio, cerámica, madera, electrónica y pastelería.",
+      "Únicamente papel couché estucado de más de 300 g/m².",
+      "Exclusivamente bobinas de papel prensa de bajo gramaje."
+    ],
+    correct: 0,
+    explanation: "Soportes de estampación: papel, plásticos, telas, vidrio, cerámica, madera, electrónica, pastelería, etc.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 434)"
+  },
+  {
+    theme: 9,
+    question: "La Viscosidad de las tintas de Serigrafía se sitúa en la clasificación general como:",
+    options: [
+      "Viscosidad intermedia entre las tintas grasas (offset) y las tintas líquidas (flexo/hueco).",
+      "La viscosidad más baja de todas las tintas (similar al agua).",
+      "Viscosidad sólida en polvo no fluido."
+    ],
+    correct: 0,
+    explanation: "Las tintas de serigrafía poseen una viscosidad intermedia entre las tintas grasas de viscosidad elevada y las tintas líquidas de viscosidad baja.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 362)"
+  },
+
+  // ==========================================
+  // BLOQUE X: SISTEMAS DE IMPRESIÓN DIGITAL Y APLICACIONES (91-100)
+  // ==========================================
+  {
+    theme: 10,
+    question: "En el sistema digital de Láser por Tóner Sólido, el proceso de filmación sobre el tambor opera mediante:",
+    options: [
+      "Un haz de luz láser dirigido que se refleja en un prisma giratorio para cargar partes del tambor; el tóner en polvo se atrae por las partes cargadas y se transfiere al papel por electricidad estática.",
+      "Inyectores piezoeléctricos que lanzan gotas de tóner caliente directamente al papel.",
+      "Un rodillo Anilox grabado a 60° que deposita el polvo estático."
+    ],
+    correct: 0,
+    explanation: "Un haz láser se refleja en un prisma giratorio para cargar partes del tambor. El tóner en polvo es atraído por las partes cargadas y transferido al papel por electricidad estática, fundiéndose con calor/presión.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 439)"
+  },
+  {
+    theme: 10,
+    question: "En la prensa digital de Tóner Líquido (E-Print 1000 / Omnius), ¿cuál es el proceso de transferencia de color al papel?",
+    options: [
+      "La tinta cargada se inyecta en la plancha única, transfiere a la mantilla y de esta al papel; el papel permanece en el cilindro durante cuatro giros recibiendo un color por segundo.",
+      "Utiliza cuatro planchas independientes que transfieren los cuatro colores en una sola pasada.",
+      "El tóner se pulveriza en suspensión gaseosa dentro de un horno a 500 °C."
+    ],
+    correct: 0,
+    explanation: "En lugar de cuatro planchas utiliza sólo una: la tinta cargada se inyecta en la plancha, pasa a la mantilla y luego al papel, permaneciendo en el cilindro impresor durante 4 giros (1 color/segundo).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 440)"
+  },
+  {
+    theme: 10,
+    question: "En el esquema de un sistema de Inyección de Tinta (Inkjet) continuo, las gotas de tinta que NO deben imprimir sobre el papel se gestionan mediante:",
+    options: [
+      "Una placa de desvío de alto voltaje que las atrae hacia un colector para recircular y reciclar la tinta.",
+      "Su evaporación instantánea mediante un rayo láser de choque.",
+      "Su absorción por un fieltro secante colocado sobre el cabezal."
+    ],
+    correct: 0,
+    explanation: "Las gotas reciben carga en los electrodos; la placa de desvío de alto voltaje altera la trayectoria de las gotas no deseadas dirigiéndolas al colector que recupera la tinta para reciclar.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 441)"
+  },
+  {
+    theme: 10,
+    question: "Entre las VENTAJAS de los sistemas de impresión digital señaladas en el manual se encuentran:",
+    options: [
+      "Rapidez de entrega, bajo coste para tiradas pequeñas, puesta a punto muy rápida, ausencia de soportes intermedios y datos variables (1:1).",
+      "Bajo coste unitario para tiradas de más de 500.000 ejemplares.",
+      "Posibilidad de utilizar cualquier tipo de soporte sin limitación de gramaje o textura."
+    ],
+    correct: 0,
+    explanation: "Ventajas: Rapidez de entrega, bajo coste en tiradas pequeñas, puesta a punto muy rápida, no requiere soportes intermedios, permite variar datos (1:1) y automatización del flujo.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 442)"
+  },
+  {
+    theme: 10,
+    question: "Entre los INCONVENIENTES de la impresión digital destacados en el manual se enumeran:",
+    options: [
+      "Elevado coste para tiradas largas, problemas con masas de color, fijación de tóner, degradados, uso de colores directos y hendidos.",
+      "Imposibilidad de realizar impresiones a doble cara (dúplex).",
+      "Necesidad de insolación química previa de fotolitos."
+    ],
+    correct: 0,
+    explanation: "Inconvenientes: Elevado coste en tiradas largas, limitación de velocidad, problemas con masas de color, fijación del tóner, degradados, colores directos, hendidos y soportes limitados.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 443)"
+  },
+  {
+    theme: 10,
+    question: "¿Qué problemas técnicos causa en los equipos de impresión digital una humedad excesivamente BAJA en el soporte papelero?",
+    options: [
+      "Abarquillado, electricidad estática y rotura por plegado.",
+      "Ondulaciones, arrugas en la impresión y fallos de registro.",
+      "Emulsificación del tóner y falta de secado."
+    ],
+    correct: 0,
+    explanation: "Humedad del soporte baja produce: abarquillado, electricidad estática y rotura por plegado. Humedad alta produce: ondulaciones, arrugas en la impresión, problemas de alimentación y registro.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 445)"
+  },
+  {
+    theme: 10,
+    question: "¿Qué problemas técnicos causa en la impresión digital una humedad excesivamente ALTA en el papel?",
+    options: [
+      "Ondulaciones, arrugas en la impresión, problemas de alimentación y errores de registro.",
+      "Abarquillado del pliego y electricidad estática en las bandejas.",
+      "Falta de adherencia de la emulsión serigráfica."
+    ],
+    correct: 0,
+    explanation: "La humedad alta del papel causa: ondulaciones, arrugas en la impresión, problemas de alimentación y fallos de registro.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 445)"
+  },
+  {
+    theme: 10,
+    question: "Entre las aplicaciones comerciales directas de la impresión digital enumeradas en el manual se incluyen:",
+    options: [
+      "Impresión bajo demanda, justo a tiempo, tirajes muy cortos, datos variables, bases de datos e impresión distribuida.",
+      "Grandes tiradas de papel prensa para diarios nacionales de más de un millón de ejemplares.",
+      "Grabado galvánico de cilindros de acero cobreado."
+    ],
+    correct: 0,
+    explanation: "Aplicaciones: Impresión bajo demanda, justo a tiempo, tirajes muy cortos, datos variables, bases de datos e impresión distribuida.",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 446)"
+  },
+  {
+    theme: 10,
+    question: "En la publicidad exterior de gran formato digital se citan dos soportes/estructuras publicitarias urbanas específicas:",
+    options: [
+      "Billboards y Opis.",
+      "Tórculos y Heidelberg.",
+      "Roller-Formers y Cajas de vapor."
+    ],
+    correct: 0,
+    explanation: "En las aplicaciones de impresión digital de gran formato se ilustran e identifican expresamente los 'Billboards' (vallas publicitarias) y los 'Opis' (mobiliario urbano iluminado).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 448)"
+  },
+  {
+    theme: 10,
+    question: "En la arquitectura de procesamiento digital de imágenes previa a la impresora (RIP), el acrónimo PDL representa:",
+    options: [
+      "Page Description Language (Lenguaje de Descripción de Página, como PostScript o PDF).",
+      "Process Density Limit.",
+      "Photo Direct Laser."
+    ],
+    correct: 0,
+    explanation: "En el diagrama del flujo digital (Pág. 437), el archivo viaja desde el ordenador al RIP a través del PDL (Page Description Language / Lenguaje de Descripción de Página).",
+    source: "Curso Básico de Artes Gráficas - FNMT / IES Puerta Bonita (Pág. 437)"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   { theme: 1, question: "Según el manual, ¿cómo se definen las dos fases fundamentales de la composición de una tinta de impresión?", options: ["Fase sólida (insoluble: pigmentos/cargas) y Fase líquida (continua: vehículo/resinas/aceites)", "Fase ácida (disolventes) y Fase neutra (agua de mojado)", "Fase volatilizable (fotopolímeros) y Fase inerte (polvos antirrepinte)"], correct: 0, explanation: "La tinta consta de una fase sólida insoluble (pigmentos y cargas) y una fase líquida o continua denominada vehículo (formada por resinas, aceites o disolventes).", source: "Manual Artes Gráficas 2 - Tintas (Pág. 2)" }
+
+
+
+
+
+
+
+
+
+
+
+
 ];
+
+
+
+
 
 
 /* =========================================================================
