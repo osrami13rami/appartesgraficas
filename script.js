@@ -10486,6 +10486,1982 @@ const questionsModulo1 = [
     explanation: "La impresión funcional aprovecha la capacidad de deposición de tintas conductoras (plata, grafeno, polímeros semiconductores) para fabricar electrónica flexible a escala industrial masiva.",
     source: "Electrónica Impresa e Impresión Funcional"
   },
+  //const preguntasExamenArtesGraficasModoSuperDificil4 = [
+  // ==========================================
+  // BLOQUE I: PREIMPRESIÓN, GESTIÓN DE COLOR Y TRAMADO AVANZADO (1-10)
+  // ==========================================
+  {
+    theme: 1,
+    question: "En la gestión de color con perfiles ICC, ¿qué diferencia técnica existe entre el propósito de renderizado 'Relativo Colorimétrico' y el 'Absoluto Colorimétrico'?",
+    options: [
+      "El Relativo mapea el punto blanco del espacio de origen al punto blanco del soporte de destino, mientras que el Absoluto simula exactamente el tono del blanco de origen imprimiendo una masa de tinta sobre el soporte.",
+      "El Absoluto comprime toda la gama cromática reduciendo la saturación y el Relativo expande los colores fuera de gama.",
+      "El Relativo es exclusivo para imágenes fotográficas RGB y el Absoluto se utiliza únicamente para textos vectoriales."
+    ],
+    correct: 0,
+    explanation: "El propósito Relativo Colorimétrico ignora la diferencia de color del blanco entre soportes adaptando el punto blanco, mientras que el Absoluto Colorimétrico simula el blanco del papel original en las pruebas de contrato.",
+    source: "ISO 15076-1 - Especificación de Perfiles de Color ICC"
+  },
+  {
+    theme: 1,
+    question: "En la técnica de separación de color por sustitución del componente gris, la diferencia fundamental entre GCR (Gray Component Replacement) y UCR (Under Color Removal) radica en:",
+    options: [
+      "GCR reemplaza la tinta neutra C+M+Y por Negro en toda la escala tonal (altas luces, tonos medios y sombras), mientras que UCR sustituye la cuatricromía por Negro únicamente en las sombras oscuras o neutras.",
+      "UCR elimina el canal Negro por completo y GCR añade un segundo canal de Negro de acompañamiento.",
+      "GCR se aplica en máquinas de serigrafía textil y UCR es exclusivo para rotativas de periódico."
+    ],
+    correct: 0,
+    explanation: "GCR actúa sobre todo el rango tonal sustituyendo la cantidad del color minoritario equivalente a gris por tinta negra, mientras que UCR se limita a reducir la suma de tinta en los tonos oscuros profundos.",
+    source: "Manual de Separación de Color y Preimpresión Digital"
+  },
+  {
+    theme: 1,
+    question: "La cantidad teórica máxima de niveles de gris ($N$) reproducibles por un sistema CTP a una resolución determinada depende de la Lineatura de Trama (LPI) y los Puntos por Pulgada (DPI) según la fórmula:",
+    options: [
+      "N = (DPI / LPI)^2 + 1",
+      "N = (LPI / DPI) * 100",
+      "N = (DPI * LPI) / 254"
+    ],
+    correct: 0,
+    explanation: "La matriz elemental de trama se forma combinando los micropuntos de la filmadora; el número de niveles de tono de gris posibles se calcula elevando al cuadrado el cociente entre la resolución del CTP y la lineatura de la trama, sumando 1 por el blanco base.",
+    source: "Fotomecánica y Tramado de Imágenes Digitales"
+  },
+  {
+    theme: 1,
+    question: "En el tramado de alta resolución, la técnica de 'Keepaway Trapping' o reventado metálico se aplica específicamente cuando:",
+    options: [
+      "Se imprimen tintas opacas metálicas (oro, plata) adyacentes a tintas de cuatricromía para evitar que la tinta metálica monte y cubra las tintas transparentes.",
+      "Se imprime sobre plásticos no absorbentes a alta temperatura.",
+      "Se convierte un archivo RGB a un perfil monocromático de escala de grises."
+    ],
+    correct: 0,
+    explanation: "El 'Keepaway trapping' reduce ligeramente el área del color claro o de la tinta opaca metálica para que no solape de forma indeseada sobre las tintas transparentes de proceso que deben verse limpias.",
+    source: "Técnicas de Trapping e Imposición en Preimpresión"
+  },
+  {
+    theme: 1,
+    question: "La versión 4 del estándar de perfiles de color ICC (ISO 15076-1) aporta como mejora crítica frente a la antigua versión 2:",
+    options: [
+      "Ambigüedades eliminadas en las definiciones del espacio PCS, mayor precisión matemática en las tablas de transformación y especificación estricta del perfil de prueba.",
+      "Soporte exclusivo para archivos de imagen monocromáticos en mapa de bits.",
+      "Reducción del tamaño del archivo de perfil a menos de 1 kilobyte."
+    ],
+    correct: 0,
+    explanation: "El estándar ICC v4 estandarizó estrictamente el espacio de conexión PCS y el tratamiento de los tags de transformación, garantizando que distintos motores CMM arrojen el mismo resultado exacto.",
+    source: "ISO 15076-1 - Image Technology Color Management"
+  },
+  {
+    theme: 1,
+    question: "Durante el acoplamiento de transparencias (Transparency Flattening) en archivos PDF/X-1a, las zonas compuestas por elementos vectoriales con transparencias complejas sobre imágenes se convierten en:",
+    options: [
+      "Regiones divididas en vectores atómicos y regiones rasterizadas a alta resolución.",
+      "Curvas de Bézier sin relleno de color.",
+      "Capas TIFF de 8 bits no editables."
+    ],
+    correct: 0,
+    explanation: "El motor de acoplamiento analiza el documento y fragmenta el diseño: las áreas afectadas por transparencias que interactúan con bitmaps se convierten en parches rasterizados manteniéndose el resto en vectores.",
+    source: "Adobe PDF Print Engine & Preflighting"
+  },
+  {
+    theme: 1,
+    question: "En el tramado estocástico (FM) de primera generación frente al de segunda generación, la diferencia geométrica radica en que:",
+    options: [
+      "La 1.ª generación utiliza micro-puntos de tamaño fijo aislados, mientras que la 2.ª generación agrupa los micro-puntos formando estructuras orgánicas de tamaño variable para evitar el efecto de moteado.",
+      "La 1.ª generación sólo se aplica al canal Cian y la 2.ª generación a los cuatro canales.",
+      "La 2.ª generación obliga a girar los ángulos de trama a 45 grados."
+    ],
+    correct: 0,
+    explanation: "La trama FM de segunda generación (ej. Staccato, CrystalRaster) agrupa de forma inteligente los puntos en las zonas de tonos medios para minimizar el efecto 'grainy' o ruido estático y facilitar la transferencia en prensa.",
+    source: "Tecnología de Tramado Digital y CTP"
+  },
+  {
+    theme: 1,
+    question: "Para calcular la Ganancia de Punto Óptica derivada del fenómeno de dispersión de la luz dentro del papel (efecto Yule-Nielsen), la ecuación utiliza la constante 'n' que representa:",
+    options: [
+      "El factor de penetración óptica y dispersión de la luz en la estructura del papel.",
+      "El número de rodillos de la batería de entintado.",
+      "La velocidad lineal del cilindro de caucho."
+    ],
+    correct: 0,
+    explanation: "El parámetro 'n' de Yule-Nielsen modifica la fórmula de Murray-Davies para compensar la luz que penetra en el soporte translúcido y se dispersa por debajo de los bordes del punto impreso.",
+    source: "Modelos Físico-Matemáticos de Densidad Tonal"
+  },
+  {
+    theme: 1,
+    question: "Las filmadoras CTP de tecnología violeta utilizan un diodo láser con una longitud de onda de 405 nm que reacciona con planchas de fotopolímero mediante una exposición basada en:",
+    options: [
+      "Polimerización por fotoiniciadores fotosensibles de luz visible de baja potencia.",
+      "Ablación térmica por infrarrojos de alta potencia.",
+      "Fusión electrostática por calor magnético."
+    ],
+    correct: 0,
+    explanation: "Los diodos violeta (405 nm) actúan en la zona del espectro visible/ultravioleta cercano, fotoiniciando la polimerización del recubrimiento fotoquímico de la plancha con láseres de baja energía (mW).",
+    source: "Sistemas CTP y Química de Planchas Offset"
+  },
+  {
+    theme: 1,
+    question: "El estándar de intercambio PDF/X-3 (ISO 15930-6) admite, a diferencia de la norma estricta PDF/X-1a:",
+    options: [
+      "El uso de datos cromáticos independientes del dispositivo (como espacios de color RGB basados en perfiles ICC o Lab).",
+      "La inclusión de archivos de audio y vídeo interactivo en el PDF.",
+      "La eliminación completa de los perfiles de salida Output Intent."
+    ],
+    correct: 0,
+    explanation: "Mientras PDF/X-1a exige que todos los objetos estén ya convertidos a CMYK o tintas planas, PDF/X-3 autoriza elementos en espacios de color independientes (RGB/Lab) acompañados de su perfil ICC.",
+    source: "ISO 15930-6 - Especificaciones PDF/X-3"
+  },
+
+  // ==========================================
+  // BLOQUE II: QUÍMICA PAPELERA, FIBRAS Y ADITIVOS (11-20)
+  // ==========================================
+  {
+    theme: 2,
+    question: "La adición de Almidones Catiónicos en la tina de preparación de masa de papel cumple la función de:",
+    options: [
+      "Fijarse por atracción electrostática a las fibras celulósicas aniónicas aumentando las resistencias mecánicas en seco (estallido y tracción).",
+      "Actuar como biocida destruyendo la pared celular de las bacterias.",
+      "Reducir la opacidad del papel estucado a valores inferiores al 10%."
+    ],
+    correct: 0,
+    explanation: "Las fibras celulósicas poseen carga neta negativa (aniónica); los almidones catiónicos (carga positiva) se adhieren eficientemente por atracción electrostática mejorando los enlaces de hidrógeno en seco.",
+    source: "Química de Papel y Aditivos de Masa"
+  },
+  {
+    theme: 2,
+    question: "Para lograr la Resistencia en Húmedo del papel a pH neutro o ligeramente alcalino se añaden en masa resinas poliméricas del tipo:",
+    options: [
+      "Poliamida-Epiclorhidrina (PAE).",
+      "Sulfato de Alúmina concentrado.",
+      "Nitrato de plata industrial."
+    ],
+    correct: 0,
+    explanation: "Las resinas PAE reticulan formando una red termofija insoluble en presencia de agua alrededor de los cruces de las fibras, conservando hasta el 30% de la resistencia del papel mojado.",
+    source: "Aditivos Especiales de Resistencia Papelera"
+  },
+  {
+    theme: 2,
+    question: "El proceso semiquímico de cocción al Sulfito Neutro (NSSC - Neutral Sulfite Semichemical) se aplica fundamentalmente en maderas de frondosas para fabricar:",
+    options: [
+      "Papel medium o flauta para cartón ondulado con alta rigidez a la compresión.",
+      "Papel estucado de alto brillo para libros de arte.",
+      "Servilletas y pañuelos tisú de máxima suavidad."
+    ],
+    correct: 0,
+    explanation: "El método NSSC conserva gran parte de la lignina y hemicelulosas en las fibras cortas de frondosas, otorgando al papel para tripa/medium ondulado una rigidez excepcional frente al aplastamiento.",
+    source: "Procesos de Pulpación y Pasta Semiquímica"
+  },
+  {
+    theme: 2,
+    question: "En el circuito de aguas de máquina papelera, las Poliacrilamidas Catenarias de alto peso molecular se utilizan como agentes de:",
+    options: [
+      "Retención de finos y cargas por el mecanismo de floculación por puenteo.",
+      "Destintado por disolución ácida de pigmentos.",
+      "Neutralización del olor de la pulpa de madera."
+    ],
+    correct: 0,
+    explanation: "Las poliacrilamidas de larga cadena polimérica atrapan los finos de celulosa y partículas de carga mineral uniéndolos en flóculos grandes que no atraviesan la malla de la tela de formación.",
+    source: "Físico-Química de la Formación de la Hoja"
+  },
+  {
+    theme: 2,
+    question: "Los Lignosulfonatos solubles obtenidos como subproducto del proceso de cocción de pasta al sulfito se aprovechan industrialmente como:",
+    options: [
+      "Agentes dispersantes, plastificantes para hormigón y adhesivos industriales.",
+      "Combustible exclusivo para reactores nucleares.",
+      "Cargas minerales transparentes para papeles estucados."
+    ],
+    correct: 0,
+    explanation: "Los licores rojos al sulfito concentran lignosulfonatos, biopolímeros sulfonados con excelentes propiedades tensioactivas y ligantes comercializados en múltiples industrias químicas.",
+    source: "Aprovechamiento de Subproductos Papeleros"
+  },
+  {
+    theme: 2,
+    question: "En la ultraestructura celular de la fibra celulósica, la pared celular secundaria (capa S2) destaca por:",
+    options: [
+      "Contener el mayor volumen de celulosa de la fibra (más del 70%) con microfibrillas dispuestas en una espiral muy cerrada respecto al eje del poro.",
+      "Estar formada puramente por ceras hidrófobas impermeables.",
+      "Ser una capa que se destruye por completo durante el despulpado mecánico."
+    ],
+    correct: 0,
+    explanation: "La capa S2 representa la masa estructural principal de la pared celular. La alineación casi paralela de sus microfibrillas con el eje de la fibra determina su elevada resistencia a la tracción.",
+    source: "Anatomía y Ultraestructura de Fibras Celulósicas"
+  },
+  {
+    theme: 2,
+    question: "Para evitar la proliferación de microorganismos celulolíticos que forman limo e inestabilidades en la máquina continuadora se añaden:",
+    options: [
+      "Slimicidas o biocidas industriales de circuito.",
+      "Floculantes sintéticos catiónicos.",
+      "Pigmentos fluorescente de azulado."
+    ],
+    correct: 0,
+    explanation: "El agua templada y con materia orgánica de los circuitos cerrados favorece las colonias bacterianas (limo); los slimicidas controlan la flora biológica evitando manchas o agujeros en el papel.",
+    source: "Control de Microbiología en Máquinas Continuadoras"
+  },
+  {
+    theme: 2,
+    question: "En el encolado interno de la pasta en medio neutro con ASA (Anhidrido Alquenil Succínico), la ventaja clave sobre el AKD es:",
+    options: [
+      "Su velocidad de reacción ultra-rápida que logra la hidrofobicidad completa casi a la salida de la máquina, requiriendo emulsiocarse 'in situ'.",
+      "Que no requiere ningún tipo de polímero catiónico de fijación.",
+      "Que se puede mezclar con ácido sulfúrico concentrado sin descomponerse."
+    ],
+    correct: 0,
+    explanation: "El ASA reacciona químicamente en segundos con los grupos hidroxilo de la celulosa, logrando el curado en máquina, aunque debe emulsionarse en la propia fábrica debido a su alta reactividad con el agua.",
+    source: "Química de Encolado Neutro y Alcalino"
+  },
+  {
+    theme: 2,
+    question: "El Caolín Calcinado se diferencia del Caolín Hidratado convencional utilizado en papelería por:",
+    options: [
+      "Someterse a un tratamiento térmico a más de 1.000 °C que elimina el agua de cristalización, aumentando drásticamente la opacidad, la porosidad del estuco y la blancura.",
+      "Presentar una tonalidad gris oscura apta solo para papeles de embalaje.",
+      "Disolverse completamente al entrar en contacto con el agua."
+    ],
+    correct: 0,
+    explanation: "La calcinación transforma el caolín en partículas con vacíos internos que dispersan la luz con mayor eficacia, incrementando de manera notable la opacidad del soporte.",
+    source: "Minerales y Pigmentos de Estucado"
+  },
+  {
+    theme: 2,
+    question: "Al someter las fibras papelera a repetidos ciclos de reciclado (despulpado y secado), el fenómeno de 'Cornificación' (Hornification) produce:",
+    options: [
+      "El colapso irreversible de los poros internos de la pared celular, reduciendo la capacidad de hinchamiento de la fibra y su aptitud para formar enlaces de hidrógeno.",
+      "El aumento ilimitado de la longitud de la fibra y su elasticidad.",
+      "La conversión espontánea de la celulosa en almidón soluble."
+    ],
+    correct: 0,
+    explanation: "La cornificación ocurre al secarse la fibra: las microfibrillas se unen íntimamente perdiendo capacidad de rehidratación en ciclos posteriores, disminuyendo las resistencias mecánicas del papel reciclado.",
+    source: "Física y Reciclado de Fibras Secundarias"
+  },
+
+  // ==========================================
+  // BLOQUE III: MÁQUINA CONTINUADORA Y MECÁNICA (21-30)
+  // ==========================================
+  {
+    theme: 3,
+    question: "La instalación de una Caja de Vapor (Steam Box) sobre la sección de prensas húmedas de la máquina continuadora sirve para:",
+    options: [
+      "Calentar la hoja de papel y el agua retenida, reduciendo la viscosidad del agua para aumentar la eficacia del desgotado mecánico por presión.",
+      "Inyectar aroma a pino en el papel terminado.",
+      "Evaporar el 100% del agua del papel antes de la sequería."
+    ],
+    correct: 0,
+    explanation: "Al elevar la temperatura del agua de $20^\circ\text{C}$ a $60^\circ\text{C}$, su viscosidad dinámica disminuye, lo que permite que el agua fluya más fácilmente fuera de la estructura de la hoja en las prensas.",
+    source: "Eficiencia Energética y Desgote en Prensas"
+  },
+  {
+    theme: 3,
+    question: "Los escáneres en línea QCS (Quality Control System) miden el gramaje continuo de la banda de papel mediante cabezales con fuentes de radiación basadas en:",
+    options: [
+      "Atenuación de rayos Beta (como Criptón-85 o Prometio-147) o Rayos X de baja energía.",
+      "Dispersión de ultrasonidos de alta frecuencia.",
+      "Refracción de radiación microondas gigahercia."
+    ],
+    correct: 0,
+    explanation: "El sensor beta mide la masa de materia interpuesta entre la fuente radioisotópica y el detector: la absorción de partículas beta es directamente proporcional al gramaje de la hoja.",
+    source: "Metrología e Instrumentación en Máquinas Continuadoras"
+  },
+  {
+    theme: 3,
+    question: "En las cajas de entrada modernas con Perfilado de Gramaje por Dilución (Consistency Profiling), el control del perfil transversal de gramaje se ejecuta:",
+    options: [
+      "Inyectando caudales micro-regulados de agua blanca diluida en puntos concretos a lo largo del ancho del manifold, sin alterar la apertura mecánica del labio.",
+      "Ajustando manualmente los tornillos del labio superior con llaves dinamométricas.",
+      "Inclinando la mesa Fourdrinier lateralmente."
+    ],
+    correct: 0,
+    explanation: "La dilución local añade agua limpia o blanca para corregir desviaciones del peso por unidad de superficie en franjas estrechas, manteniendo la geometría del labio constante.",
+    source: "Automatización de la Cabeza de Máquina"
+  },
+  {
+    theme: 3,
+    question: "En la sección de calandrado, una Calandra de Zapata Caliente (Shoe Calender / Gloss Calender) utiliza un rodillo suave presionado contra un cilindro calefactado a alta temperatura para:",
+    options: [
+      "Satinar la superficie por termomodelado sin aplastar el cuerpo interno de la hoja, conservando el volumen específico y la rigidez.",
+      "Grabar la marca de agua a 300 °C.",
+      "Cortar los bordes laterales del pliego."
+    ],
+    correct: 0,
+    explanation: "El pulso térmico y la presión prolongada de la zapata plastifican suavemente las capas superficiales de estuco o celulosa logrando lisura de alta calidad sin destruir el calibre o mano del papel.",
+    source: "Acabados y Calandrado Térmico Papelero"
+  },
+  {
+    theme: 3,
+    question: "El Rodillo Suctor de Vacío situado en el giro de retorno de la tela Fourdrinier (Couch Roll) cumple el cometido de:",
+    options: [
+      "Extraer el agua libre final por vacíos internos graduados (hasta -0,8 bar) y consolidar la hoja para su transferencia por suspensión al fieltro pick-up.",
+      "Centrifugar las cargas minerales hacia el aire.",
+      "Enfriar el papel secado mediante aire helado."
+    ],
+    correct: 0,
+    explanation: "El rodillo Couch es un cilindro perforado de bronce/acero con cajas de aspiración fijas internas que llevan la sequedad de la hoja desde el 18% hasta alrededor del 22-25% antes del prensado.",
+    source: "Tecnología de la Mesa de Formación Fourdrinier"
+  },
+  {
+    theme: 3,
+    question: "Para el secado de la capa de estuco inmediatamente posterior a la aplicación con rasqueta se emplean secadores de Infrarrojos (IR) combinados con aire porque:",
+    options: [
+      "Inmovilizan rápidamente la salsa de estuco por evaporación relámpago sin contacto físico, evitando la migración asimétrica de ligantes.",
+      "Congelan la salsa de estuco por sublimación.",
+      "Reemplazan a los cilindros de vapor de la sequería principal."
+    ],
+    correct: 0,
+    explanation: "La radiación IR penetra en la capa húmeda fijando los componentes antes de que la salsa toque ningún rodillo, evitando que el almidón o látex emigren excesivamente hacia la superficie.",
+    source: "Estucado Fuera de Máquina y Secado IR"
+  },
+  {
+    theme: 3,
+    question: "En la rebobinadora industrial de papel, el sistema de bobinado sobre tambores independientes (Bi-wind) está diseñado prioritariamente para:",
+    options: [
+      "Bobinar papeles de alta calidad o estucados ajustando la presión y tensión de cada bobina individualmente sin importar variaciones de perfil.",
+      "Plegar los pliegos en formato A4.",
+      "Producir bobinas cuadradas para prensas tipográficas."
+    ],
+    correct: 0,
+    explanation: "Las rebobinadoras Bi-wind montan cada bobina en su propio brazo neumático; así, las diferencias ligeras de calibre en el ancho no provocan bobinas flojas o estrechas en el mismo eje.",
+    source: "Ingeniería de Bobinado y Rebobinado"
+  },
+  {
+    theme: 3,
+    question: "El defecto denominado 'Marcación por Fieltro' (Felt Marks) producido en la sección de prensas consiste en:",
+    options: [
+      "La transferencia de la estructura del tejido o trama del fieltro de prensado a la superficie húmeda de la hoja por una presión excesiva o fieltro desgastado.",
+      "El desgarro transversal de la banda de papel en el horno.",
+      "Manchas de grasa originadas por los motores."
+    ],
+    correct: 0,
+    explanation: "Si el fieltro pierde elasticidad, sus hilos dejan una huella o relieve rugoso imborrable sobre la hoja blanda, reduciendo la lisura del papel terminado.",
+    source: "Diagnóstico de Defectos en Máquinas Continuadoras"
+  },
+  {
+    theme: 3,
+    question: "En la mesa de fabricación, los 'Foils' o desgotadores de ángulo de inclinación variable regulan la extracción de agua mediante:",
+    options: [
+      "El vacío parcial generado en el ángulo divergente posterior del perfil al pasar la tela a alta velocidad sobre la hoja metálica.",
+      "El soplado de aire a presión desde el interior del rodillo.",
+      "El rascado directo del estuco seco."
+    ],
+    correct: 0,
+    explanation: "La geometría del foil crea una depresión hidrodinámica bajo la tela que succiona suavemente el agua; ajustando el ángulo de la cuchilla se controla la turbulencia y la tasa de drenaje.",
+    source: "Hidrodinámica del Desgote sobre Tela"
+  },
+  {
+    theme: 3,
+    question: "La 'Prensa de Zapato Ancho' (Extended Nip Press) alcanza niveles de sequedad de la hoja a la salida del prensado de hasta un:",
+    options: [
+      "48% a 52% de materia seca.",
+      "10% a 15% de materia seca.",
+      "95% a 99% de materia seca."
+    ],
+    correct: 0,
+    explanation: "Al prolongar el tiempo bajo presión en la zapata cóncava, la prensa ENP extrae muchísima más agua que las prensas de rodillos tradicionales, entregando la hoja al secador a cerca del 50% seco.",
+    source: "Tecnología de Prensado ENP"
+  },
+
+  // ==========================================
+  // BLOQUE IV: ESPECTROFOTOMETRÍA, METROLOGÍA E ISO (31-40)
+  // ==========================================
+  {
+    theme: 4,
+    question: "En la teoría de formulación de color de Kubelka-Munk para películas de tinta impresas, las constantes fundamentales 'K' y 'S' representan respectivamente:",
+    options: [
+      "K: Coeficiente de Absorción de la luz; S: Coeficiente de Dispersión (Scattering) de la luz.",
+      "K: Tinta Negra; S: Densidad de la Sombra.",
+      "K: Constante de Kelvin; S: Saturación del espacio CIELAB."
+    ],
+    correct: 0,
+    explanation: "La teoría Kubelka-Munk fundamenta la colorimetría de capas opacas y translúcidas mediante las constantes espectrales de absorción ($K$) y dispersión óptica ($S$) del material.",
+    source: "Formulación de Color y Teoría Kubelka-Munk"
+  },
+  {
+    theme: 4,
+    question: "La fórmula de diferencia de color CMC (l:c) desarrollada por el Comité de Medición del Color británico parametriza la tolerancia visual mediante dos factores que ajustan:",
+    options: [
+      "La elipsoide de tolerancia ponderando la Luminosidad (l) y el Croma (c) según las exigencias de la aplicación (ej. 2:1 para textiles, 1:1 para artes gráficas).",
+      "El peso del papel y la velocidad del escáner.",
+      "La temperatura del iluminante tungsten D65."
+    ],
+    correct: 0,
+    explanation: "La fórmula CMC elipsoidal permite variar los coeficientes $l$ y $c$ para adaptar la aceptabilidad visual a sectores donde la diferencia de luminosidad es menos crítica que la de saturación.",
+    source: "Colorimetría Avanzada y Tolerancias de Color"
+  },
+  {
+    theme: 4,
+    question: "El 'Metamerismo de Observador' ocurre cuando dos muestras de color son percibidas como idénticas por un individuo pero diferentes por otro debido a:",
+    options: [
+      "Variaciones anatómicas en la distribución y sensibilidad espectral de los conos en la fóvea de la retina entre observadores.",
+      "El cambio de tubos de luz de la sala de impresión.",
+      "La evaporación del solvente de la tinta durante la lectura."
+    ],
+    correct: 0,
+    explanation: "Dado que las curvas de respuesta espectral de la visión humana presentan variaciones biológicas ligeras, un par metamérico verificado por un observador patrón ($2^\circ$) puede no coincidir para otra persona.",
+    source: "CIE - Fundamentos de la Visión del Color"
+  },
+  {
+    theme: 4,
+    question: "El Iluminante Estándar CIE 'A' se define colorimétricamente como:",
+    options: [
+      "La radiación espectral del radiador de cuerpo negro (Planckiano) a una temperatura absoluta de 2.856 Kelvin (luz de lámpara de filamento de tungsteno).",
+      "La luz solar directa a mediodía en el ecuador a 10.000 K.",
+      "Una lámpara de vapor de mercurio de alta presión."
+    ],
+    correct: 0,
+    explanation: "El iluminante CIE A representa la iluminación doméstica incandescente tradicional con una temperatura de color correlacionada de $2856\text{ K}$, rica en el espectro rojo/infrarrojo.",
+    source: "ISO/CIE 11664-2 - Iluminantes Estándar CIE"
+  },
+  {
+    theme: 4,
+    question: "El Modo de Medición M2 especificado en la norma ISO 13655 exige la instalación de un filtro 'UV-Cut' en el espectrofotómetro con el objetivo de:",
+    options: [
+      "Eliminar por completo la radiación ultravioleta de la fuente de iluminación para medir el color intrínseco del papel sin la activación fluorescente de los Blanqueantes Ópticos (OBA).",
+      "Duplicar la fluorescencia de los Blanqueantes Ópticos.",
+      "Medir el grosor de las tintas UV endurecidas."
+    ],
+    correct: 0,
+    explanation: "M2 excluye toda energía por debajo de $400\text{ nm}$; así se evalúa el tono real de la celulosa o pigmento sin la distorsión azulada que introducen los aditivos fluorescentes bajo luz UV.",
+    source: "ISO 13655 - Spectral Measurement Conditions in Graphic Technology"
+  },
+  {
+    theme: 4,
+    question: "Para evaluar la Eficiencia de Atrapado o Trampa de Tinta (Ink Trap) en impresiones superpuestas húmedo sobre húmedo se aplica la fórmula densitométrica de:",
+    options: [
+      "Preucil.",
+      "Brunner.",
+      "Stouffer."
+    ],
+    correct: 0,
+    explanation: "La ecuación de Preucil calcula el porcentaje de tinta secundaria que se adhiere sobre una primera capa de tinta húmeda en comparación con la que se transfiere sobre el papel limpio.",
+    source: "Densitometría de Proceso y Control en Prensa"
+  },
+  {
+    theme: 4,
+    question: "El parámetro densitométrico denominado 'Error de Tono' (Hue Error) expresa cuantitativamente:",
+    options: [
+      "La desviación espectral de una tinta de proceso real (Cian, Magenta o Amarillo) respecto a la tinta primaria idealmente pura.",
+      "El ángulo de inclinación de la guillotina.",
+      "El nivel de borrosidad del CTP."
+    ],
+    correct: 0,
+    explanation: "El Error de Tono mide la absorción indeseada de la tinta en zonas del espectro donde debería transmitir el 100% de la luz (por ejemplo, las absorciones secundarias del Magenta en la zona del azul).",
+    source: "Densitometría y Evaluación de Tintas de Proceso"
+  },
+  {
+    theme: 4,
+    question: "La norma CIE 1931 estableció las funciones de respuesta del Observador Estándar para un campo visual de $2^\circ$, el cual corresponde anatómicamente a:",
+    options: [
+      "La proyección de la imagen exclusivamente sobre la fóvea central de la retina humana.",
+      "La visión periférica completa de $180^\circ$.",
+      "La visión nocturna regida por los bastones."
+    ],
+    correct: 0,
+    explanation: "El experimento original de Wright y Guild delimitó la observación a un ángulo de $2^\circ$ centrando la muestra en la fóvea, donde no hay bastones y la densidad de conos es máxima.",
+    source: "Sistemas Colorimétricos CIE"
+  },
+  {
+    theme: 4,
+    question: "El Factor de Reflectancia de una capa opaca de grosor infinito ($R_\infty$) representa:",
+    options: [
+      "La reflectancia de una capa de papel o tinta tan gruesa que cualquier incremento posterior de espesor no altera el valor medido.",
+      "El reflejo de la luz en un espejo de plata pura.",
+      "La radiación emitida por una masa de carbón ardiente."
+    ],
+    correct: 0,
+    explanation: "En la espectrofotometría de materiales porosos, $R_\infty$ es la reflectancia intrínseca medida sobre un taco de pliegos tan grueso que elimina por completo la influencia del fondo subyacente.",
+    source: "ISO 2469 - Paper, Board and Pulps - Measurement of Diffuse Radiance Factor"
+  },
+  {
+    theme: 4,
+    question: "En la espectrofotometría de esfera de integración d/8°, la configuración SPIN (Specular Included) se caracteriza por:",
+    options: [
+      "Incluir el brillo de la reflexión especular directa en la medida, evaluando el color independiente de la textura o brillo superficial de la muestra.",
+      "Excluir el color de los pigmentos transparentes.",
+      "Rotar la muestra a 10.000 revoluciones por minuto."
+    ],
+    correct: 0,
+    explanation: "SPIN captura la energía total reflejada (difusa + especular); por ello, mide el pigmento intrínseco idéntico independientemente de si la superficie es mate, rugosa o súper brillante.",
+    source: "Espectrofotometría de Esfera y Geometrías de Medida"
+  },
+
+  // ==========================================
+  // BLOQUE V: REOLOGÍA DE TINTAS, CURADO Y OFFSET (41-50)
+  // ==========================================
+  {
+    theme: 5,
+    question: "El parámetro reológico denominado 'Valor de Rendimiento' o Límite de Fluidez (Yield Value) de una tinta offset representa:",
+    options: [
+      "El esfuerzo cortante mínimo (en dinas/cm² o pascales) que debe aplicarse sobre la tinta para que venza su estructura interna e inicie el flujo.",
+      "El número de pliegos impresos antes de limpiar el tintero.",
+      "La temperatura de ebullición del solvente."
+    ],
+    correct: 0,
+    explanation: "Las tintas grasas son fluidos plásticos de Bingham o plásticos no newtonianos: requieren una fuerza inicial (Yield Value) para romper su estructura pseudoplástica y empezar a deformarse/fluir.",
+    source: "Reología Avanzada de Tintas Grasas"
+  },
+  {
+    theme: 5,
+    question: "Al sustituir el Alcohol Isopropílico (IPA) en la solución de mojado por sustitutos ecológicos (como éteres de glicol) se produce el siguiente efecto físico:",
+    options: [
+      "Aumenta la viscosidad del agua y se reduce la evaporación, requiriendo un ajuste mecánico más preciso de los rodillos mojadores.",
+      "Aumenta la tensión superficial del agua a 100 dinas/cm.",
+      "Se destruye la emulsión agua-tinta instantáneamente."
+    ],
+    correct: 0,
+    explanation: "El IPA reduce la tensión superficial y eleva la viscosidad del agua facilitando una película fina de mojado; los sustitutos de IPA reducen la tensión pero no elevan la viscosidad, exigiendo ajustar las presiones entre rodillos.",
+    source: "Reducción y Eliminación de IPA en Impresión Offset"
+  },
+  {
+    theme: 5,
+    question: "Los Fotoiniciadores de tipo Norrish Tipo I (escisión alfa) empleados en tintas de curado UV se caracterizan por:",
+    options: [
+      "Romperse directamente por homólisis al absorber un fotón UV generando dos radicales libres altamente reactivos de forma inmediata.",
+      "Requerir la presencia obligatoria de una amina terciaria como co-iniciador para extraer un átomo de hidrógeno.",
+      "Activar la polimerización únicamente cuando la temperatura supera los 200 °C."
+    ],
+    correct: 0,
+    explanation: "Los fotoiniciadores Tipo I (unimoleculares) sufren escisión intramolecular directa tras absorber fotones UV, produciendo radicales libres muy eficientes para iniciar la fotopolimerización.",
+    source: "Química de Polímeros y Curado UV"
+  },
+  {
+    theme: 5,
+    question: "El fenómeno nefasto de 'Nebulización de Tinta' (Ink Misting / Ink Flying) en la batería de distribución a alta velocidad se origina por:",
+    options: [
+      "La elongación y rotura violenta de los filamentos de tinta entre rodillos que giran a gran velocidad, proyectando microgotas aéreas al ambiente.",
+      "El uso de papel con un pH inferior a 3,0.",
+      "La congelación del agua de mojado en el tintero."
+    ],
+    correct: 0,
+    explanation: "Cuando la visco-elasticidad o la longitud del 'hilo' de tinta es inadecuada, las fuerzas centrífugas de los rodillos a alta velocidad rompen los filamentos proyectando un fino aerosol contaminante.",
+    source: "Reología y Fisicoquímica de Tintas en Prensa"
+  },
+  {
+    theme: 5,
+    question: "Las tintas clasificadas como 'Mineral Oil Free' (Libres de Aceite Mineral) sustituyen los destilados de petróleo de su vehículo por:",
+    options: [
+      "Esteres de aceites vegetales comestibles (soja, colza, linaza, coco) totalmente renovables.",
+      "Agua destilada al 100% con espesante sintético.",
+      "Resinas epoxi disueltas en acetona pura."
+    ],
+    correct: 0,
+    explanation: "Para cumplir las normativas medioambientales y de envasado alimentario (evitando la migración de hidrocarburos aromáticos MOAH/MOSH), estas tintas utilizan aceites vegetales altamente refinados.",
+    source: "Tintas Sostenibles y Reglamentación Alimentaria"
+  },
+  {
+    theme: 5,
+    question: "Las lámparas de secado LED-UV para imprenta emiten una radiación espectral casi monocromática con picos de emisión centrados típicamente en:",
+    options: [
+      "365, 385, 395 o 405 nanómetros.",
+      "100 nanómetros (rayos gamma).",
+      "780 a 1.200 nanómetros (infrarrojo térmico)."
+    ],
+    correct: 0,
+    explanation: "El LED-UV no emite luz infrarroja ni ozono, concentrando toda su energía fotónica en bandas estrechas del UVA cercano (especialmente 385 nm y 395 nm) adaptadas a fotoiniciadores específicos.",
+    source: "Tecnología de Curado LED-UV Industrial"
+  },
+  {
+    theme: 5,
+    question: "El fenómeno de 'Desentintado de Rodillos' (Roller Stripping) en la batería de entintado offset ocurre cuando:",
+    options: [
+      "Los rodillos metálicos distribuidores se vuelven hidrófilos (atraen agua) debido al depósito de sales de la solución de mojado, rechazando la tinta grasa.",
+      "La tinta polimeriza dentro del tintero por la radiación solar.",
+      "El caucho se ablanda por el uso de aceite vegetal."
+    ],
+    correct: 0,
+    explanation: "Si los aditivos o sales del agua cristalizan sobre la superficie del rodillo metálico, este pierde su lipofilia natural; el agua moja el metal y la tinta deja de distribuirse, desentintando el rodillo.",
+    source: "Mantenimiento y Química del Proceso Offset"
+  },
+  {
+    theme: 5,
+    question: "El curado de tintas mediante Haz de Electrones (Electron Beam - EB) ofrece como ventaja tecnológica sobre el curado UV convencional:",
+    options: [
+      "Penetración total en capas gruesas de tinta sin necesidad de fotoiniciadores en la formulación, erradicando los riesgos de migración de olor o sabor.",
+      "La posibilidad de imprimir en máquinas de madera sin energía eléctrica.",
+      "Un coste de instalación del equipo diez veces inferior a una lámpara estándar."
+    ],
+    correct: 0,
+    explanation: "Los electrones acelerados a alto voltaje poseen energía suficiente para romper enlaces directamente e iniciar la polimerización masiva sin usar fotoiniciadores químicos.",
+    source: "Sistemas de Curado por Haz de Electrones (EB)"
+  },
+  {
+    theme: 5,
+    question: "El ensayo de reología mediante el Viscosímetro de Caída de Barra (Laray) calcula la Viscosidad Aparente ($V$) y el Valor de Rendimiento de una tinta midiendo:",
+    options: [
+      "El tiempo de caída de una barra cilíndrica de acero pesada a través de un orificio ajustado que contiene la muestra de tinta.",
+      "La velocidad de rotación de un disco de madera flotando en agua.",
+      "El número de gotas que caen por minuto desde un embudo de vidrio."
+    ],
+    correct: 0,
+    explanation: "El viscosímetro Laray aplica cizalla constante: la caída de la barra de acero bajo diferentes masas calibradas permite trazar la reograma de cizalla/fuerza de la tinta grasa.",
+    source: "ISO 12644 - Graphic Technology - Determination of Rheological Properties"
+  },
+  {
+    theme: 5,
+    question: "El fenómeno de 'Arrancado en la Cara posterior' o Repintado Secundario (Backtrap Picking) en prensas offset multicolor en línea sucede cuando:",
+    options: [
+      "Una capa de tinta ya impresa en una unidad anterior es parcialmente re-extraída de la hoja por el mantilla seco o poco entintado de una unidad posterior.",
+      "El tintero de la última unidad se desborda sobre la pila de salida.",
+      "La guillotina trilateral corta el papel con la cuchilla al revés."
+    ],
+    correct: 0,
+    explanation: "Ocurre cuando la fuerza de adhesión/tack del caucho de las unidades de impresión posteriores es superior a la cohesión de la tinta húmeda recién depositada en las primeras unidades.",
+    source: "Análisis de Mecanismos de Transferencia Multicolor"
+  },
+
+  // ==========================================
+  // BLOQUE VI: FLEXOGRAFÍA, HUECOGRABADO Y SERIGRAFÍA (51-60)
+  // ==========================================
+  {
+    theme: 6,
+    question: "En la grabación digital de planchas fotopolímeras flexográficas por tecnología LAMS (Laser Ablation Mask System), el láser térmico graba:",
+    options: [
+      "La capa negra de máscara de carbón (máscara ablativa) deposita en la superficie de la plancha, permitiendo la posterior insolación UVA principal a través de la máscara.",
+      "El fotopolímero de relieve directamente recortando el material en 3D.",
+      "El reverso de poliéster para eliminar las sombras."
+    ],
+    correct: 0,
+    explanation: "El CTP flexo LAMS vaporiza la fina película negra superior; después, la plancha entera se expone a luz UV-A de banco: donde el láser eliminó el negro, la luz penetra y polimeriza el relieve.",
+    source: "Sistemas CTP Flexográficos y Fotopolímeros"
+  },
+  {
+    theme: 6,
+    question: "Para que una tinta flexográfica moje adecuadamente un soporte plástico (como Polietileno o Polipropileno), la energía superficial del soporte debe tratarse mediante Corona para alcanzar un valor de:",
+    options: [
+      "Al menos 38 a 42 dinas/cm (mN/m), siendo superior a la tensión superficial de la tinta.",
+      "Exactamente 10 dinas/cm.",
+      "Más de 200 dinas/cm."
+    ],
+    correct: 0,
+    explanation: "La regla de humectabilidad exige que la energía libre de superficie del sustrato sea entre 7 y 10 dinas/cm MAYOR que la tensión superficial de la tinta fluida para lograr una adhesión perfecta.",
+    source: "Tratamiento Corona y Tensión Superficial de Filmes"
+  },
+  {
+    theme: 6,
+    question: "Las planchas flexográficas con tecnología de 'Puntos de Cumbre Plana' (Flat Top Dots) ofrecen como ventaja técnica sobre los puntos digitales oxigenados convencionales:",
+    options: [
+      "Una superficie de punto plana con bordes nítidos que no se deforma bajo presión de máquina, reduciendo la ganancia de punto mecánica y aumentando la estabilidad.",
+      "Que la masa de fotopolímero es líquida y nunca se endurece.",
+      "Que no requieren el uso de rodillos Anilox."
+    ],
+    correct: 0,
+    explanation: "Al eliminar la inhibición por oxígeno durante la insolación UV (mediante laminación con film o atmósfera de nitrógeno), los puntos no terminan en cono afilado sino en una meseta estable y plana.",
+    source: "Tecnología Avanzada de Fotopolímeros Flexo"
+  },
+  {
+    theme: 6,
+    question: "El grabado electromecánico de los cilindros de Huecograbado utiliza un buril de diamante que oscila a frecuencias de hasta:",
+    options: [
+      "8.000 a 12.000 hertzios (celdas grabadas por segundo).",
+      "50 hertzios.",
+      "1.000.000 de megahertzios."
+    ],
+    correct: 0,
+    explanation: "El buril de diamante del electromecanizado (ej. Hell Klischograph) penetra la capa de cobre a velocidades de 8 a 12 kHz, modulando el volumen y profundidad de los alveolos piramidales.",
+    source: "Grabado de Cilindros de Huecograbado"
+  },
+  {
+    theme: 6,
+    question: "En la operación de la racla o cuchilla de doctorado en Huecograbado, el ángulo de trabajo óptimo de la cuchilla respecto a la tangente del cilindro en el punto de contacto es de:",
+    options: [
+      "55° a 65°.",
+      "5° a 10°.",
+      "120° a 150°."
+    ],
+    correct: 0,
+    explanation: "Un ángulo reverso de $55^\circ-65^\circ$ proporciona una limpieza hidráulica limpia de la superficie lisa del cobre sin mellar los bordes de las celdas ni desgastar prematuramente la lámina de acero.",
+    source: "Tecnología de Limpieza y Raclas en Huecograbado"
+  },
+  {
+    theme: 6,
+    question: "En Serigrafía, el valor de Tensión de Tensado de la malla tensada en el marco se mide con un tensiómetro en unidades de:",
+    options: [
+      "Newtons por centímetro (N/cm).",
+      "Gramos por metro cuadrado (g/m²).",
+      "Puntos Didot."
+    ],
+    correct: 0,
+    explanation: "La tensión mecánica de las fibras sintéticas de poliéster de la malla de serigrafía se mide dinámicamente mediante la deflexión de una masa calibrada en N/cm (típicamente 18-25 N/cm).",
+    source: "Estandarización y Preparación de Pantallas Serigráficas"
+  },
+  {
+    theme: 6,
+    question: "Las emulsiones serigráficas de Fotopolímero Puro (SBQ) destacan frente a las emulsiones Diazo tradicionales por:",
+    options: [
+      "Su velocidad de insolación ultra-rápida, vida útil ilimitada sin necesidad de sensibilizador y altísima resistencia a tintas UV y solventes.",
+      "Que se deben lavar obligatoriamente con gasolina comercial.",
+      "Que pierden su sensibilidad si se exponen a la luz."
+    ],
+    correct: 0,
+    explanation: "Las emulsiones basadas en fotopolímeros monocomponentes de estirilbarbito (SBQ) vienen listas para usar, insolan en una fracción del tiempo de las Diazo y tienen años de caducidad.",
+    source: "Química de Emulsiones y Fotomascaras Serigráficas"
+  },
+  {
+    theme: 6,
+    question: "Para calcular el Porcentaje de Superficie Abierta ($O_A$) de una malla de serigrafía conocida la abertura de malla ($w$) y el diámetro del hilo ($d$) se utiliza:",
+    options: [
+      "O_A = (w / (w + d))^2 * 100",
+      "O_A = (d / w) * 2",
+      "O_A = (w + d) / 100"
+    ],
+    correct: 0,
+    explanation: "El área libre de paso por donde fluye la tinta depende del área geométrica del orificio cuadrado en proporción al espacio total ocupado por la suma del poro y el grosor del hilo de poliéster.",
+    source: "Ingeniería de Mallas y Tejidos Serigráficos"
+  },
+  {
+    theme: 6,
+    question: "En el envasado alimentario impreso en Huecograbado con tintas al solvente, el control de Retención de Solventes Residuales en la película impresa se analiza mediante:",
+    options: [
+      "Cromatografía de Gases en Espacio de Cabeza (Headspace Gas Chromatography).",
+      "Espectrofotometría de reflectancia difusa.",
+      "Ensayo de tracción en dinamómetro."
+    ],
+    correct: 0,
+    explanation: "Se calienta la muestra de empaque dentro de un vial estanco y se inyecta la fase gaseosa en un cromatógrafo de gases para cuantificar miligramo a miligramo la cantidad residual de acetatos o alcoholes.",
+    source: "Análisis de Residuos Volátiles en Empaques Flexibles"
+  },
+  {
+    theme: 6,
+    question: "El defecto denominado 'Halo Flexográfico' (o repujado) se visualiza en los bordes de los textos impresos y está causado por:",
+    options: [
+      "Un exceso de presión de impresión (Kiss Impression sobrepasada) que aplasta el fotopolímero flexible exprimiendo la tinta hacia los márgenes.",
+      "La falta de secado en el tintero.",
+      "Un ángulo de trama de 45 grados."
+    ],
+    correct: 0,
+    explanation: "Al ajustar una presión excesiva entre el cilindro porta-cliché y el cilindro de presión, el borde del punto o letra de fotopolímero se deforma escupiendo un anillo de tinta más oscuro alrededor del trazo.",
+    source: "Diagnóstico de Defectos en Flexografía"
+  },
+
+  // ==========================================
+  // BLOQUE VII: GUILLOTINAS, ENCUADERNACIÓN Y ACABADOS (61-70)
+  // ==========================================
+  {
+    theme: 7,
+    question: "Al cortar materiales sintéticos duros o polimerizados en una guillotina, la cuchilla debe equiparse con un Doble Bisel (o bisel secundario) para evitar:",
+    options: [
+      "El desportillado y muescado del filo afilado y la fractura brusca del material por impacto violento.",
+      "Que el papel se pegue a la mesa por aire.",
+      "El aumento del peso del taco de papel."
+    ],
+    correct: 0,
+    explanation: "Un bisel secundario refuerza la arista del filo (por ejemplo $24^\circ$ con una punta reforzada a $30^\circ$) absorbiendo la onda de choque en plásticos rígidos o materiales de altísima densidad.",
+    source: "Tecnología de Corte y Mantenimiento de Guillotinas"
+  },
+  {
+    theme: 7,
+    question: "En la evaluación de la calidad de la encuadernación en rústica fresada, la resistencia mecánica de las hojas individuales se mide mediante el ensayo de:",
+    options: [
+      "Fuerza de Tracción de Hoja (Page Pull Test) expresado en N/cm.",
+      "Viscosidad Saybolt en segundos.",
+      "Porosidad Gurley."
+    ],
+    correct: 0,
+    explanation: "Un equipo dinamométrico pinza una sola hoja central del libro terminado y tira verticalmente de ella registrando la fuerza en Newtons necesaria para arrancarla del lomo encolado.",
+    source: "ISO 19594 - Graphic Technology - Test Method for Determination of the Bonding Strength"
+  },
+  {
+    theme: 7,
+    question: "El defecto de plegado denominado 'Arruga en Pico de Pato' que aparece en la intersección de los pliegos cruzados es provocado por:",
+    options: [
+      "La bolsa de aire ocluido atrapada dentro del cuadernillo al realizar un plegado en ángulo recto sin previa micro-perforación de escape.",
+      "Un fallo de temperatura en el horno de secado.",
+      "La falta de agua de mojado en la cubierta."
+    ],
+    correct: 0,
+    explanation: "Al doblar a alta velocidad pliegos cerrados sin salida de aire, el aire comprimido en la bolsa de plegado hace estallar la fibra celulósica en el cruce de las dobles formando arrugas diagonales en forma de bolsa o pico.",
+    source: "Mecánica del Plegado Editorial de Pliegos"
+  },
+  {
+    theme: 7,
+    question: "Los adhesivos termofusibles basados en Poliolefinas Amorfas (APAO / PO) ofrecen como ventaja sobre los tradicionales EVA:",
+    options: [
+      "Mayor resistencia térmica al calor y al frío, menor densidad y mayor flexibilidad de lomo sin llegar al coste del PUR.",
+      "Que se disuelven completamente al entrar en contacto con el agua fría.",
+      "Que no requieren derretirse mediante calor."
+    ],
+    correct: 0,
+    explanation: "Los adhesivos hot-melt de poliolefina poseen mejor estabilidad térmica en el crisol que el EVA, no sufren degradación de color y proporcionan una cohesión mecánica muy superior.",
+    source: "Tecnología de Adhesivos en Postimpresión"
+  },
+  {
+    theme: 7,
+    question: "La técnica de Estampación en Frío (Cold Foil) en prensa offset en línea transfiere la película metálica mediante:",
+    options: [
+      "La impresión de un adhesivo fotocurable o graso en la primera unidad de impresión sobre el cual se prensa la lámina de foil, curándose con luz UV antes de retirar el film soporte.",
+      "El calentamiento de un cliché de bronce a 200 °C.",
+      "La pulverización de polvo de aluminio electrostático."
+    ],
+    correct: 0,
+    explanation: "Cold Foil no usa calor ni troqueles térmicos: aplica el adhesivo en la forma offset como si fuera una tinta; la cinta de aluminio solapa en el caucho adyacente y el adhesivo fijado retiene la capa metálica.",
+    source: "Acabados en Línea y Cold Foil Technology"
+  },
+  {
+    theme: 7,
+    question: "En las coseidoras de pliegos con hilo de alambre para folletos (Grapado a cinto), la formación de la grapa exige que el alambre atraviese el pliego sobre:",
+    options: [
+      "La cresta exacta del dobladillo central del pliego embuchado.",
+      "El margen exterior de corte de la cabeza.",
+      "El centro geométrico de la cubierta de cartón aglomerado."
+    ],
+    correct: 0,
+    explanation: "El sistema de embuchado transporta las tripas insertadas a cinto sobre una cadena en 'V'; las cabezas grapadoras disparan el alambre cortado y doblado atravesando la arista exacta del lomo.",
+    source: "Encuadernación a la Grapa y Maquinaria de Acabados"
+  },
+  {
+    theme: 7,
+    question: "Para determinar la anchura teórica adecuada de la canaleta de hendido ($W$) en un troquel para cartón doblado se utiliza la relación geométrica:",
+    options: [
+      "W = 1,5 * t + s (donde t es el espesor del cartón y s el grosor del fleje de hendido)",
+      "W = t / s",
+      "W = 100 * t"
+    ],
+    correct: 0,
+    explanation: "La geometría de la matriz debe dar espacio suficiente para que el papel fluya dentro del canal sin cizallarse ni romperse en la cara externa: la anchura suma el fleje más una constante proporcional al espesor del soporte.",
+    source: "Tecnología de Hendido y Packaging de Cartoncillo"
+  },
+  {
+    theme: 7,
+    question: "El defecto conocido como 'Ojos de Pez' en el barnizado UV de alto brillo sobre impresos offset está originado por:",
+    options: [
+      "Contaminación de la superficie con aceites de silicona o polvo antimaculante que poseen una tensión superficial más baja que la del barniz fluido.",
+      "El uso de una lámpara UV demasiado potente.",
+      "Un gramaje de papel de 300 g/m²."
+    ],
+    correct: 0,
+    explanation: "Si sobre la tinta o el papel hay gotas microscópicas de silicona o exceso de ceras/polvos antimaculantes, el barniz UV no puede humectar la zona y se retrae formando crateres o 'ojos de pez'.",
+    source: "Defectos de Barnizado y Protección Superficial"
+  },
+  {
+    theme: 7,
+    question: "En el troquelado rotativo industrial con cilindros magnéticos se emplean como herramienta de corte:",
+    options: [
+      "Planchas de acero flexibles de grabado fotomecánico o láser sujetas al cilindro por imanes permanentes de alta potencia.",
+      "Cuchillas de guillotina accionadas por aire comprimido.",
+      "Hilos de nicrom calentados al rojo vivo."
+    ],
+    correct: 0,
+    explanation: "Las troqueladoras flexibles utilizan planchas de acero delgado procesadas con biseles afilados CNC; la plancha se envuelve e imanta firmemente sobre el cilindro magnético rectificado.",
+    source: "Ingeniería de Troquelado Rotativo y Etiquetas"
+  },
+  {
+    theme: 7,
+    question: "En las alzadoras de pliegos para la confección de libros, las alzadoras de succión rotativa neumática destacan sobre las de fricción por:",
+    options: [
+      "Manipular soportes estucados pesados o delicados sin dejar marcas de rozamiento ni arrastrar pliegos dobles.",
+      "Funcionar sin necesidad de corriente eléctrica.",
+      "Ser capaces de cortar el papel simultáneamente."
+    ],
+    correct: 0,
+    explanation: "Los ventosas de vacío separan y sujetan la hoja sin rozar la cara impresa anterior, erradicando los problemas de repintado y los fallos de marcas de rodillos de goma de fricción.",
+    source: "Sistemas Automáticos de Alzado y Embuchado"
+  },
+
+  // ==========================================
+  // BLOQUE VIII: ENVASES, PACKAGING Y CARTÓN ONDULADO (71-80)
+  // ==========================================
+  {
+    theme: 8,
+    question: "El Ensayo de Resistencia a la Compresión del Canto (ECT - Edge Crush Test, ISO 3037) en cartón ondulado mide:",
+    options: [
+      "La fuerza máxima por unidad de longitud (kN/m) que soporta una probeta con las flautas verticales antes del colapso del cuerpo estructural.",
+      "La absorción de agua en g/m² de la cara liner.",
+      "El grosor total del polietileno extrusionado."
+    ],
+    correct: 0,
+    explanation: "El ECT es el parámetro fundamental para predecir la rigidez estructural de una caja de cartón ondulado, midiendo la fuerza de aplastamiento directa aplicada en sentido paralelo a las ondas.",
+    source: "ISO 3037 - Corrugated Fibreboard - Determination of Edgewise Crush Resistance"
+  },
+  {
+    theme: 8,
+    question: "La fórmula simplificada de McKee utiliza el parámetro ECT, el Caliper ($h$) y el Perímetro de la caja ($Z$) para predecir:",
+    options: [
+      "La Resistencia a la Compresión Vertical de la Caja (BCT - Box Crush Test).",
+      "La temperatura de ignición del embalaje.",
+      "La velocidad de impresión de la flexográfica."
+    ],
+    correct: 0,
+    explanation: "La fórmula de McKee ($BCT = 5,876 \cdot ECT \cdot \sqrt{h \cdot Z}$) permite calcular el peso exacto en kg que soportará una caja cerrada apilada en almacén a partir de ensayos de laboratorio de la plancha de cartón.",
+    source: "Cálculo Estructural de Envoltorios de Cartón Ondulado"
+  },
+  {
+    theme: 8,
+    question: "Las microóndolas tipo F (espesor aprox. 0,75 mm) y N (espesor aprox. 0,5 mm) de cartón ondulado se han diseñado para:",
+    options: [
+      "Sustituir al cartoncillo en empaques de lujo y cosmética permitiendo la impresión offset directa con alta lisura y rigidez superior.",
+      "Fabricar contenedores marítimos de 40 pies.",
+      "Envolver tubos de acero sin doblar."
+    ],
+    correct: 0,
+    explanation: "Las microóndolas extra-finas proporcionan la resistencia del cartón ondulado pero con un paso de flauta tan estrecho que anula el efecto marcación de la onda, pudiendo imprimirse en prensa pliego.",
+    source: "Evolución de Flautas de Cartón Ondulado"
+  },
+  {
+    theme: 8,
+    question: "Para prevenir la migración de Fotoiniciadores en envases de alimentos impresos con tintas UV se emplean compuestos de:",
+    options: [
+      "Alto Peso Molecular (fotoiniciadores poliméricos o multifuncionales > 1.000 Da) que quedan atrapados en la red tridimensional sin difundir.",
+      "Esteres de plomo sintético de rápida evaporación.",
+      "Gas metano disuelto en la laca."
+    ],
+    correct: 0,
+    explanation: "Al tener una masa molecular superior a $1000\text{ Dalton}$, las moléculas de fotoiniciador polimérico no pueden atravesar la barrera del soporte ni difundirse a través del polímero hacia el alimento interno.",
+    source: "Evaluación de Migración e Inocuidad en Packaging Alimentario"
+  },
+  {
+    theme: 8,
+    question: "Los Barnices Barrera Acuosos de última generación aplicados sobre cartón sustituyen las películas laminadas de Polietileno (PE) gracias a:",
+    options: [
+      "Polímeros acuosos dispersos que crean una película continua hidrófoba y oleófoba que no impide el reciclado directo del papel en el pulper.",
+      "Su formulación basada en cera de abejas pura a 150 °C.",
+      "Que disuelven el cartón al contacto."
+    ],
+    correct: 0,
+    explanation: "Los recubrimientos 'Dispersive Barrier' otorgan barrera al agua y grasas pero al llegar al pulper de reciclaje se desintegran sin formar la malla plástica contaminante de los plastificados convencionales.",
+    source: "Desarrollo de Packaging Monomaterial Compostable"
+  },
+  {
+    theme: 8,
+    question: "En la preparación del adhesivo de almidón para la máquina onduladora (proceso Stein-Hall), se añade Bórax (Tetraborato Sódico) con la finalidad de:",
+    options: [
+      "Modificar la estructura química del almidón aumentando la viscosidad, el 'tack' en húmedo y la cohesión de la cola.",
+      "Pintar el pegamento de color verde brillante.",
+      "Acelerar la degradación biológica del cartón en almacén."
+    ],
+    correct: 0,
+    explanation: "El bórax reacciona con los grupos hidroxilo del almidón gelatinizado creando un complejo entrecruzado que proporciona una adhesión inicial instantánea en caliente sobre las crestas de la onda.",
+    source: "Química de Adhesivos para Cartón Ondulado"
+  },
+  {
+    theme: 8,
+    question: "El defecto denominado 'Inclinación de la Onda' (Flute Leaning) en la cara central del cartón ondulado se produce por:",
+    options: [
+      "El desajuste de tensión entre el papel medium y los rodillos onduladores que inclina los flancos de las flautas perdiendo resistencia al aplastamiento vertical.",
+      "El exceso de tinta roja en la cubierta exterior.",
+      "La falta de secado de la guillotina."
+    ],
+    correct: 0,
+    explanation: "Si la onda se deforma geométricamente cayéndose de lado en vez de permanecer perpendicular, la plancha pierde drásticamente su espesor (Caliper) y desploma los valores del ensayo ECT.",
+    source: "Análisis de Fallos de Proceso en Corrugadoras"
+  },
+  {
+    theme: 8,
+    question: "En la estructura multicapa de un envase aséptico para líquidos tipo Tetra Pak, la función de la fina lámina intermedia de Aluminio ($6\, \mu\text{m}$) es:",
+    options: [
+      "Actuar como barrera absoluta contra la luz, el oxígeno y aromas externos evitando la oxidación del alimento.",
+      "Transmitir electricidad para enfriar la leche.",
+      "Aumentar el peso del envase para la venta por kilos."
+    ],
+    correct: 0,
+    explanation: "La capa infranqueable de aluminio de solo 6 micras de grosor bloquea la entrada de oxígeno molecular y fotones de luz, garantizando la conservación de alimentos perecederos a temperatura ambiente.",
+    source: "Ingeniería de Envasado Multicapa Aséptico"
+  },
+  {
+    theme: 8,
+    question: "El ensayo de resistencia al reventamiento FEFCO / ISO en papel liner para cartón ondulado se realiza mediante el ensayo de:",
+    options: [
+      "Mullen Hidráulico expresado en kilopascales (kPa).",
+      "Cobb 60.",
+      "Medidor de aire Bendtsen."
+    ],
+    correct: 0,
+    explanation: "El método Mullen de estallido somete al liner a una deformación por diafragma elástico hidráulico hasta la rotura, siendo el parámetro de control clave para el empaque de transporte pesado.",
+    source: "FEFCO Testing Methods for Corrugated Board"
+  },
+  {
+    theme: 8,
+    question: "Para medir la absorción de agua de las caras liner del cartón ondulado destinadas a embalajes de exportación en ambientes húmedos se exige un ensayo Cobb 1800 cuyo resultado debe ser:",
+    options: [
+      "Valores bajos de absorbencia de agua (por ejemplo Cobb 1800 < 150 g/m²).",
+      "Valores de absorbencia superiores a 5.000 g/m².",
+      "Exactamente cero sin medición posible."
+    ],
+    correct: 0,
+    explanation: "El ensayo Cobb a largo plazo (30 minutos = 1800 segundos) certifica que la cara exterior hidrofugada de la caja no se ablandará por condensación en contenedores de flete marítimo.",
+    source: "Ensayos Físico-Químicos de Cartón de Exportación"
+  },
+
+  // ==========================================
+  // BLOQUE IX: TIPOGRAFÍA, HISTORIA Y DISEÑO EDITORIAL (81-90)
+  // ==========================================
+  {
+    theme: 9,
+    question: "El Cánon de Villard de Honnecourt utilizado por los maestros impresores del Renacimiento determina la maquetación de la página mediante:",
+    options: [
+      "La división progresiva de la página en una cuadrícula de 9 x 9 sectores que fija márgenes proporcionales de 2:3:4:6 (interior, cabeza, exterior, pie).",
+      "Un algoritmo informático basado en la resolución de imagen.",
+      "El uso exclusivo de fuentes de palo seco alineadas al centro."
+    ],
+    correct: 0,
+    explanation: "La geometría armónica del canon medieval/renacentista subdivide la página trazando diagonales para ubicar la mancha de texto en proporción exacta con los márgenes de blanco circundantes.",
+    source: "Historia y Geometría del Diseño Editorial"
+  },
+  {
+    theme: 9,
+    question: "La clasificación tipográfica diseñada por Aldo Novarese en 1956 organiza los estilos en diez familias principales basándose en:",
+    options: [
+      "La forma anatómica de los remates (serifs) y la modulación del trazo.",
+      "El año de patente del software de ordenador.",
+      "El país de fabricación de la fundición de plomo."
+    ],
+    correct: 0,
+    explanation: "Novarese simplificó la catalogación agrupando las letras en 10 grandes familias (Lapidarios, Medievales, Venetianos, Tradicionales, Modernos, Egipcios, Lineales, Lapidarios/Fantasía, Escritos y Góticos).",
+    source: "Sistemas Clásicos de Clasificación Tipográfica"
+  },
+  {
+    theme: 9,
+    question: "Las tipografías clasificadas como 'Reales' o de Transición (ej. Baskerville, Fournier) representan el paso evolutivo entre:",
+    options: [
+      "Las Humanísticas/Garaldas del Renacimiento y las Didonas Neoclásicas del siglo XVIII.",
+      "Las letras Góticas de madera y las impresoras de chorro de tinta.",
+      "Los caracteres de palo seco y la tipografía digital escalable."
+    ],
+    correct: 0,
+    explanation: "Las fuentes de Transición o Reales perfeccionaron el grabado en metal afinando los remates, aumentando el contraste y verticalizando el eje de modulación respecto a las Garaldas.",
+    source: "Evolución Histórica de los Estilos Tipográficos"
+  },
+  {
+    theme: 9,
+    question: "En la estructura interna de un archivo de fuente OpenType, las tablas GSUB y GPOS se encargan respectivamente de:",
+    options: [
+      "GSUB: Sustitución de Glifos (ligaduras, fracciones, versalitas); GPOS: Posicionamiento de Glifos (ajustes de kerning y marcas de diacríticos).",
+      "GSUB: Grabado de fuentes; GPOS: Impresión en papel.",
+      "GSUB: Licencia de software; GPOS: Borrado de fuentes corruptas."
+    ],
+    correct: 0,
+    explanation: "La especificación OpenType procesa las funciones avanzadas mediante tablas tipográficas inteligentes: GSUB sustituye caracteres por glifos alternativos y GPOS ajusta las coordenadas $(X,Y)$ del trazo.",
+    source: "Especificación de Formato OpenType (ISO/IEC 14496-22)"
+  },
+  {
+    theme: 9,
+    question: "En las instrucciones de 'Hinting' TrueType, las denominadas 'Delta Instructions' permiten al diseñador de tipos:",
+    options: [
+      "Mover o encender/apagar píxeles individuales en tamaños de cuerpo extremadamente pequeños para corregir cierres de ojos de letras como 'e' o 'a'.",
+      "Cambiar el idioma de la fuente de inglés a chino.",
+      "Aumentar la velocidad de transferencia del cable USB."
+    ],
+    correct: 0,
+    explanation: "Las instrucciones Delta ejecutan correcciones finas que solo se activan a resoluciones o cuerpos puntuales específicos (por ejemplo a 9 pt a 72 dpi), asegurando máxima legibilidad en pantalla.",
+    source: "TrueType Instruction Set & Typography Engine"
+  },
+  {
+    theme: 9,
+    question: "El Cánon de van de Graaf para el trazado del libro es una construcción geométrica que logra que la altura de la mancha impreso sea igual a:",
+    options: [
+      "El ancho total de la página física.",
+      "Un tercio de la diagonal del pliego.",
+      "Exactamente 10 centímetros en todos los formatos."
+    ],
+    correct: 0,
+    explanation: "La geometría de Van de Graaf relaciona armónicamente la mancha con la página: la altura del texto impreso coincide milimétricamente con la anchura de la hoja recortada.",
+    source: "Geometría de la Pagina y Cánones de Maquetación"
+  },
+  {
+    theme: 9,
+    question: "En la ortotipografía española, la distinción técnica entre el guion (-), la semirraya (–) y la raya (—) establece que la raya se utiliza prioritariamente para:",
+    options: [
+      "Enmarcar incisos en un texto y señalar las intervenciones de los diálogos.",
+      "Separar las sílabas al final de un renglón.",
+      "Expresar rangos numéricos de fechas."
+    ],
+    correct: 0,
+    explanation: "La raya o em-dash ($—$) es el signo ortográfico de mayor longitud asignado a incisos y diálogos; la semirraya ($–$) indica intervalos o uniones y el guion ($-$) la división silábica.",
+    source: "Manual de Ortotipografía para Artes Gráficas"
+  },
+  {
+    theme: 9,
+    question: "Las denominadas 'Superfamilias Tipográficas' (ej. Thesis, Scala, Linotype Univers) se caracterizan por:",
+    options: [
+      "Ofrecer variantes Serif, Sans-Serif, Slab-Serif y Script diseñadas con la misma estructura esquelética, métricas de ojo y alturas-x compatibles.",
+      "Incluir más de diez mil colores dentro del tipo de plomo.",
+      "Ser fuentes creadas antes del invento de la imprenta de Gutenberg."
+    ],
+    correct: 0,
+    explanation: "Una superfamilia unifica familias morfológicas completas bajo las mismas proporciones esqueléticas, permitiendo combinar tipografías con y sin remate en el mismo documento con armonía perfecta.",
+    source: "Diseño Tipográfico Contemporáneo"
+  },
+  {
+    theme: 9,
+    question: "Las 'Ligaduras Históricas' en las fuentes digitales OpenType Pro restauran caracteres clásicos en desuso como:",
+    options: [
+      "Las uniones de la 's' larga histórica con la 't' o la 'f' (ej. ﬅ, ﬆ).",
+      "Los números arábigos con tildes.",
+      "Las letras mayúsculas invertidas para la impresión de espejos."
+    ],
+    correct: 0,
+    explanation: "OpenType Pro rescata la riqueza tipográfica del plomo incorporando glifos como la 's' larga barroca ($ſ$) ligada a consonantes adyacentes para ediciones facsímiles o de época.",
+    source: "OpenType Feature Tag Reference"
+  },
+  {
+    theme: 9,
+    question: "En la definición de curvas Bézier en tipografía digital, el formato PostScript Type 1 / CFF utiliza curvas Bézier Cúbicas mientras que el formato TrueType emplea:",
+    options: [
+      "Curvas Bézier Cuadráticas (con un único punto de control fuera de la curva por segmento).",
+      "Vectores rectilíneos sin curvas.",
+      "Fórmulas sinusoidales de Fourier."
+    ],
+    correct: 0,
+    explanation: "TrueType calcula sus contornos mediante polinomios cuadráticos de segundo grado (1 punto de control fuera del trazo), a diferencia de las cúbicas de tercer grado de PostScript (2 puntos de control).",
+    source: "Geometría de Fuentes Digitales: Bézier Cuadrática vs Cúbica"
+  },
+
+  // ==========================================
+  // BLOQUE X: IMPRESIÓN DIGITAL, SEGURIDAD Y NORMATIVAS AMBIENTALES (91-100)
+  // ==========================================
+  {
+    theme: 10,
+    question: "Las Tintas de Seguridad Ópticamente Variables (OVI - Optically Variable Ink) utilizadas en billetes de banco cambian de color según el ángulo de observación gracias a:",
+    options: [
+      "Pigmentos de interferencia óptica formados por láminas microscópicas multicapa que reflejan longitudes de onda específicas según el ángulo de incidencia de la luz.",
+      "Un microchip instalado dentro del papel moneda.",
+      "La adición de pigmentos radiactivos de fósforo."
+    ],
+    correct: 0,
+    explanation: "Los copos de pigmento OVI son estructuras microscópicas multicapa (metal/dieléctrico): al inclinar el impreso, el recorrido de la luz dentro del cristal varía cambiando el color percibido (ej. verde a magenta).",
+    source: "Tecnología de Tintas de Seguridad y Documentos Oficiales"
+  },
+  {
+    theme: 10,
+    question: "En la impresión de documentos de valor, las tramas de seguridad denominadas 'Guilloché' se caracterizan por:",
+    options: [
+      "Patrones geométricos complejos de líneas finas entrelazadas continuas generadas por ecuaciones matemáticas sinusoidales imposibles de descomponer por un escáner.",
+      "Líneas gruesas de color negro continuo impresas con rodillo de pintura.",
+      "Cuadros de píxeles estocásticos en blanco y negro."
+    ],
+    correct: 0,
+    explanation: "Los guillochés generan orlas y fondos de rosetas mediante trazados vectoriales matemáticos continuos tan finos que cualquier intento de digitalización fotográfica los pixelará o destruirá.",
+    source: "Diseño y Producción de Documentos Antifalsificación"
+  },
+  {
+    theme: 10,
+    question: "Para la verificación de la autenticidad del papel moneda bajo luz ultravioleta se incorporan en la masa de la pasta durante la fabricación:",
+    options: [
+      "Fibras sintéticas fluorescentes (invisibles o visibles) que emiten luminosidad de color primario al exponerse a UV a 365 nm.",
+      "Trozos de hilo de cobre oxidado.",
+      "Gota de aceite de girasol concentrado."
+    ],
+    correct: 0,
+    explanation: "Las fibrillas fluorescentes se mezclan de forma aleatoria en la suspensión de celulosa; bajo radiación ultravioleta cercana (365 nm), las moléculas fotoactivas brillan en tonos azul, verde o rojo.",
+    source: "Elementos de Seguridad Integrados en el Soporte Papelero"
+  },
+  {
+    theme: 10,
+    question: "En las prensas digitales Electrofotográficas de Tóner Seco, la secuencia correcta del proceso físico de formación de la imagen sobre el tambor fotoconductor es:",
+    options: [
+      "Carga electrostática, Exposición láser, Revelado con tóner, Transferencia al papel y Fusión térmica por presión.",
+      "Fusión térmica, Exposición, Carga y Limpieza.",
+      "Revelado, Carga, Secado e Inyección."
+    ],
+    correct: 0,
+    explanation: "El cilindro fotoconductor se carga homogéneamente; el láser descarga las zonas de imagen; el tóner cargado adhiere a las zonas latentemente expuestas; se transfiere al papel por campo eléctrico y se funde por calor.",
+    source: "Sistemas Digitales NIP y Electrofotografía"
+  },
+  {
+    theme: 10,
+    question: "En los sistemas de Inyección de Tinta Continua (CIJ - Continuous Inkjet) empleados para codificación industrial a alta velocidad, las gotas de tinta no utilizadas se gestionan:",
+    options: [
+      "Cargándose electrostáticamente para ser desviadas por placas deflectoras hacia un canalón de recogida (Gutter) que las recircula al depósito.",
+      "Cayendo libremente sobre el suelo de la fábrica.",
+      "Evaporándose en el aire mediante un rayo láser."
+    ],
+    correct: 0,
+    explanation: "El sistema CIJ genera un chorro ininterrumpido de miles de gotas por segundo; las gotas que no deben imprimir se cargan eléctricamente y un campo electromagnético las desvía hacia el retorno o gutter.",
+    source: "Ingeniería de Cabezales e Inyección de Tinta CIJ"
+  },
+  {
+    theme: 10,
+    question: "La norma ISO 16759 establece el método de cálculo estandarizado para la cuantificación en las artes gráficas de:",
+    options: [
+      "La Huella de Carbono (emisiones de gases de efecto invernadero equivalentes a CO2) asociada a la producción de productos impresos.",
+      "El número de faltas de ortografía de un libro.",
+      "La velocidad máxima de las guillotinas trilaterales."
+    ],
+    correct: 0,
+    explanation: "ISO 16759 especifica los requisitos para calcular y reportar la huella de carbono de todo el ciclo de vida del impreso, desde la extracción de la pulpa hasta el transporte del producto final.",
+    source: "ISO 16759 - Graphic Technology - Quantification and Communication of Greenhouse Gas Emissions"
+  },
+  {
+    theme: 10,
+    question: "En el envasado secundario de medicamentos farmacéuticos se exige que las tintas e impresos cumplan estrictamente la prueba de Resistencia al Frotado especificada en la norma:",
+    options: [
+      "Sutherland Rub Test (o norma ISO 21138 / ASTM D5264).",
+      "Ensayo de tracción de fibra en seco.",
+      "Prueba de inmersión en ácido sulfúrico."
+    ],
+    correct: 0,
+    explanation: "El equipo Sutherland somete el impreso a un frotamiento oscilante estandarizado con un peso calibrado frente a un papel seco o húmedo, garantizando que el texto de la dosis no se borre por fricción.",
+    source: "Normativas de Calidad e Impresión para la Industria Farmacéutica"
+  },
+  {
+    theme: 10,
+    question: "La aplicación de Recubrimientos Nanométricos de Óxido de Aluminio (AlOx) o Sílice (SiOx) por deposición en vacío sobre soportes de papel permite:",
+    options: [
+      "Crear una capa transparente de barrera extrema a gases y vapor de agua, manteniendo la capacidad de reciclado del soporte.",
+      "Hacer que el papel sea completamente invisible a la vista.",
+      "Multiplicar por mil el grosor del pliego."
+    ],
+    correct: 0,
+    explanation: "La nano-deposición por plasma forma una piel inorgánica microscópica (nanómetros) que frena el oxígeno sin usar aluminio ni plásticos gruesos, permitiendo envases de alta barrera reciclables.",
+    source: "Nuevos Materiales Nanotecnológicos en Empaques"
+  },
+  {
+    theme: 10,
+    question: "El Reglamento Europeo REACH (CE n.º 1907/2006) afecta directamente a la industria gráfica al restringir:",
+    options: [
+      "El registro, evaluación, autorización y uso de Sustancias Químicas Altamente Preocupantes (SVHC) presentes en tintas, disolventes y aditivos.",
+      "El número de páginas que puede tener un periódico impreso.",
+      "La venta de papel a clientes particulares."
+    ],
+    correct: 0,
+    explanation: "REACH obliga a la cadena de suministro de impresión a erradicar o declarar el uso de sustancias químicas peligrosas (como fotoiniciadores tóxicos, plastificantes ftalatos o solventes pesados).",
+    source: "Reglamento REACH y Conformidad Química en Artes Gráficas"
+  },
+  {
+    theme: 10,
+    question: "La tecnología de impresión de 'Electrónica Impresa' (Printed Electronics) aprovecha los sistemas de serigrafía, flexografía e inkjet para depositar:",
+    options: [
+      "Tintas funcionales conductoras (basadas en nanopartículas de plata o grafeno) para fabricar sensores, antenas RFID y circuitos flexibles.",
+      "Fotos en color en tres dimensiones sobre cristal.",
+      "Letras con textura de terciopelo."
+    ],
+    correct: 0,
+    explanation: "La impresión funcional sustituye los pigmentos por tintas metálicas o polímeros semiconductores, permitiendo fabricar circuitos electrónicos pasivos y activos masivamente en prensas rotativas.",
+    source: "Electrónica Impresa e Impresión Funcional"
+  },
+  //const preguntasExamenArtesGraficasModoSuperDificil5 = [
+  // ==========================================
+  // BLOQUE I: PREIMPRESIÓN, GESTIÓN DE COLOR Y FLUJOS DIGITALES (1-6)
+  // ==========================================
+  {
+    theme: 1,
+    question: "En la arquitectura de perfiles de color ICC, los perfiles denominados 'DeviceLink' se caracterizan por:",
+    options: [
+      "Vincular directamente el espacio de color de un dispositivo de origen con el de destino sin pasar por el espacio PCS (CIELAB/XYZ), preservando el canal del Negro k puro.",
+      "Conectar la cámara digital con el monitor mediante transmisión de fibra óptica.",
+      "Convertir automáticamente imágenes RGB a mapa de bits monocromo de 1 bit."
+    ],
+    correct: 0,
+    explanation: "Los perfiles DeviceLink realizan una transformación directa CMYK-a-CMYK evitando la conversión intermedia a CIELAB, lo que permite conservar el canal del Negro (K) sin contaminarlo con Cian, Magenta o Amarillo.",
+    source: "Especificación del Consorcio Internacional del Color (ICC) - Perfiles DeviceLink"
+  },
+  {
+    theme: 1,
+    question: "En el flujo de trabajo OPI (Open Prepress Interface), la sustitución de archivos de imagen durante la preimpresión funciona mediante:",
+    options: [
+      "El uso de imágenes en baja resolución (FPO - For Position Only) durante la maquetación que el servidor OPI reemplaza automáticamente por los archivos TIFF/EPS en alta resolución durante el ripeado.",
+      "La compresión destructiva de las fotografías en formato JPEG antes del envío al CTP.",
+      "El entintado de la manta de caucho mediante inyección de tinta."
+    ],
+    correct: 0,
+    explanation: "El servidor OPI genera copias livianas en baja resolución (FPO) para acelerar el diseño; en la fase final de filmación, el servidor reemplaza los marcadores OPI por los archivos originales de alta calidad.",
+    source: "Flujos de Trabajo Digitales y Servidores de Preimpresión"
+  },
+  {
+    theme: 1,
+    question: "En la especificación PDF/VT (ISO 16612-2) para la impresión de datos variables y transaccionales, la arquitectura de datos se optimiza mediante:",
+    options: [
+      "La separación de los elementos repetitivos de fondo (reutilizables) y los elementos variables únicos, almacenándolos en caché para acelerar el procesamiento en el RIP.",
+      "La conversión obligatoria de todo el documento a formato JPEG de 72 ppi.",
+      "El grabado de las imágenes variables mediante buril de diamante."
+    ],
+    correct: 0,
+    explanation: "PDF/VT (Variable and Transactional) permite definir estructuras donde los fondos y gráficos fijos se procesan una sola vez en memoria caché, reduciendo drásticamente el tiempo de ripeado masivo.",
+    source: "ISO 16612-2 - Graphic Technology - Variable Data Printing (PDF/VT)"
+  },
+  {
+    theme: 1,
+    question: "El fenómeno de 'Roseta Cerrada' (o roseta con centro de punto) en el tramado de cuatricromía convencional AM se produce cuando:",
+    options: [
+      "Los puntos de trama de las cuatro tintas se cruzan coincidiendo exactamente en un punto central común.",
+      "Los ángulos de trama forman un círculo concéntrico sin superposición.",
+      "Se omite la tinta negra en la separación de color."
+    ],
+    correct: 0,
+    explanation: "La roseta centrada en punto (cerrada) coloca las tramas de forma que los puntos coinciden en el centro geométrico, siendo más sensible a variaciones de registro frente a la roseta centrada en blanco (abierta).",
+    source: "Fotomecánica y Geometría del Tramado AM"
+  },
+  {
+    theme: 1,
+    question: "En la tecnología CTP térmico por ablasión de capa, la interacción del rayo láser infrarrojo ($830\\text{ nm}$) con el polímero consiste en:",
+    options: [
+      "La vaporización instantánea por choque térmico de la capa foto-absorbente superficial sin necesidad de revelado químico líquido.",
+      "El enfriamiento criogénico de la chapa de aluminio.",
+      "La fusión del polímero con cera vegetal."
+    ],
+    correct: 0,
+    explanation: "Las planchas térmicas por ablación absorben la radiación infrarroja de alta potencia vaporizando las zonas sin imagen; los residuos secos se aspiran directamente en el CTP sin baños químicos.",
+    source: "Sistemas CTP Térmicos y Química de Planchas"
+  },
+  {
+    theme: 1,
+    question: "La técnica de Sub-sampling o muestreo en la preparación de imágenes para preimpresión reduce la resolución mediante:",
+    options: [
+      "El promedio matemático de los valores de color de una rejilla de píxeles para fusionarlos en un único píxel resultante.",
+      "El corte físico de los bordes de la fotografía.",
+      "El aumento del contraste mediante curvas de tono."
+    ],
+    correct: 0,
+    explanation: "El sub-muestreo (subsampling) calcula la media ponderada del color de un grupo de píxeles adyacentes para reducir el peso en megabytes del archivo sin distorsionar la geometría de la imagen.",
+    source: "Tratamiento Digital de la Imagen y Formatos de Archivo"
+  },
+
+  // ==========================================
+  // BLOQUE II: QUÍMICA PAPELERA, FIBRAS Y POLÍMEROS (7-12)
+  // ==========================================
+  {
+    theme: 2,
+    question: "En el proceso de cocción de pasta de madera por el método Organosolv (ej. Proceso Alcell), la disolución de la lignina se efectúa mediante:",
+    options: [
+      "Disolventes orgánicos reciclables (como etanol, metanol o ácido acético) a alta presión y temperatura.",
+      "Sosa cáustica concentrada y sulfuro sódico.",
+      "Ácido clorhídrico y gas cloro puro."
+    ],
+    correct: 0,
+    explanation: "La pulpación Organosolv sustituye los reactivos azufrados por solventes orgánicos volátiles como el etanol; esto facilita la recuperación de la lignina pura sin contaminación ambiental.",
+    source: "Nuevas Tecnologías de Fabricación de Pastas Ecológicas"
+  },
+  {
+    theme: 2,
+    question: "En el circuito de preparación de masa papelera, el Potencial Zeta (Zeta Potential) mide:",
+    options: [
+      "La carga eléctrica superficial de la suspensión de fibras y finos en el plano de cizallamiento, crítica para controlar la floculación y la retención.",
+      "El volumen de aire comprimido disuelto en la tina.",
+      "El grado de acidez de la salsa de estuco."
+    ],
+    correct: 0,
+    explanation: "El potencial Zeta (expresado en mV) determina la estabilidad coloidal del sistema: al acercarse a la neutralidad electrostática (0 mV) se maximiza la retención de finos y cargas por floculación.",
+    source: "Físico-Química de Superficies Papeleras"
+  },
+  {
+    theme: 2,
+    question: "Los sistemas microparticulados de retención de última generación combinan un polímero sintético catiónico de masa molar elevada con:",
+    options: [
+      "Micropartículas inorgánicas aniónicas (como Bentonita o Sílice Coloidal).",
+      "Aceite mineral comestible.",
+      "Sulfato de cobre concentrado."
+    ],
+    correct: 0,
+    explanation: "El polímero forma flóculos grandes de masa que luego se cizallan en la bomba de pulso; las micropartículas de bentonita/sílice (aniónicas) vuelven a unir los microflóculos logrando excelente desgote y formación.",
+    source: "Química de Aditivos de Masa y Floculación"
+  },
+  {
+    theme: 2,
+    question: "En la estructura cristalina de la Celulosa Nativa (Celulosa I), las cadenas poliméricas paralelas se organizan mediante:",
+    options: [
+      "Redes intramoleculares e intermoleculares de Puentes de Hidrógeno extremadamente compactas e insolubles en agua.",
+      "Enlaces metálicos de aluminio.",
+      "Cadenas ramificadas de glucógeno."
+    ],
+    correct: 0,
+    explanation: "La Celulosa I presenta sus cadenas ordenadas en la misma dirección (paralelas) cristalizadas gracias a una densa red de enlaces por puentes de hidrógeno, lo que le confiere su alta resistencia traccional.",
+    source: "Estructura y Cristalografía de la Celulosa"
+  },
+  {
+    theme: 2,
+    question: "Las hemicelulosas principales presentes en la madera de coníferas (resinosas) son químicamente del tipo:",
+    options: [
+      "Galactoglucomananos.",
+      "Glucuronoxilanos.",
+      "Amilopectinas."
+    ],
+    correct: 0,
+    explanation: "Mientras que las frondosas contienen mayoritariamente xilanos, las coníferas o resinosas tienen como hemicelulosa dominante los galactoglucomananos (15-20% del peso de la madera).",
+    source: "Química de la Madera y Polímeros Naturales"
+  },
+  {
+    theme: 2,
+    question: "Durante el blanqueo de pasta de papel con Ozono ($O_3$), un exceso de dosificación o pH inadecuado provoca el siguiente efecto negativo sobre la celulosa:",
+    options: [
+      "La despolimerización y degradación de la cadena de celulosa con pérdida drástica de la viscosidad y resistencia mecánica.",
+      "El amarilleamiento instantáneo por carbonización.",
+      "La solidificación de la suspensión en un bloque rígido."
+    ],
+    correct: 0,
+    explanation: "El ozono es un oxidante ultra-reactivo: si no se controla estrictamente, ataca los enlaces glucosídicos de la celulosa reduciendo su Grado de Polimerización (GP) y debilitando las fibras.",
+    source: "Blanqueo TCF y Oxidación de la Celulosa"
+  },
+
+  // ==========================================
+  // BLOQUE III: MÁQUINA CONTINUADORA E INGENIERÍA PAPELERA (13-18)
+  // ==========================================
+  {
+    theme: 3,
+    question: "En las cajas de entrada hidráulicas de alta velocidad, los atenuadores de pulsación instalados en la alimentación del manifold sirven para:",
+    options: [
+      "Absorber las ondas de presión hidrodinámica generadas por las bombas antes de que causen variaciones periódicas de gramaje en sentido longitudinal.",
+      "Mezclar la tinta con la resina.",
+      "Aumentar la temperatura del agua a 200 °C."
+    ],
+    correct: 0,
+    explanation: "Los amortiguadores de pulsaciones emplean cámaras de aire amortiguadas para anular las micro-variaciones de presión del flujo de pulpa, evitando ondas o ráfagas transversales de peso en la hoja.",
+    source: "Hidrodinámica de la Cabeza de Máquina Continuadora"
+  },
+  {
+    theme: 3,
+    question: "En las Cajas Aspirantes (Suction Boxes) de la mesa Fourdrinier, el nivel de vacío graduado se regula aumentando paulatinamente en el sentido de marcha hasta alcanzar:",
+    options: [
+      "Un vacío de -0,1 a -0,4 bar.",
+      "Un vacío de -10,0 bar.",
+      "Una presión positiva de +5,0 bar."
+    ],
+    correct: 0,
+    explanation: "Para no sellar prematuramente la hoja ni compactar las fibras en exceso, la succión de las cajas aspirantes se eleva progresivamente desde valores suaves hasta unos $-0,4\\text{ bar}$ antes del rodillo Couch.",
+    source: "Operaciones de Desgote en la Mesa Fourdrinier"
+  },
+  {
+    theme: 3,
+    question: "Las máquinas de fabricación provistas de un formador tipo 'Roll-Former' ejecutan el desgote inicial principalmente por:",
+    options: [
+      "La presión centrífuga y tensión de la tela al envolver el cilindro formador perforado.",
+      "La evaporación por aire caliente a 150 °C.",
+      "La inmersión del pliego en cera sintética."
+    ],
+    correct: 0,
+    explanation: "En un Roll-Former de doble tela, la suspensión queda atrapada en el contacto y la tensión mecánica de las telas aprisionadas contra el rodillo cura y drena el agua por fuerza centrífuga.",
+    source: "Sistemas Avanzados de Formación de la Hoja"
+  },
+  {
+    theme: 3,
+    question: "Los rodillos de calandra denominados de 'Bombeo Variable' o Corona Controlada (NIPCO / Crown Controlled) corrigen la flexión del eje mediante:",
+    options: [
+      "Pistones hidráulicos de presión ajustables ubicados internamente dentro de la camisa rotativa del rodillo.",
+      "La deformación manual con martillos de plomo.",
+      "El aumento del espesor del estuco en los bordes."
+    ],
+    correct: 0,
+    explanation: "Los rodillos NIPCO poseen un eje fijo interno provisto de patines de presión hidráulicos independientes que empujan la superficie cilíndrica desde dentro, garantizando una presión uniforme de contacto.",
+    source: "Ingeniería de Calandras y Control de Perfil"
+  },
+  {
+    theme: 3,
+    question: "En las rebobinadoras de corte longitudinal de papel, el ángulo de cruce entre la cuchilla circular superior y la contra-cuchilla inferior se denomina:",
+    options: [
+      "Ángulo de sesgo o de cizalladura (Shear Cut).",
+      "Ángulo de inclinación del troquel.",
+      "Ángulo de bisel ortogonal."
+    ],
+    correct: 0,
+    explanation: "El corte por cizalla circular (Shear cut) ajusta un punto de contacto inclinado preciso entre la cuchilla y la contra-cuchilla para recortar la tira de papel sin rasgar ni generar polvo.",
+    source: "Mecanismo de Cortadoras y Rebobinadoras Industriales"
+  },
+  {
+    theme: 3,
+    question: "La unidad de tratamiento en máquina 'Gate-Roll' aplica la salsa de encolado o estuco ligero mediante:",
+    options: [
+      "Un tren de rodillos de transferencia que premide y extiende la película antes de transferirla a la hoja de papel.",
+      "Inyección directa mediante boquillas de soplado a alta presión.",
+      "Un baño estático donde la hoja se sumerge por completo."
+    ],
+    correct: 0,
+    explanation: "El sistema Gate-Roll utiliza una reserva de salsa entre dos rodillos de dosificación; la película pasa por rodillos intermedios reguladores hasta depositarse suavemente sobre la superficie del papel.",
+    source: "Tratamientos Superficiales e Recubrimientos de la Hoja"
+  },
+
+  // ==========================================
+  // BLOQUE IV: ESPECTROFOTOMETRÍA, METROLOGÍA E ISO (19-24)
+  // ==========================================
+  {
+    theme: 4,
+    question: "En la espectrofotometría de esfera de integración con geometría $d/0^\circ$, la muestra se ilumina mediante:",
+    options: [
+      "Luz difusa reflejada por las paredes internas de la esfera integradora recubiertas de Sulfato de Bario o PTFE (Spectralon), capturando el flujo reflejado en perpendicular ($0^\circ$).",
+      "Un haz direccional directo a 45 grados de la superficie.",
+      "Radiación de tubos de neón rojo a 180 grados."
+    ],
+    correct: 0,
+    explanation: "La geometría difusa $d/0^\circ$ baña la probeta con radiación uniforme en todas direcciones gracias a las múltiples reflexiones sobre el revestimiento blanco mate ($BaSO_4$) de la esfera.",
+    source: "Geometrías Espectrofotométricas e ISO 2469"
+  },
+  {
+    theme: 4,
+    question: "Los Iluminantes Fluorescentes de la serie CIE 'F' (ej. F2, F7, F11) se caracterizan por presentar un espectro de emisión con:",
+    options: [
+      "Líneas de emisión estrechas del vapor de mercurio superpuestas sobre una banda ancha de fósforo.",
+      "Una curva de radiación idéntica a la del sol en el espacio exterior.",
+      "Ausencia absoluta de radiación en la zona del azul."
+    ],
+    correct: 0,
+    explanation: "Las lámparas fluorescentes comerciales presentan picos discretos de radiación de mercurio (a 405, 436, 546 y 578 nm), lo que provoca fuertes efectos de metamerismo sobre tintas y papeles.",
+    source: "CIE Publication 15 - Colorimetry"
+  },
+  {
+    theme: 4,
+    question: "Según la norma ISO 12647-2 (revisión 2013), el objetivo de diferencia de color ($\Delta E_00$) para la tolerancia de variación del balance de grises en tonos medios en la tirada es de:",
+    options: [
+      "ΔE00 <= 3,0 unidades.",
+      "ΔE00 <= 15,0 unidades.",
+      "ΔE00 = 0,0 unidades."
+    ],
+    correct: 0,
+    explanation: "La revisión 2013 sustituye $\Delta E^*{ab}$ por la fórmula CIEDE2000, fijando una tolerancia estricta de $\Delta E_{00} \le 3,0$ para evitar variaciones perceptibles de tono en la escala de grises.",
+    source: "ISO 12647-2:2013 - Graphic Technology - Process Control"
+  },
+  {
+    theme: 4,
+    question: "En la definición de los Valores Triestímulo CIE XYZ, el valor de la coordenada 'Y' representa directamente:",
+    options: [
+      "La Luminancia o eficiencia luminosa fotópica percibida por el ojo humano.",
+      "La saturación del color verde purísimo.",
+      "El porcentaje de radiación infrarroja absorbida."
+    ],
+    correct: 0,
+    explanation: "En la construcción del espacio CIE 1931, la función de mezcla de color $\bar{y}(\lambda)$ se hizo coincidir intencionadamente con la curva de sensibilidad luminosa visual $V(\lambda)$, resultando en $Y = \text{Luminancia}$.",
+    source: "Colorimetría Científica y Espacios CIE"
+  },
+  {
+    theme: 4,
+    question: "Los espectrofotómetros de matriz de fotodiodos (Sensor Array) capturan la luz reflejada dividiendo el espectro visible mediante:",
+    options: [
+      "Una red de difracción plana o cóncava que proyecta el espectro descompuesto sobre una fila de sensores semiconductor de silicio.",
+      "Filtros de gelatina de colores superpuestos a mano.",
+      "Un prisma de cristal de cuarzo giratorio accionado por motor."
+    ],
+    correct: 0,
+    explanation: "La red de difracción separa los fotones reflejados en sus longitudes de onda individuales proyectándolos simultáneamente sobre la matriz CCD/CMOS, capturando el espectro completo en milisegundos.",
+    source: "Instrumentación y Sensores Espectrofotométricos"
+  },
+  {
+    theme: 4,
+    question: "Los datos de caracterización FOGRA51 (PSO Coated v3) sustituyen a la antigua FOGRA39 para adaptar la estandarización a:",
+    options: [
+      "El uso masivo de papeles estucados con elevados niveles de Blanqueantes Ópticos (OBA) medidos bajo la condición M1.",
+      "La impresión en rotativas de papel prensa con tinta al agua.",
+      "El grabado de cilindros de cobre."
+    ],
+    correct: 0,
+    explanation: "FOGRA51 actualizó la caracterización incorporando el contenido real de OBA de los papeles comerciales modernos medidos con la condición M1 (D50 con UV), corregidos mediante ISO 12647-2:2013.",
+    source: "FOGRA / Fogra51 Characterization Data Set"
+  },
+
+  // ==========================================
+  // BLOQUE V: REOLOGÍA DE TINTAS Y TECNOLOGÍA OFFSET (25-30)
+  // ==========================================
+  {
+    theme: 5,
+    question: "El comportamiento reológico conocido como 'Reopexia' es el fenómeno opuesto a la Tixotropía y consiste en:",
+    options: [
+      "El incremento de la viscosidad de un fluido con el tiempo cuando se somete a un esfuerzo cortante o agitación constante.",
+      "El ablandamiento instantáneo de la tinta en reposo.",
+      "La evaporación completa de los disolventes en el tintero."
+    ],
+    correct: 0,
+    explanation: "Un fluido reopéctico se vuelve más viscoso y espeso a medida que se le aplica agitación o cizalla; es un defecto indeseable en tintas de impresión porque bloquearía los rodillos.",
+    source: "Reología Avanzada de Fluidos Complejos"
+  },
+  {
+    theme: 5,
+    question: "La Temperatura de Transición Vítrea ($T_g$) de las resinas sintéticas empleadas en los vehículos de tinta offset determina:",
+    options: [
+      "La temperatura crítica a la cual el polímero pasa de un estado vítreo rígido y quebradizo a un estado gomoso o fluido.",
+      "El punto de combustión del solvente en el horno.",
+      "La temperatura de congelación del agua de mojado."
+    ],
+    correct: 0,
+    explanation: "La $T_g$ de la resina (ej. fenólica o alquídica) condiciona la dureza de la capa final, el tiempo de fijado por enfriamiento y la resistencia al frote del impreso seco.",
+    source: "Resinas Poliméricas y Fisicoquímica de Tintas"
+  },
+  {
+    theme: 5,
+    question: "En la formulación de los secantes metálicos para tintas de oxidosecado, el Manganeso actúa como un secante de tipo:",
+    options: [
+      "Secante de masa (o penetrante), acelerando la polimerización interna de la capa de tinta.",
+      "Secante de superficie exclusivo.",
+      "Inhibidor de la combustión."
+    ],
+    correct: 0,
+    explanation: "Mientras que el Cobalto es un secante de superficie (cura la piel externa), el Manganeso y el Zirconio catalizan la oxidación en todo el espesor de la película (secado en masa).",
+    source: "Química de Catalizadores y Secantes de Tinta"
+  },
+  {
+    theme: 5,
+    question: "La Ecuación de Young-Dupré permite evaluar la Mojabilidad de un líquido sobre un sólido relacionando:",
+    options: [
+      "El Ángulo de Contacto de la gota con las tensiones superficiales e intersuperficiales de las fases sólida, líquida y gaseosa.",
+      "La velocidad de la guillotina con el peso del papel.",
+      "El número de puntos de trama por centímetro."
+    ],
+    correct: 0,
+    explanation: "Un ángulo de contacto $<90^\circ$ indica humectación; cuando tiende a $0^\circ$ el líquido se extiende completamente sobre el sólido. Es la base física del equilibrio agua-tinta-plancha.",
+    source: "Físico-Química de Superficies e Interfases"
+  },
+  {
+    theme: 5,
+    question: "En los sistemas de mojado continuo offset tipo 'Alcolor', el rodillo sumergido en la cubeta (rodillo del agua) se acciona mediante:",
+    options: [
+      "Un motor de velocidad variable independiente sincronizado electrónicamente con la velocidad de la máquina.",
+      "Un piñón fijo enganchado al cilindro portaplancha.",
+      "El impulso manual del prensista."
+    ],
+    correct: 0,
+    explanation: "El rodillo tomador posee tracción eléctrica propia con variación de frecuencia: esto permite ajustar exactamente la micra de película de agua aportada sin depender de los engranajes de la prensa.",
+    source: "Mecánica y Control de Sistemas de Mojado Offset"
+  },
+  {
+    theme: 5,
+    question: "Los dispositivos de lavado automático de mantillas que utilizan paño impregnado (Wash Cloth) destacan sobre los de espátula líquida por:",
+    options: [
+      "Recoger de forma continua los residuos de fibra y tinta sobre la bobina de tela limpia sin proyectar solventes ni contaminar la pila de salida.",
+      "Funcionar sumergidos en agua hirviendo.",
+      "Raspar la mantilla con cuchillas de diamante."
+    ],
+    correct: 0,
+    explanation: "Elpaño de microfibra avanza mecánicamente frotando el caucho mientras absorbe la tinta y partículas de papel sin derramar disolventes volátiles ni dejar restos sobre la mantilla.",
+    source: "Automatización y Mantenimiento de Prensas Offset"
+  },
+
+  // ==========================================
+  // BLOQUE VI: FLEXOGRAFÍA, HUECOGRABADO Y SERIGRAFÍA (31-36)
+  // ==========================================
+  {
+    theme: 6,
+    question: "En la geometría de las celdas del rodillo Anilox cerámico, la inclinación o ángulo de grabado más utilizado para tramas de proceso es de:",
+    options: [
+      "60° (geometría hexagonal).",
+      "0° (líneas paralelas horizontal).",
+      "90° (cuadrado ortogonal)."
+    ],
+    correct: 0,
+    explanation: "El grabado hexagonal a $60^\circ$ empaqueta la mayor densidad geométrica de celdas por $\text{cm}^2$, maximizando la uniformidad de la transferencia de tinta y facilitando la limpieza de las paredes.",
+    source: "Especificaciones Técnicas de Rodillos Anilox Cerámicos"
+  },
+  {
+    theme: 6,
+    question: "Las planchas fotopolímeras flexográficas lavables con agua (Water-Washable) sustituyen los disolventes orgánicos de revelado por:",
+    options: [
+      "Soluciones acuosas ligeramente alcalinas con detergentes biodegradables a 40-50 °C.",
+      "Acetona concentrada.",
+      "Ácido nítrico al 90%."
+    ],
+    correct: 0,
+    explanation: "Las fotopolímeros ecológicos dispersan la resina no expuesta utilizando agua tibia con un porcentaje reducido de tensioactivo neutro, erradicando los VLA de solventes en el taller de CTP.",
+    source: "Fotopolímeros Ecológicos de Revelado Acuoso"
+  },
+  {
+    theme: 6,
+    question: "La tecnología de Grabado Láser Directo (DLE - Direct Laser Engraving) en elastómeros para mangas flexográficas utiliza un láser de $CO_2$ o fibra para:",
+    options: [
+      "Tallar térmicamente en 3D el relieve de imagen directo sobre la manga de caucho sin necesidad de insolación, lavados ni secado.",
+      "Pintar la superficie con aerosol negro.",
+      "Fundir la manga de poliéster sobre el eje."
+    ],
+    correct: 0,
+    explanation: "El DLE es un proceso totalmente seco y directo: el láser de alta potencia esculpe la goma o elastómero retirando el material por vaporización y dejando el relieve listo para imprimir.",
+    source: "Sistemas DLE y Mangas Directas de Elastómero"
+  },
+  {
+    theme: 6,
+    question: "Durante el re-cromado de un cilindro de Huecograbado fatigado, el proceso galvanoplástico deposita una capa superficial de Cromo Duro con un espesor de:",
+    options: [
+      "6 a 8 micras.",
+      "500 a 1.000 micras.",
+      "0,1 nanómetros."
+    ],
+    correct: 0,
+    explanation: "Una fina piel de cromo electrolítico de solo $6-8\, \mu\text{m}$ (con dureza $>900\text{ HV}$) basta para proteger las aristas del grabado de cobre de la fricción continua de la racla de acero.",
+    source: "Galvanoplastia e Ingeniería de Cilindros de Huecograbado"
+  },
+  {
+    theme: 7,
+    question: "En Serigrafía, la Película Capilar (Capillary Film) se aplica sobre la malla mediante:",
+    options: [
+      "La adhesión por capilaridad del film fotopolímero seco sobre la malla previamente humedecida con agua destilada.",
+      "El fundido con plancha de vapor a 200 °C.",
+      "El pegado con cera caliente."
+    ],
+    correct: 0,
+    explanation: "La película capilar ofrece un espesor controlado y uniforme de emulsión fotográfica; se coloca sobre la pantalla mojada y el agua la atrae por tensión capilar secándose antes de la exposición.",
+    source: "Tecnología de Matrices y Películas Serigráficas"
+  },
+  {
+    theme: 6,
+    question: "Las tintas serigráficas de tipo Plastisol empleadas en la estampación textil no secan al aire porque están compuestas por:",
+    options: [
+      "Resinas de PVC en suspensión dentro de un plastificante líquido que sólo fusionan y gelifican al alcanzar los 160 °C en el túnel.",
+      "Alcohol etílico que se evapora en un segundo.",
+      "Agua destilada al 99%."
+    ],
+    correct: 0,
+    explanation: "El Plastisol permanece fluido indefinidamente a temperatura ambiente dentro de la pantalla; la polimerización se produce cuando la temperatura del túnel calienta la masa a $160^\circ\text{C}$ reticulando el PVC.",
+    source: "Físico-Química de Tintas Textiles Plastisol"
+  },
+
+  // ==========================================
+  // BLOQUE VII: GUILLOTINADO, PLEGADO Y ACABADOS (37-42)
+  // ==========================================
+  {
+    theme: 7,
+    question: "En las guillotinas industriales de corte oscilante, el movimiento de la cuchilla no es vertical directo sino oblicuo debido a que:",
+    options: [
+      "El movimiento en diagonal realiza una acción de cizallamiento y rebanado (corte por tracción) que reduce la fuerza necesaria para atravesar el taco de papel.",
+      "Evita que el papel sufra electricidad estática.",
+      "Permite cortar pliegos circulares."
+    ],
+    correct: 0,
+    explanation: "El trazado diagonal desplaza la cuchilla lateralmente mientras baja; este rebanado reduce la resistencia mecánica del taco y evita arrugar los pliegos inferiores.",
+    source: "Cinemática y Mecánica de Guillotinas de Papel"
+  },
+  {
+    theme: 7,
+    question: "Para calcular la Fuerza de Presión del Pisón adecuada en una guillotina al cortar un papel estucado denso frente a un papel offset poroso se aplica la norma de:",
+    options: [
+      "Aumentar la presión sobre el papel estucado para evitar que los pliegos resbalen entre sí debido a su menor coeficiente de rozamiento.",
+      "Reducir la presión del pisón a cero.",
+      "Aplicar siempre la misma fuerza de 100 toneladas independientemente del papel."
+    ],
+    correct: 0,
+    explanation: "Los papeles estucados satinados son lisos y resbaladizos: requieren mayor presión de prensado del pisón para inmovilizar el bloque de papel y evitar desplazamientos en el corte.",
+    source: "Manual de Operación y Seguridad en Guillotinas"
+  },
+  {
+    theme: 7,
+    question: "En las plegadoras de bolsas, los deflectores o tope ciego instalados en la boca de las bolsas sirven para:",
+    options: [
+      "Anular la función de esa bolsa en concreto, haciendo que el pliego pase de largo hacia la siguiente bolsa o rodillo sin doblarse.",
+      "Inyectar pegamento líquido en la hoja.",
+      "Cortar el papel por la mitad."
+    ],
+    correct: 0,
+    explanation: "Al cerrar la entrada de una bolsa mediante el deflector, el pliego no puede penetrar en ella y continúa su avance recto hacia el siguiente módulo de plegado.",
+    source: "Configuración de Plegadoras MBO / Stahl"
+  },
+  {
+    theme: 7,
+    question: "En la aplicación de adhesivos PUR para encuadernación en rústica, el 'Tiempo de Abierto' (Open Time) del crisol se define como:",
+    options: [
+      "El intervalo de tiempo durante el cual el adhesivo fundido mantiene su pegajosidad y capacidad de humectación sobre el lomo antes de enfriarse.",
+      "El tiempo que tarda el libro en destruirse.",
+      "El tiempo de garantía de la máquina."
+    ],
+    correct: 0,
+    explanation: "El 'Open Time' determina la ventana operativa desde que se aplica el hilo de pegamento caliente en el lomo hasta que se estampa la cubierta; si excede este tiempo el pegamento no moja el papel.",
+    source: "Propiedades y Control de Adhesivos PUR"
+  },
+  {
+    theme: 7,
+    question: "En la maquinaria de cosido de pliegos con hilo de coser (Thread Sewing), las agujas de punzonado previas tienen la función de:",
+    options: [
+      "Perforar el lomo del cuadernillo desde dentro hacia fuera para facilitar el paso de la aguja con hilo sin desgarrar el papel.",
+      "Inyectar aire a presión para abrir las hojas.",
+      "Calentar el hilo metálico."
+    ],
+    correct: 0,
+    explanation: "Los punzones realizan los orificios guía en la cresta del pliego abierto; inmediatamente después, las agujas e hilo entran limpiamente a través de la perforación sin romper la fibra.",
+    source: "Técnicas de Encuadernación en Cosido con Hilo"
+  },
+  {
+    theme: 7,
+    question: "En el proceso de Gofrado o Relieve en Seco con troquel Macho-Hembra, la hembra (grabado rehundido) suele fabricarse de metal duro mientras que el macho (patriz) se elabora de:",
+    options: [
+      "Resina epoxi termoformada o foso sintético elástico que copia la cavidad exacta.",
+      "Plomo líquido derretido a 500 °C.",
+      "Madera de balsa no tratada."
+    ],
+    correct: 0,
+    explanation: "Para encajar milimétricamente con el cliché hembra grabado en latón/cobre, la contra-forma macho se realiza estampando un polímero o pasta sintética rápida que fragua con la forma idéntica.",
+    source: "Troquelado y Relieves de Alta Precisión"
+  },
+
+  // ==========================================
+  // BLOQUE VIII: PACKAGING Y CARTÓN ONDULADO (43-48)
+  // ==========================================
+  {
+    theme: 8,
+    question: "El Ensayo de Resistencia al Aplastamiento Plano de la Onda (FCT - Flat Crush Test, ISO 3035) en cartón ondulado evalúa:",
+    options: [
+      "La fuerza perpendicular aplicada sobre la cara de la plancha necesaria para colapsar las crestas de las flautas onduladas.",
+      "La resistencia al fuego del embalaje.",
+      "El estiramiento del papel liner."
+    ],
+    correct: 0,
+    explanation: "El FCT (en kPa) mide la solidez de las ondas ante impactos directos en el plano frontal: un FCT deficiente indica que las crestas se aplastarán perdiendo el calibre y la capacidad amortiguadora.",
+    source: "ISO 3035 - Corrugated Fibreboard - Determination of Flat Crush Resistance"
+  },
+  {
+    theme: 8,
+    question: "La combinación de flautas en cartón ondulado de Doble Pared denominado 'Tipo BC' presenta un espesor nominal de aproximadamente:",
+    options: [
+      "6,5 a 7,0 mm.",
+      "1,0 mm.",
+      "25,0 mm."
+    ],
+    correct: 0,
+    explanation: "La combinación de la Flauta B ($3\\text{ mm}$) y la Flauta C ($4\\text{ mm}$) da un espesor total compuesto de unos $6,5-7,0\\text{ mm}$, aportando alta resistencia de apilamiento y amortiguación.",
+    source: "Geometría de Planchas de Cartón Ondulado"
+  },
+  {
+    theme: 8,
+    question: "En las máquinas convertidoras Flexo-Folder-Gluer (Casemaker), la sección de 'Slotting' o Ranurado ejecuta:",
+    options: [
+      "El corte de las hendiduras y solapas de cierre de la caja de cartón ondulado mediante cuchillas dentadas rotativas.",
+      "El barnizado con laca ultravioleta.",
+      "El secado de la cola por infrarrojos."
+    ],
+    correct: 0,
+    explanation: "El cabezal Slotter troquela las ranuras que separan las solapas superiores e inferiores de la caja tipo B1 (B401 americano), permitiendo doblar y cerrar la caja.",
+    source: "Maquinaria de Conversión de Embalajes de Cartón"
+  },
+  {
+    theme: 8,
+    question: "Para la fabricación de embalajes de cartón ondulado destinados a congelados se exige que el papel Liner Kraft incorpore:",
+    options: [
+      "Tratamiento de encolado fuertemente hidrófugo con resinas de resistencia en húmedo para soportar la condensación de agua.",
+      "Una capa externa de terciopelo.",
+      "Papel cebolla pegado al interior."
+    ],
+    correct: 0,
+    explanation: "Las cajas de congelación sufren la descongelación y humedad en la cadena de frío: los liners exigen resinas de resistencia en húmedo para evitar que la caja se ablande y desplome.",
+    source: "Especificaciones de Cartón para Cadena de Frío"
+  },
+  {
+    theme: 8,
+    question: "En los materiales de envasado flexible multicapa de alta barrera, el copolímero EVOH (Etileno-Vinil-Alcohol) destaca por:",
+    options: [
+      "Ofrecer una barrera excepcional a los gases (oxígeno y nitrógeno) que se degrada si entra en contacto directo con la humedad por lo que se encapsula entre capas de PE o PP.",
+      "Ser un plástico completamente transparente y soluble en aceite.",
+      "Soportar temperaturas de más de 1.000 °C sin deformarse."
+    ],
+    correct: 0,
+    explanation: "El EVOH es el mejor bloqueante de oxígeno en filmes plásticos; sin embargo, al ser sensible al agua, se extruye siempre co-laminado dentro de sándwiches de polietileno hidrófobo.",
+    source: "Polímeros de Alta Barrera en Envasado Flexible"
+  },
+  {
+    theme: 8,
+    question: "El ensayo de Impacto por Plano Inclinado (Incline Impact Test, ASTM D880) sobre palés de empaques completos evalúa:",
+    options: [
+      "La resistencia de la unidad de carga paletizada frente a choques frontales o frenadas bruscas durante el transporte ferroviario o en camión.",
+      "El grado de acidez del pegamento de la etiqueta.",
+      "La velocidad de secado de las tintas flexográficas."
+    ],
+    correct: 0,
+    explanation: "La prueba lanza el carro con el palé sobre un plano inclinado colisionando contra una pared rígida; así se analiza si las cajas se deforman o si el film estirable rompe por la fuerza de inercia.",
+    source: "ASTM D880 - Standard Test Method for Impact Testing for Shipping Containers"
+  },
+
+  // ==========================================
+  // BLOQUE IX: TIPOGRAFÍA, TIPOMETRÍA Y DISEÑO EDITORIAL (49-53)
+  // ==========================================
+  {
+    theme: 9,
+    question: "La norma alemana DIN 16518 clasifica los tipos tipográficos en once grupos principales. El grupo denominado 'Incisas' o Glíficas comprende caracteres como:",
+    options: [
+      "Albertus, Optima o Trajan (caracteres inspirados en la talla monumental en piedra con remates triangulares pequeños).",
+      "Garamond y Times New Roman.",
+      "Futura y Helvetica."
+    ],
+    correct: 0,
+    explanation: "Las Incisas o Glíficas simulan la tipografía cincelada en mármol con buril: presentan terminaciones o remates diminutos en forma de espuela o triángulo sin formar serifas horizontales completas.",
+    source: "Clasificación Tipográfica DIN 16518"
+  },
+  {
+    theme: 9,
+    question: "En la anatomía de los estilos tipográficos, las letras de la familia 'Palo Seco Neogóticas' o Humanistas (ej. Gill Sans, Frutiger) se diferencian de las Grotescas (ej. Helvetica) por:",
+    options: [
+      "Presentar proporciones inspiradas en la mayúscula romana y la minúscula carolingia con variaciones sutiles de grosor en el trazo y mayor apertura de ojos.",
+      "Tener todas las letras de geometría circular exacta.",
+      "Usar remates cuadrados extremadamente gruesos."
+    ],
+    correct: 0,
+    explanation: "Las Sans-Serif Humanistas rechazan la rigidez industrial neoclásica: incorporan modulación orgánica del trazo y proporciones basadas en la caligrafía tradicional, mejorando la lectura en señalética.",
+    source: "Anatomía Tipográfica y Diseño de Fuentes"
+  },
+  {
+    theme: 9,
+    question: "En la estructura de las fuentes digitales OpenType, la tabla denominada 'hmtx' (Horizontal Metrics Table) almacena los datos de:",
+    options: [
+      "Los anchos de avance horizontal (Advance Widths) y los desplazamientos del margen izquierdo (Left Side Bearings) de cada glifo.",
+      "La clave de encriptación del autor de la fuente.",
+      "El número de colores CMYK de la tipografía."
+    ],
+    correct: 0,
+    explanation: "La tabla 'hmtx' contiene la métrica horizontal exacta de cada carácter, definiendo la distancia que debe avanzar el cursor tras imprimir la letra y los blancos de separación laterales.",
+    source: "OpenType Specification - 'hmtx' Table Specifications"
+  },
+  {
+    theme: 9,
+    question: "El ajuste de 'Kerning por Parejas' (Pair Kerning) integrado en la tabla 'kern' o 'GPOS' de un archivo de fuente contiene:",
+    options: [
+      "Una matriz de valores numéricos de compensación espacial aplicables exclusivamente a combinaciones concretas de dos caracteres específicos.",
+      "La lista de palabras prohibidas en el corrector ortográfico.",
+      "El tamaño en puntos de la letra mayúscula."
+    ],
+    correct: 0,
+    explanation: "El Pair Kerning especifica desviaciones métricas (+/-) aplicadas a pares concretos (como 'AV', 'To', 'Wa') para corregir el exceso de espacio blanco óptico formado entre sus formas geométricas.",
+    source: "Digital Typography & Kerning Metrics"
+  },
+  {
+    theme: 9,
+    question: "El Cánon de Composición Editorial diseñado por Jan Tschichold establece que los márgenes de una página armónica deben mantener la proporción:",
+    options: [
+      "2 : 3 : 4 : 6 (Márgen Interior : Cabeza : Exterior : Pie).",
+      "1 : 1 : 1 : 1.",
+      "10 : 2 : 5 : 1."
+    ],
+    correct: 0,
+    explanation: "Tschichold estandarizó la regla del libro clásico: el margen interior es el menor (2), el superior sube a 3, el exterior a 4 y el pie es el más amplio (6) para equilibrar la mancha al abrir el libro.",
+    source: "Jan Tschichold - La Forma del Libro"
+  },
+
+  // ==========================================
+  // BLOQUE X: IMPRESIÓN DIGITAL, SEGURIDAD Y NORMATIVAS AMBIENTALES (54-58)
+  // ==========================================
+  {
+    theme: 10,
+    question: "En los cabezales de inyección Inkjet por demanda de gota (DoD) de tecnología Piezoeléctrica de Cizalla (Shear Mode), la deformación del cristal piezoeléctrico ocurre por:",
+    options: [
+      "La aplicación de un campo eléctrico en dirección transversal a la polarización del cristal, haciendo que la pared de la cavidad se flexione en forma de 'C' o 'S' expulsando la gota.",
+      "La ebullición del agua a más de 500 °C.",
+      "El giro de un motor de engranajes diminuto."
+    ],
+    correct: 0,
+    explanation: "El modo de cizalla (shear mode) aplica el pulso eléctrico perpendicularmente al eje del piezoeléctrico; la pared se deforma por cizalladura acústica proyectando volúmenes de gota de picolitros precisos.",
+    source: "Ingeniería de Cabezales de Inyección Piezoeléctrica"
+  },
+  {
+    theme: 10,
+    question: "Los Hilos de Seguridad Desmetalizados incorporados en las papel moneda se fabrican mediante:",
+    options: [
+      "Una tira fina de poliéster metalizada con aluminio al vacío a la cual se le eliminan químicamente el metal en zonas micro-textuales visibles al trasluz.",
+      "El tejido de hilos de lana pintados de dorado.",
+      "La impresión con lapicero de grafito."
+    ],
+    correct: 0,
+    explanation: "El hilo desmetalizado lleva una capa opaca de aluminio evaporado; mediante reserva química se disuelve el metal formando microrletras transparentes que se verifican a trasluz o con sensor óptico.",
+    source: "Tecnología de Fabricación de Papel Moneda y Billete"
+  },
+  {
+    theme: 10,
+    question: "Las tintas fotocromáticas empleadas en documentos de alta seguridad o autenticación cambian su estado de color cuando:",
+    options: [
+      "Se exponen a la radiación ultravioleta de la luz solar cambiando reversiblemente de incoloro a un tono coloreado.",
+      "Se calientan con un secador de pelo.",
+      "Se sumergen en aceite de oliva."
+    ],
+    correct: 0,
+    explanation: "Las moléculas fotocromáticas (como los espirooxazinas) sufren una isomerización estructural reversible al absorber fotones UV (sol o lámpara UV), volviéndose coloreadas instantáneamente.",
+    source: "Tintas Inteligentes y Fotoquímica de Seguridad"
+  },
+  {
+    theme: 10,
+    question: "La realización de un Análisis de Ciclo de Vida (ACV / LCA) según las normas ISO 14040/14044 en una industria gráfica abarca desde:",
+    options: [
+      "La cuna a la tumba (Cradle-to-Grave): extracción de materias primas, fabricación, transporte, impresión, uso y gestión final del residuo impreso.",
+      "Únicamente el cálculo de la factura de la luz del taller.",
+      "La compra de las máquinas guillotinas."
+    ],
+    correct: 0,
+    explanation: "El LCA o ACV bajo ISO 14040 contabiliza de forma holística todas las entradas y salidas de materia y energía desde el bosque/mina original hasta la incineración o reciclado del papel.",
+    source: "ISO 14040 / ISO 14044 - Environmental Management - Life Cycle Assessment"
+  },
+  {
+    theme: 10,
+    question: "En la impresión de Células Fotovoltaicas Orgánicas (OPV) y pantallas flexibles mediante Electrónica Impresa se exige un control de tolerancia del espesor de la capa seca impreso de:",
+    options: [
+      "Tolerancias del orden de nanómetros (nm) con ausencia total de agujeros o picaduras (Pin-holes).",
+      "Tolerancias de 1 a 2 centímetros.",
+      "Tolerancias de medio metro."
+    ],
+    correct: 0,
+    explanation: "Dado que las capas semiconductoras u orgánicas tienen grosores microscópicos ($50-200\text{ nm}$), una ligera variación o defecto de picadura cortocircuita las capas eléctricas anulando el dispositivo.",
+    source: "Procesos Avanzados de Impresión Funcional e Impresión de Semiconductores"
+  },
 
 
 
